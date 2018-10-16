@@ -17,9 +17,11 @@
 	
 	<body>
 
-		<header></header>
+		<header>
+			
+		</header>
 
-		<main class="tab-dashboard">
+		<main>
 			<div id="head">
 				<div class="wrapper">
 					<img class="obj-1" src="img/common_dashboard/Mancover.svg" alt="">
@@ -33,7 +35,7 @@
 				</div>
 			</div>
 			<div id="container">
-				<div class="wrapper">
+				<div style="display: block;" class="wrapper wrapper-tab-dashboard">
 					<div class="container-el">
 						<div class="el el-style-1">
 							<div class="head">
@@ -132,45 +134,22 @@
 								</div>
 							</div>
 						</div>
-						<div class="el">
-							<div class="head">
-								<h4>Colliers actif</h4>
-								<div class="container-dropdown">
-									<div class="container-rslt">
-										<div class="rslt">
-											Janvier 2018
-										</div>
-										<div class="arrow"></div>
-										<div class="dropdown">
-											
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="container-ist">
-								<div class="container-num">
-									<div class="num-prct">83%</div>
-									<div class="num-lgd">20 actifs /30</div>
-								</div>
-								<div class="container-stats">
-									<div class="container-subline">
-										<div class="title">
-											Elevage (bovins)
-										</div>
-										<div class="graph">
-											<span>20%</span>
-											<img src="img/common_dashboard/graph.svg" alt="">
-										</div>
-									</div>
-									<div class="container-line">
-										<div class="line">
-											<div style="width: 83%;" class="fill"></div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
 					</div>
+				</div>
+				<div class="wrapper wrapper-tab-product">
+					
+				</div>
+				<div class="wrapper wrapper-tab-client">
+					
+				</div>
+				<div class="wrapper wrapper-tab-factures">
+					
+				</div>
+				<div class="wrapper wrapper-tab-agents">
+					
+				</div>
+				<div class="wrapper wrapper-tab-agenda">
+					
 				</div>
 			</div>
 		</main>
