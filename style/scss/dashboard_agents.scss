@@ -1,0 +1,229 @@
+@import 'common.scss';
+@import 'dashboard_common.scss';
+
+/* ------------------------------------------------------------ */
+/* ********************* DASHBOARD AGENTS ********************* */
+/* ------------------------------------------------------------ */
+
+#head{
+	position: relative;
+	background-color: $colorMain_1;
+	padding: 135px 0px 175px 0px;
+	.wrapper{
+		@include styleGrid1;
+		position: relative;
+		.container-text{
+			text-align: center;
+			h1{
+				@include styleH2;
+				color: #FFF;
+			}
+			p{
+				width: 350px;
+				margin: auto;
+				@include styleParagraphSmall;
+			}
+		}
+		.obj-1{
+			height: 218px;
+			position: absolute;
+			left: 0px;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+		.obj-2{
+			height: 218px;
+			position: absolute;
+			right: 0px;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+}
+
+#container{
+	margin-top: -60px;
+	position: relative;
+	.wrapper{
+		@include styleGrid1;
+		position: relative;
+	}
+}
+
+.tab-dashboard{
+	#container{
+		.wrapper{
+			.container-el{
+				width: 880px;
+				display: flex;
+				flex-flow: row wrap;
+				justify-content: space-between;
+				.el{
+					width: 45%;
+					margin-bottom: 40px;
+					.head{
+						display: flex;
+						flex-flow: row wrap;
+						width: 100%;
+						align-items: center;
+						justify-content: space-between;
+						margin-bottom: 9px;
+						h4{
+							font-size: 11px;
+							line-height: 14px;
+							font-family: $font_1;
+							color: #FFF;
+							text-transform: uppercase;
+						}
+						.container-rslt{
+							display: flex;
+							flex-flow: row wrap;
+							align-items: center;
+							.rslt{
+								margin-right: 5px;
+								@include styleParagraphSmall;
+								color: $colorMain_2;
+							}
+						}
+					}
+					.container-ist{
+						padding: 15px;
+						border-radius: 5px;	
+						background-color: #FFFFFF;	
+						box-shadow: 0 20px 40px 0 rgba(108,96,255,0.1);
+					}
+					&.el-style-1{
+						.container-btn{
+							display: flex;
+							flex-flow: row wrap;
+							.btn{
+								cursor: pointer;
+								height: 25px;
+								@include styleParagraphSmall;
+								border: 1px solid #D4D3E3;
+								opacity: 1;
+								&:nth-child(1){
+									border-radius: 15px 0px 0px 15px;
+									padding: 0px 7px 0px 16px;
+								}
+								&:nth-child(2){
+									border-left:0px;
+									border-radius: 0px 15px 15px 0px;
+									padding: 0px 16px 0px 7px;
+								}
+								&.active{
+									background-color: $colorMain_1;
+									color: #FFF;
+									border-color: $colorMain_1;
+								}
+							}
+						}
+						
+					}
+					&.el-style-2{
+						.container-ist{
+							display: flex;
+							flex-flow: row wrap;
+							align-items: center;
+							justify-content: space-between;
+						}
+						.head-2{
+							margin-top: 25px;
+							h4{
+								color: $colorMain_1;
+							}
+						}
+						.container-ist-1{
+							.container-line:before,
+							.container-line:after{
+								background-color: $colorMain_4;
+							}
+							.fill{
+								background-color: $colorMain_4;
+							}
+						}
+						.container-ist-2{
+							.container-line:before,
+							.container-line:after{
+								background-color: #15BBDF;
+							}
+							.fill{
+								background-color: #15BBDF;
+							}
+						}
+						.container-num{
+							.num-prct{
+								@include styleH3;
+							}
+							.num-lgd{
+								@include styleParagraphSmall;
+							}
+						}
+						.container-stats{
+							width: 235px;
+							.container-subline{
+								display: flex;
+								flex-flow: row wrap;
+								align-items: center;
+								justify-content: space-between;
+								.title{
+									@include styleParagraphSmall;
+									opacity: 1;
+									color: $colorMain_1;
+								}
+								.graph{
+									display: flex;
+									flex-flow: row wrap;
+									align-items: center;
+									span{
+										font-size: 12px;	
+										line-height: 15px;
+										color: $colorMain_5;
+										font-family: $font_2;
+										margin-right: 5px;
+									}
+								}
+							}
+							.container-line{
+								position: relative;
+								margin-top: 12px;
+								&:before, 
+								&:after{
+									content:'';
+									position: absolute;
+									left: 50%;
+									transform: translateX(-50%);
+									height: 6px;
+									width: 2px;
+									border-radius: 4px;
+								}
+								&:before{
+									bottom: calc(100% + 4px);
+								}
+								&:after{
+									top: calc(100% + 4px);
+								}
+								.line{
+									width: 100%;
+									height: 4px;
+									background-color: #F5F5F5;
+									border-radius: 2px;
+									overflow: hidden;
+									.fill{
+										height: 100%;
+										border-radius: 2px;
+									}
+								}
+								
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/* ---------------------------------------------------------------- */
+/* ********************* END DASHBOARD AGENTS ********************* */
+/* ---------------------------------------------------------------- */

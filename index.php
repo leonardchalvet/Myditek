@@ -9,7 +9,7 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<link rel="stylesheet" type="text/css" href="css/home.css">
+		<link rel="stylesheet" type="text/css" href="style/css/home.css">
 
 		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 
