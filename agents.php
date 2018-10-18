@@ -67,7 +67,37 @@
 						AJOUTER
 					</div>
 					<div class="container-action">
-						<img src="img/agents/common/plus.svg">
+						<img class="nohover" src="img/agents/common/plus.svg">
+						<div class="action">
+							<img src="img/agents/common/drone-picto.svg">
+							<div class="container-text">
+								DRONE
+							</div>
+						</div>
+						<div class="action">
+							<img src="img/agents/common/capteur-picto.svg">
+							<div class="container-text">
+								CAPTEUR
+							</div>
+						</div>
+						<div class="action">
+							<img src="img/agents/common/clients-picto.svg">
+							<div class="container-text">
+								CLIENTS
+							</div>
+						</div>
+						<div class="action">
+							<img src="img/agents/common/facture-picto.svg">
+							<div class="container-text">
+								FACTURES
+							</div>
+						</div>
+						<div class="action">
+							<img src="img/agents/common/agenda-picto.svg">
+							<div class="container-text">
+								AGENDA
+							</div>
+						</div>
 					</div>
 				</div>
 
