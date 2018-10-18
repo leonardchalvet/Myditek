@@ -1,0 +1,84 @@
+@import '../common.scss';
+@import '../header.scss';
+
+/* ------------------------------------------------------------ */
+/* ********************* DASHBOARD COMMON ********************* */
+/* ------------------------------------------------------------ */
+
+#head{
+	position: relative;
+	background-color: $colorMain_1;
+	padding: 175px 0px 175px 0px;
+	.wrapper{
+		@include styleGrid1;
+		position: relative;
+		display: none;
+		.container-text{
+			text-align: center;
+			h1{
+				@include styleH2;
+				color: #FFF;
+			}
+			p{
+				width: 350px;
+				margin: auto;
+				@include styleParagraphSmall;
+			}
+		}
+		.obj-1{
+			height: 218px;
+			position: absolute;
+			left: 0px;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+		.obj-2{
+			height: 218px;
+			position: absolute;
+			right: 0px;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+}
+
+#container{
+	position: relative;
+	.wrapper{
+		@include styleGrid1;
+		position: relative;
+		display: none;
+	}
+}
+
+main {
+	&.dashboard {
+		#head .wrapper-tab-dashboard {
+			display: block;
+		}
+
+		#container { 
+			margin-top: -60px;
+			.wrapper-tab-dashboard {
+				display: block;
+			}
+		}
+	}
+
+	&.agenda {
+		#head .wrapper-tab-agenda {
+			display: block;
+		}
+
+		#container {
+			margin-top: -100px;
+			.wrapper-tab-agenda {
+				display: block;
+			}
+		}
+	}
+}
+
+/* ---------------------------------------------------------------- */
+/* ********************* END DASHBOARD COMMON ********************* */
+/* ---------------------------------------------------------------- */

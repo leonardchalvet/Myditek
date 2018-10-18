@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="9px" viewBox="0 0 10 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>8E139764-BC1C-46EF-8BA9-A0F478E672A2-1185-00008E0FAD89BB59</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="DesignDashboardAgents-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="7a-Agenda" transform="translate(-969.000000, -28.000000)" fill="#FFFFFF">
+            <g id="Header">
+                <g id="Menu">
+                    <g transform="translate(301.000000, 17.000000)">
+                        <g id="Links" transform="translate(0.000000, 7.000000)">
+                            <g id="6" transform="translate(668.000000, 1.000000)">
+                                <g transform="translate(0.000000, -1.000000)" id="agenda-picto">
+                                    <path d="M1.5,8 L1.5,11.5999575 C1.5,11.8209952 1.69525915,12 1.93535157,12 L8.06464843,12 C8.30499389,12 8.5,11.8212227 8.5,11.5999575 L8.5,6.40004247 C8.5,6.17900482 8.30474085,6 8.06464843,6 L7.5,6 L6.5,6 L5.5,6 L4.5,6 L3.5,6 L2.5,6 L1.93535157,6 C1.69500611,6 1.5,6.17877734 1.5,6.40004247 L1.5,7 L8.5,7 L8.5,8 L1.5,8 Z M8.5,5.04246774 C9.07590271,5.18626129 9.5,5.67858181 9.5,6.2632026 L9.5,11.7367974 C9.5,12.4342775 8.89702787,13 8.15220982,13 L1.84779018,13 C1.10323749,13 0.5,12.4340428 0.5,11.7367974 L0.5,6.2632026 C0.5,5.67835441 0.923955092,5.18614622 1.5,5.04242978 L1.5,4 L2.5,4 L2.5,5 L3.5,5 L3.5,4 L4.5,4 L4.5,5 L5.5,5 L5.5,4 L6.5,4 L6.5,5 L7.5,5 L7.5,4 L8.5,4 L8.5,5.04246774 Z"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

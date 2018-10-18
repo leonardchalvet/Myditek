@@ -1,0 +1,247 @@
+/*======================================
+=            PAGE MESSAGERIE           =
+========================================*/
+
+.wrapper-tab-agenda{ 
+	@include styleGrid1;
+
+	.message-search {
+		position: relative;
+		text-align: right;
+		padding-bottom: 20px;
+		width: 335px;
+		margin-right: 0;
+		margin-left: auto;
+
+		.search-input {
+			height: 40px;	
+			width: 100%;
+			border-radius: 20px;
+			background-color: rgba(255,255,255,0.1);
+			border: none;
+			color: #C2C6CF;	
+			font-family:Lato-Regular;
+			font-size: 13px;
+			padding-left: 45px;
+			outline: none;
+
+			&::placeholder {
+				color: #C2C6CF;		
+			}
+
+			&::-webkit-search-cancel-button {
+			  display: none;
+			}
+		}
+
+		.search-button {
+			position: absolute;
+			text-align: right;
+			top: 14px;
+			left: 20px;
+			height: 13px;	
+			width: 13px;	
+			opacity: 0.9;
+			background-color: transparent;
+			border: none;
+			outline: none;
+
+			img {
+				height: 13px;	
+				width: 13px;
+			}
+		}
+	}
+
+	.message-interaction {
+		display: flex;
+		background-color: #fff;
+		border-radius: 4px;
+		box-shadow: 0 20px 40px 0 rgba(108,96,255,0.1);
+
+		.messages-action {
+		
+			width: 400px;
+			border-right: 1px solid #F3F3F3;
+
+			.message-add {
+
+				cursor: pointer;
+				display: flex;
+				align-items: center;
+				padding: 35px 27px 25px 27px;
+
+				.oval {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					height: 37px;	
+					width: 37px;	
+					border-radius: 50%;
+					border: 1px solid #E3667A;	
+					background-color: #E3667A;
+					transition-duration: 0.3s;
+				}
+
+				.container-text {
+					
+					margin-left: 10px;
+					font-family:Lato-Regular;
+					font-size: 14px;
+					color: #0B1D4C;
+				}
+
+				&:hover {
+					.oval {
+						transform: scale(1.1);
+					}
+				}
+			}
+
+			.messages-list {
+
+				ul {
+					li {
+						position: relative;
+						list-style: none;
+						display: flex;
+						align-items: center;
+						padding: 25px 25px;
+						cursor: pointer;
+
+						.logo {
+							.nohover {
+								display: block;
+							}
+							.hover {
+								display: none;
+							}
+						}
+						&:hover {
+
+							background-color: #E9E9F4;
+
+							.logo {
+								.hover {
+									display: block;
+								}
+								.nohover {
+									display: none;
+								}
+							}
+						}
+
+						.container-text {
+							margin-left: 10px;
+
+							h3 {
+								font-family:Lato-Regular;
+								font-size: 14px;
+								color: #0B1D4C;
+							}
+
+							p {
+								@include styleParagraphSmall;
+								font-size: 13px;
+							}
+						}
+
+						&:after {
+							content: " ";
+							position: absolute;
+							width: 4px;
+							height: 4px;
+							margin: 8px;
+							border-right: 1.4px solid #0B1D4C;
+							border-bottom: 1.4px solid #0B1D4C;
+							right: 5%;
+							transform: translateY(-130%) rotate(-45deg);
+						}
+					}
+				}
+			}
+		}
+
+		.message-read {
+			width: 800px;
+
+			.head {
+				position: relative;
+				padding: 15px 26px;
+				border-bottom: 1px solid #F3F3F3;
+				.container-title {
+					@include styleH4;
+				}
+				.container-infos {
+					margin-top: 10px;
+					width: 100%;
+					display: flex;
+					justify-content:space-between;
+
+					.info {
+						font-family:Lato-Regular;
+						font-size: 14px;
+						color: #0B1D4C;
+						span {
+							@include styleParagraphSmall;
+							font-size: 12px;
+						}
+					}
+				}
+				.container-action {
+
+					position: absolute;
+					top: 15px;
+    				right: 40px;
+    				cursor: pointer;
+					@include styleParagraphSmall;
+
+					&:after {
+						content: " ";
+						position: absolute;
+						top: -5px;
+						right: -20px;
+						width: 5px;
+						height: 5px;
+						margin: 8px;
+						border-right: 1.4px solid $colorMain_2;
+						border-bottom: 1.4px solid $colorMain_2;
+						transform: translateY(75%) rotate(45deg);
+					}
+
+					.dropdown {
+						display: none;
+						position: absolute;
+						top: 0;
+						right: 0;
+						height: 90px;	
+						width: 145px;	
+						border-radius: 8px;	
+						background-color: #FFFFFF;	
+						box-shadow: 0 5px 20px 0 rgba(0,0,0,0.1);
+					}
+
+					a:hover {
+						.dropdown {
+							display: block;
+						}
+					}
+				}
+			}
+
+			.read {
+
+			}
+
+			.answer {
+
+			}
+		}
+	}
+}
+
+/*==========================================
+=            END PAGE MESSAGERIE           =
+============================================*/
+
+@import '../footer.scss';
