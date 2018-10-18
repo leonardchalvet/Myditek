@@ -19,7 +19,7 @@
 
 		<?php include 'header.php'; ?>
 
-		<main class="dashboard">
+		<main class="agenda">
 			<div id="head">
 
 				<!-- DASHBOARD -->
@@ -61,6 +61,15 @@
 				</div>
 				
 				<?php include 'agenda_agents.php'; ?>
+
+				<div class="cta-common">
+					<div class="container-text">
+						AJOUTER
+					</div>
+					<div class="container-action">
+						<img src="img/agents/common/plus.svg">
+					</div>
+				</div>
 
 			</div>
 

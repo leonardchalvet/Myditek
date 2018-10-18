@@ -43,11 +43,39 @@
 }
 
 #container{
+	@include styleGrid1;
+	display: flex;
+	justify-content: space-between;
 	position: relative;
 	.wrapper{
-		@include styleGrid1;
+		@include styleGrid2;
+		margin-right: 0;
+		margin-left: 0;
 		position: relative;
 		display: none;
+	}
+
+	.cta-common {
+		width: 60px;
+		.container-text {
+			margin-bottom: 20px;
+			text-align: center;
+			font-family:ClanPro-Regular;
+			font-size: 11px;	
+			font-weight: 500;
+			color: #fff;
+		}
+		.container-action {
+			display: flex;
+			justify-content: center;
+			align-items: flex-start;
+			padding-top: 20px;
+			height: 110px;	
+			width: 60px;	
+			border-radius: 10px;	
+			background-color: #F8CC6A;	
+			box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1);	
+		}
 	}
 }
 
@@ -74,6 +102,9 @@ main {
 			margin-top: -100px;
 			.wrapper-tab-agenda {
 				display: block;
+			}
+			.cta-common {
+				margin-top: 25px;
 			}
 		}
 	}
