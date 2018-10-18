@@ -164,11 +164,15 @@
 		}
 
 		.message-read {
-			position: sticky;
-			top: 0;
 			width: 700px;
+			height: fit-content;
 			display: flex;
 			flex-direction: column;
+
+			&.sticky {
+				position: fixed;
+				bottom: 30px;
+			}
 
 			.head {
 				position: relative;
