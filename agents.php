@@ -21,7 +21,7 @@
 
 		<?php include 'lightbox.php'; ?>
 
-		<main class="agenda">
+		<main class="dashboard">
 			<div id="head">
 
 				<!-- DASHBOARD -->

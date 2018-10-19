@@ -403,6 +403,14 @@ lightbox {
 
 		.container-title {
 			@include styleH5();
+
+			&.under{
+				width: 100%;
+				text-align: center;
+				margin-top: 25px;
+				padding-bottom: 25px;
+				border-bottom: 1px solid #E9E9F4;
+			}
 		}
 
 		.container-picto {
@@ -443,6 +451,27 @@ lightbox {
 			width: 100%;
 			margin-top: 35px;
 
+			.input {
+				margin-bottom: 25px;
+				label {
+					@include styleParagraphSmall;
+					width: 100%;
+				}
+
+				input, select {
+					padding-left: 15px;
+					@include styleParagraphSmall;
+					width: 100%;
+					height: 50px;
+					border: 0.5px solid #0B1D4C;	
+					border-radius: 4px;	
+					background-color: #FFFFFF;
+					outline: none;
+					opacity: 1;
+					color: #1C2D4F;
+				}
+			}
+
 			.container-action {
 				display: flex;
 				justify-content: space-between;
@@ -467,6 +496,12 @@ lightbox {
 					&.delete {
 						border: 0.5px solid $colorMain_4;
 						background-color: $colorMain_4;
+						color: #fff;
+					}
+					
+					&.validate {
+						border: 0.5px solid #35C850;
+						background-color: #35C850;
 						color: #fff;
 					}
 

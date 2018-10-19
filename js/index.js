@@ -51,9 +51,18 @@ $(window).on('load', function() {
 	})
 
 	$('.wrapper-tab-agenda .message-interaction .message-read .head .container-action .dropdown .action:nth-child(2)').click(function() {
+		initLightbox('.delMessage');
+		
+	});
+
+	$('.wrapper-tab-agenda .message-interaction .messages-action .message-add').click(function() {
+		initLightbox('.newMessage');
+	});
+
+	function initLightbox(el) {
 		$('body').addClass('lightbox');
 		$('lightbox').addClass('active');
-		$('lightbox .delMessage').addClass('active');
-	});
+		$('lightbox ' + el).addClass('active');
+	}
 	/* END LIGHTBOX */
 })
