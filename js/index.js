@@ -24,24 +24,32 @@ $(window).on('load', function() {
 	});
 
 	/* STICKY PAGE AGENTS -> AGENDA */
-	if($('main').hasClass('agenda')) {
 
-		const offsetTopMessageRead = $('.wrapper-tab-agenda .message-interaction .message-read').offset().top;
-		const heightMessageRead    = $('.wrapper-tab-agenda .message-interaction .message-read').height();
+	let offsetTopMessageRead = undefined;
+	let heightMessageRead = undefined;
 
-		$(window).scroll(function(){
-			let scrollBottom = $(window).scrollTop() + $(window).height();
+	$(window).scroll(function(){
+		
+		if($('main').hasClass('agenda')) {
+			
+			if(offsetTopMessageRead == undefined && heightMessageRead == undefined) {
+				offsetTopMessageRead = $('.wrapper-tab-agenda .message-interaction .message-read').offset().top;
+				heightMessageRead    = $('.wrapper-tab-agenda .message-interaction .message-read').height();
+			} else if(offsetTopMessageRead != undefined && heightMessageRead != undefined) {
 
-		    if ( scrollBottom >= (offsetTopMessageRead + heightMessageRead + 30)  ) {
-		    	$('.wrapper-tab-agenda .message-interaction .message-read').addClass('sticky');
-		    	let left = $('.wrapper-tab-agenda .message-interaction .messages-action').offset().left + 100;
-		    	$('.wrapper-tab-agenda .message-interaction .message-read').css("right", left + 'px');
-		    }
-		    else {
-		    	$('.wrapper-tab-agenda .message-interaction .message-read').removeClass('sticky');
-		    }
-		})
-	}
+				let scrollBottom = $(window).scrollTop() + $(window).height();
+
+			    if ( scrollBottom >= (offsetTopMessageRead + heightMessageRead + 30)  ) {
+			    	$('.wrapper-tab-agenda .message-interaction .message-read').addClass('sticky');
+			    	let left = $('.wrapper-tab-agenda .message-interaction .messages-action').offset().left + 100;
+			    	$('.wrapper-tab-agenda .message-interaction .message-read').css("right", left + 'px');
+			    }
+			    else {
+			    	$('.wrapper-tab-agenda .message-interaction .message-read').removeClass('sticky');
+			    }
+			}
+		}
+	});
 
 	/* LIGHTBOX */
 	$('lightbox .close').click(function() {
