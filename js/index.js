@@ -4,6 +4,7 @@ $(window).on('load', function() {
 	}, 1000);
 	*/
 
+	/* INIT PAGE AGENTS */
 	$('header .nav .container-action').click(function() {
 		$('header .nav .container-action').removeClass('active');
 		$(this).addClass('active');
@@ -22,6 +23,7 @@ $(window).on('load', function() {
 		}
 	});
 
+	/* STICKY PAGE AGENTS -> AGENDA */
 	if($('main').hasClass('agenda')) {
 
 		const offsetTopMessageRead = $('.wrapper-tab-agenda .message-interaction .message-read').offset().top;
@@ -40,4 +42,18 @@ $(window).on('load', function() {
 		    }
 		})
 	}
+
+	/* LIGHTBOX */
+	$('lightbox .close').click(function() {
+		$('body').removeClass('lightbox');
+		$('lightbox').removeClass('active');
+		$('lightbox .box').removeClass('active');
+	})
+
+	$('.wrapper-tab-agenda .message-interaction .message-read .head .container-action .dropdown .action:nth-child(2)').click(function() {
+		$('body').addClass('lightbox');
+		$('lightbox').addClass('active');
+		$('lightbox .delMessage').addClass('active');
+	});
+	/* END LIGHTBOX */
 })

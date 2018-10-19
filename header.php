@@ -16,11 +16,17 @@
 			<div class="container-text">
 				PRODUITS
 			</div>
+			<div class="arrow">
+				<img src="img/header/down-arrow.svg">
+			</div>
 		</div>
 		<div class="container-action">
 			<img src="img/header/clients-picto.svg">
 			<div class="container-text">
 				CLIENTS
+			</div>
+			<div class="container-number">
+				23
 			</div>
 		</div>
 		<div class="container-action">
@@ -49,6 +55,7 @@
 		</div>
 		<div class="notif" href="">
 			<img src="img/header/mail-notif.svg">
+			<div class="exposant">2</div>
 		</div>
 		<div class="point"></div>
 		<div class="compte">
