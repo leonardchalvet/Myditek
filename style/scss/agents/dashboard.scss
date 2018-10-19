@@ -37,13 +37,123 @@
 					}
 				}
 			}
+			.container-num{
+				position: relative;
+
+				&.bullet {
+					
+					margin-left: 30px;
+					
+					&:after {
+						content: " ";
+						position: absolute;
+						top: 25%;
+    					left: -25px;
+						border-radius: 50%;
+						height: 8px;	
+						width: 8px;
+					}
+
+					
+					&.blue {
+						&:after {
+							background-color: #15BBDF;
+						}
+					}
+
+					&.gray {
+						&:after {
+							background-color: #203660;
+						}
+					}
+				}
+
+				.num-prct{
+					@include styleH3;
+				}
+				.num-lgd{
+					@include styleParagraphSmall;
+				}
+				.graph{
+					position: absolute;
+				    right: 0;
+				    top: 50%;
+				    transform: translateY(-70%);
+					display: flex;
+					flex-flow: row wrap;
+					align-items: center;
+					span{
+						font-size: 12px;	
+						line-height: 15px;
+						color: $colorMain_5;
+						font-family: $font_2;
+						margin-right: 5px;
+					}
+					&.neg span {
+						color: #FF5555;
+					}
+				}
+			}
+			.col {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+			}
 			.container-ist{
+				display: flex;
+				justify-content: space-between;
 				padding: 15px;
 				border-radius: 5px;	
 				background-color: #FFFFFF;	
 				box-shadow: 0 20px 40px 0 rgba(108,96,255,0.1);
 			}
+			.container-ist-1{
+				.container-line:before,
+				.container-line:after{
+					background-color: $colorMain_4;
+				}
+				.fill{
+					background-color: $colorMain_4;
+				}
+			}
+			.container-ist-2{
+				.container-line:before,
+				.container-line:after{
+					background-color: #15BBDF;
+				}
+				.fill{
+					background-color: #15BBDF;
+				}
+			}
+			.container-circle {
+				position: relative;
+				height: 148px;	
+				width: 148px;
+				img {
+					width: 100%;
+					height: 100%;
+				}
+
+				svg {
+					height: 148px;	
+					width: 148px;
+					position: absolute;
+					z-index: 1;
+					top: 0;
+					left: 0;
+
+					.path {
+						stroke-dasharray: 100;
+  						stroke-dashoffset: 72;
+  					}
+				}
+			}
 			&.el-style-1{
+				.head-2{
+					h4{
+						color: $colorMain_1;
+					}
+				}
 				.container-btn{
 					display: flex;
 					flex-flow: row wrap;
@@ -82,32 +192,6 @@
 					margin-top: 25px;
 					h4{
 						color: $colorMain_1;
-					}
-				}
-				.container-ist-1{
-					.container-line:before,
-					.container-line:after{
-						background-color: $colorMain_4;
-					}
-					.fill{
-						background-color: $colorMain_4;
-					}
-				}
-				.container-ist-2{
-					.container-line:before,
-					.container-line:after{
-						background-color: #15BBDF;
-					}
-					.fill{
-						background-color: #15BBDF;
-					}
-				}
-				.container-num{
-					.num-prct{
-						@include styleH3;
-					}
-					.num-lgd{
-						@include styleParagraphSmall;
 					}
 				}
 				.container-stats{
