@@ -37,7 +37,7 @@
 				</div>
 
 				<!-- AGENDA -->
-				<div class="wrapper wrapper-tab-agenda">
+				<div class="wrapper wrapper-tab-messagerie">
 					<div class="container-text">
 						<h1>Messagerie</h1>
 					</div>
@@ -62,7 +62,7 @@
 					
 				</div>
 				
-				<?php include 'agenda_agents.php'; ?>
+				<?php include 'messagerie_agents.php'; ?>
 
 				<div class="cta-common">
 					<div class="container-text">
@@ -110,5 +110,7 @@
 		<footer></footer>
 
 		<script type="text/javascript" src="js/index.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPThFHkei-uGXSuE1reZ0Ur9LeRiUwUiQ&callback=initMaps"
+    async defer></script>
 	</body>
 </html>

@@ -124,19 +124,19 @@ main {
 		#container { 
 			margin-top: -60px;
 			.wrapper-tab-dashboard {
-				display: block;
+				display: flex;
 			}
 		}
 	}
 
-	&.agenda {
-		#head .wrapper-tab-agenda {
+	&.messagerie {
+		#head .wrapper-tab-messagerie {
 			display: block;
 		}
 
 		#container {
 			margin-top: -100px;
-			.wrapper-tab-agenda {
+			.wrapper-tab-messagerie {
 				display: block;
 			}
 			.cta-common {
