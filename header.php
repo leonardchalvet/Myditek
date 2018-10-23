@@ -19,6 +19,23 @@
 			<div class="arrow">
 				<img src="img/header/down-arrow.svg">
 			</div>
+			<div class="dropdown">
+				<div class="container-illu">
+					<img src="img/header/drone.svg">
+					<div class="container-text">
+						DRONES
+						<img src="img/header/down-arrow.svg">
+					</div>
+				</div>
+				<div class="line"></div>
+				<div class="container-illu">
+					<img src="img/header/capteur.svg">
+					<div class="container-text">
+						CAPTEUR
+						<img src="img/header/down-arrow.svg">
+					</div>
+				</div>
+			</div>
 		</div>
 		<div class="container-action">
 			<img src="img/header/clients-picto.svg">
@@ -53,7 +70,7 @@
 		<div class="notif" href="">
 			<img src="img/header/notif-picto.svg">
 		</div>
-		<div class="notif" href="">
+		<div class="notif messagerie" data-tab="messagerie" href="">
 			<img src="img/header/mail-notif.svg">
 			<div class="exposant">2</div>
 		</div>
