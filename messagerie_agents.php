@@ -1,4 +1,4 @@
-<div class="wrapper wrapper-tab-agenda">
+<div class="wrapper wrapper-tab-messagerie">
 	<div class="message-search">
 		<form role="search">
 			<input type="search" value="" placeholder="Rechercher un message" class="search-input">
@@ -58,11 +58,7 @@
 				<div class="container-action">
 					Action
 					<div class="dropdown">
-						<div class="action">
-							<img src="img/agents/agenda/archiver.svg">
-							Archiver
-						</div class="action">
-						<div class="action">
+						<div class="action supprimer">
 							<img src="img/agents/agenda/supprimer.svg">
 							Supprimer
 						</div>
