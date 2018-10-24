@@ -394,7 +394,7 @@ function initMaps() {
 		marker.addListener('click', function() {
 			setTimeout(function(){
 				infoWindow.open(map, marker);
-			}, 500);
+			}, 250);
 			marker.setIcon(icons[1]);
 		});
 		markers.push(marker);
