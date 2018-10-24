@@ -379,6 +379,7 @@ function initMaps() {
 		}
 	];
 
+	let markers = [];
 	features.forEach(function(feature) {
 		let infoWindow = new google.maps.InfoWindow({
 			content: feature.content
@@ -387,15 +388,18 @@ function initMaps() {
 			position: feature.position,
 			map: map,
 			title: feature.name,
-			icon: icons[0]
+			icon: icons[0],
+			infowindow: infoWindow
 		});
 		marker.addListener('click', function() {
-			infoWindow.open(map, marker);
+			setTimeout(function(){
+				infoWindow.open(map, marker);
+			}, 500);
 			marker.setIcon(icons[1]);
 		});
+		markers.push(marker);
 
-		
-		//Close button
+		//STYLE INFOWINDOW
 		google.maps.event.addListener(infoWindow, 'domready', function() {
 
 			var iwOuter = $('.gm-style-iw');
@@ -413,7 +417,16 @@ function initMaps() {
 			'display':'none'
 			});
 		});
+	});
 
+	closeInfoWindow = function() {
+		markers.forEach(function(marker) {
+			marker.infowindow.close(map, marker);
+		});
+	};
+	google.maps.event.addListener(map, 'click', closeInfoWindow);
+	markers.forEach(function(marker) {
+		google.maps.event.addListener(marker, 'click', closeInfoWindow);
 	});
 }
 </script>
