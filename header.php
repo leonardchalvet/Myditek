@@ -46,7 +46,7 @@
 				23
 			</div>
 		</div>
-		<div class="container-action">
+		<div class="container-action" data-tab="factures">
 			<img src="img/header/facture-picto.svg">
 			<div class="container-text">
 				FACTURES

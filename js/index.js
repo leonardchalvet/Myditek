@@ -18,6 +18,7 @@ $(window).on('load', function() {
 
 			switch (data) {
 				case 'dashboard': $('main').addClass('dashboard'); break;
+				case 'factures': $('main').addClass('factures'); break;
 				case 'agenda': $('main').addClass('agenda'); break;
 				default: break;
 			}

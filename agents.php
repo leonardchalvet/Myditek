@@ -36,10 +36,17 @@
 					<img class="obj-2" src="img/agents/common/Womencover.svg" alt="">
 				</div>
 
-				<!-- AGENDA -->
+				<!-- MESSAGERIE -->
 				<div class="wrapper wrapper-tab-messagerie">
 					<div class="container-text">
 						<h1>Messagerie</h1>
+					</div>
+				</div>
+
+				<!--FACTURES-->
+				<div class="wrapper wrapper-tab-factures">
+					<div class="container-text">
+						<h1>Factures</h1>
 					</div>
 				</div>
 

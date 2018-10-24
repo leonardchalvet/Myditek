@@ -129,6 +129,22 @@ main {
 		}
 	}
 
+	&.factures {
+		#head .wrapper-tab-factures {
+			display: block;
+		}
+
+		#container {
+			margin-top: -100px;
+			.wrapper-tab-factures {
+				display: block;
+			}
+			.cta-common {
+				margin-top: 25px;
+			}
+		}
+	}
+
 	&.messagerie {
 		#head .wrapper-tab-messagerie {
 			display: block;
