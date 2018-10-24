@@ -515,12 +515,103 @@ lightbox {
 }
 
 
-/* -------------------------------------------------- */
-/* ***************** CALENDRIER ********************* */
-/* -------------------------------------------------- */
+/* ------------------------------------------- */
+/* ***************** MAP ********************* */
+/* ------------------------------------------- */
+.gm-style-iw {
+   width: 200px !important;
+   height: 225px !important;
+   z-index: 1;
+   top: 30px !important;
+   background-color: transparent;
+   box-shadow: none;
 
+   div div {
+   		overflow: hidden !important;
+   }
+}
 
+#content {
+	overflow: hidden;
+	width: 195px;
+	height: 225px;
+   	border-radius: 4px;
 
-/* ------------------------------------------------------ */
-/* ***************** END CALENDRIER ********************* */
-/* ------------------------------------------------------ */
+	.firstHeading {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		height: 58px;	
+		border-radius: 4px 4px 0 0;
+		background-color: #1C2D4F;
+		color: #FFFFFF;	
+		font-family:ClanPro-Regular;
+		font-size: 11px;	
+		font-weight: 500;
+
+		img {	
+			position: absolute;
+			height: 35px;
+			width: 35px;
+			border-radius: 50%;
+			top: 50%;
+			transform: translateY(30%);
+		}
+	}
+
+	.body {
+		padding: 30px 15px 15px 15px;
+		height: 100%;
+		background-color: #fff;
+
+		display: flex;
+		flex-direction: column;
+
+		.container-info {
+			padding-bottom: 10px;
+			@include styleParagraphSmall();
+			opacity: 1;
+			font-size: 12px;
+			line-height: 20px;
+			width: 170px;
+			border-bottom: 1px solid #E9E9F4;
+			.type {
+
+			}
+
+			.info {
+
+				display: flex;
+				justify-content: space-between;
+
+				.left {
+					color: #0B1D4C;
+				}
+				.right {
+					width: 45px;
+					color: #35C850;
+
+					img {
+						margin-left: 5px;
+					}
+				}
+			}
+		}
+
+		.container-adress {
+			width: 170px;
+			padding-top: 10px;
+			@include styleParagraphSmall();
+			opacity: 1;
+			font-size: 11px;
+			line-height: 20px;
+		}
+	}
+
+}
+
+/* ----------------------------------------------- */
+/* ***************** END MAP ********************* */
+/* ----------------------------------------------- */

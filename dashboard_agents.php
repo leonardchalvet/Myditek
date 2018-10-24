@@ -12,47 +12,20 @@
 						<div class="arrow">
 							<img src="img/header/down-arrow.svg">
 						</div>
-						<div class="dropdown">
-							<div class="row">
-								<ul class="month">
-									<li>Février</li>
-									<li>Mars</li>
-									<li>Avril</li>
-									<li>Mai</li>
-									<li>Juin</li>
-									<li>Juillet</li>
-									<li>Aout</li>
-									<li>Semptembre</li>
-									<li>Octobre</li>
-									<li>Novembre</li>
-									<li>Décembre</li>
-								</ul>
-								<ul class="year">
-									<li>2000</li>
-									<li>2001</li>
-									<li>2002</li>
-									<li>2003</li>
-									<li>2004</li>
-									<li>2005</li>
-									<li>2006</li>
-									<li>2007</li>
-									<li>2008</li>
-									<li>2009</li>
-									<li>2010</li>
-									<li>2011</li>
-									<li>2012</li>
-									<li>2013</li>
-									<li>2014</li>
-									<li>2015</li>
-									<li>2016</li>
-									<li>2017</li>
-									<li>2018</li>
-								</ul>
-							</div>
-							<div class="container-action">
-								VALIDER
-							</div>
-						</div>
+						<ul class="dropdown">
+							<li>Janvier 2017</li>
+							<li>Février 2017</li>
+							<li>Mars 2017</li>
+							<li>Avril 2017</li>
+							<li>Mai 2017</li>
+							<li>Juin 2017</li>
+							<li>Juillet 2017</li>
+							<li>Aout 2017</li>
+							<li>Septembre 2017</li>
+							<li>Octobre 2017</li>
+							<li>Novembre 2017</li>
+							<li>Décembre 2017</li>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -76,51 +49,24 @@
 						<div class="arrow">
 							<img src="img/header/down-arrow.svg">
 						</div>
-						<div class="dropdown">
-							<div class="row">
-								<ul class="month">
-									<li>Février</li>
-									<li>Mars</li>
-									<li>Avril</li>
-									<li>Mai</li>
-									<li>Juin</li>
-									<li>Juillet</li>
-									<li>Aout</li>
-									<li>Semptembre</li>
-									<li>Octobre</li>
-									<li>Novembre</li>
-									<li>Décembre</li>
-								</ul>
-								<ul class="year">
-									<li>2000</li>
-									<li>2001</li>
-									<li>2002</li>
-									<li>2003</li>
-									<li>2004</li>
-									<li>2005</li>
-									<li>2006</li>
-									<li>2007</li>
-									<li>2008</li>
-									<li>2009</li>
-									<li>2010</li>
-									<li>2011</li>
-									<li>2012</li>
-									<li>2013</li>
-									<li>2014</li>
-									<li>2015</li>
-									<li>2016</li>
-									<li>2017</li>
-									<li>2018</li>
-								</ul>
-							</div>
-							<div class="container-action">
-								VALIDER
-							</div>
-						</div>
+						<ul class="dropdown">
+							<li>Janvier 2017</li>
+							<li>Février 2017</li>
+							<li>Mars 2017</li>
+							<li>Avril 2017</li>
+							<li>Mai 2017</li>
+							<li>Juin 2017</li>
+							<li>Juillet 2017</li>
+							<li>Aout 2017</li>
+							<li>Septembre 2017</li>
+							<li>Octobre 2017</li>
+							<li>Novembre 2017</li>
+							<li>Décembre 2017</li>
+						</ul>
 					</div>
 				</div>
 			</div>
-			<div class="container-ist blue">
+			<div class="container-ist red">
 				<div class="container-pourcent">
 					<div class="container-num">
 						<div class="num-prct">83%</div>
@@ -155,69 +101,42 @@
 						<div class="arrow">
 							<img src="img/header/down-arrow.svg">
 						</div>
-						<div class="dropdown">
-							<div class="row">
-								<ul class="month">
-									<li>Février</li>
-									<li>Mars</li>
-									<li>Avril</li>
-									<li>Mai</li>
-									<li>Juin</li>
-									<li>Juillet</li>
-									<li>Aout</li>
-									<li>Semptembre</li>
-									<li>Octobre</li>
-									<li>Novembre</li>
-									<li>Décembre</li>
-								</ul>
-								<ul class="year">
-									<li>2000</li>
-									<li>2001</li>
-									<li>2002</li>
-									<li>2003</li>
-									<li>2004</li>
-									<li>2005</li>
-									<li>2006</li>
-									<li>2007</li>
-									<li>2008</li>
-									<li>2009</li>
-									<li>2010</li>
-									<li>2011</li>
-									<li>2012</li>
-									<li>2013</li>
-									<li>2014</li>
-									<li>2015</li>
-									<li>2016</li>
-									<li>2017</li>
-									<li>2018</li>
-								</ul>
-							</div>
-							<div class="container-action">
-								VALIDER
-							</div>
-						</div>
+						<ul class="dropdown">
+							<li>Janvier 2017</li>
+							<li>Février 2017</li>
+							<li>Mars 2017</li>
+							<li>Avril 2017</li>
+							<li>Mai 2017</li>
+							<li>Juin 2017</li>
+							<li>Juillet 2017</li>
+							<li>Aout 2017</li>
+							<li>Septembre 2017</li>
+							<li>Octobre 2017</li>
+							<li>Novembre 2017</li>
+							<li>Décembre 2017</li>
+						</ul>
 					</div>
 				</div>
 			</div>
-			<div class="container-ist red">
+			<div class="container-ist blue">
 				<div class="container-pourcent">
 					<div class="container-num">
-						<div class="num-prct">56%</div>
-						<div class="num-lgd">20 actifs /30</div>
+						<div class="num-prct">72%</div>
+						<div class="num-lgd">18 actifs /30</div>
 						<div class="graph">
-							<span>20%</span>
+							<span>5%</span>
 							<img src="img/agents/common/graph.svg" alt="">
 						</div>
 					</div>
 					<div class="container-stats">
 						<div class="container-subline">
 							<div class="title">
-								Elevage (bovins)
+								Culture (Bannane)
 							</div>
 						</div>
 						<div class="container-line">
 							<div class="line">
-								<div style="width: 56%;" class="fill"></div>
+								<div style="width: 72%;" class="fill"></div>
 							</div>
 						</div>
 					</div>
@@ -236,47 +155,20 @@
 						<div class="arrow">
 							<img src="img/header/down-arrow.svg">
 						</div>
-						<div class="dropdown">
-							<div class="row">
-								<ul class="month">
-									<li>Février</li>
-									<li>Mars</li>
-									<li>Avril</li>
-									<li>Mai</li>
-									<li>Juin</li>
-									<li>Juillet</li>
-									<li>Aout</li>
-									<li>Semptembre</li>
-									<li>Octobre</li>
-									<li>Novembre</li>
-									<li>Décembre</li>
-								</ul>
-								<ul class="year">
-									<li>2000</li>
-									<li>2001</li>
-									<li>2002</li>
-									<li>2003</li>
-									<li>2004</li>
-									<li>2005</li>
-									<li>2006</li>
-									<li>2007</li>
-									<li>2008</li>
-									<li>2009</li>
-									<li>2010</li>
-									<li>2011</li>
-									<li>2012</li>
-									<li>2013</li>
-									<li>2014</li>
-									<li>2015</li>
-									<li>2016</li>
-									<li>2017</li>
-									<li>2018</li>
-								</ul>
-							</div>
-							<div class="container-action">
-								VALIDER
-							</div>
-						</div>
+						<ul class="dropdown">
+							<li>Janvier 2017</li>
+							<li>Février 2017</li>
+							<li>Mars 2017</li>
+							<li>Avril 2017</li>
+							<li>Mai 2017</li>
+							<li>Juin 2017</li>
+							<li>Juillet 2017</li>
+							<li>Aout 2017</li>
+							<li>Septembre 2017</li>
+							<li>Octobre 2017</li>
+							<li>Novembre 2017</li>
+							<li>Décembre 2017</li>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -429,8 +321,99 @@ function initMaps() {
 	// map dashboard
 	let map = new google.maps.Map(document.getElementById('map'), {
 		center: { lat: 49.4431, lng: 1.0993 },
-		zoom: 8,
+		zoom: 10,
 		disableDefaultUI: true
+	});
+
+	//boucle ici pour les différents marker, ici un exemple sur Rouen
+	let icons = [
+		{
+			url: "img/agents/common/marker-01.svg",
+			origin: new google.maps.Point(0, 0),
+			anchor: new google.maps.Point(0, 32)
+		},
+		{
+			url: "img/agents/common/marker-02.svg",
+			origin: new google.maps.Point(0, 0),
+			anchor: new google.maps.Point(0, 32)
+		}
+	];
+	//content test
+	contentest = '<div id="content">' +
+      				'<div id="siteNotice"></div>' +
+      				'<h1 id="firstHeading" class="firstHeading">BARTHELEMY CHALVET' +
+      				'<img src="img/header/people.jpg" ></h1>' +
+      				'<div id="bodyContent" class="body">' +
+      					'<div class="container-info">' +
+      						'<div class="type">Type d\'installation</div>' +
+      						'<div class="info">' +
+      							'<div class="left">Elevage(Bovins)</div>' +
+      							'<div class="right">20%<img src="img/agents/common/graph.svg" alt=""></div>' +
+      						'</div>' +
+      						'<div class="info">' +
+      							'<div class="left">Capteurs</div>' +
+      							'<div class="right">2</div>' +
+      						'</div>' + 
+			      		'</div>' +
+						'<div class="container-adress">' +
+			      			'1451 boulebard magenta, 75010, Paris' +
+			      		'</div>' +
+					'</div>' +
+				  '</div>';
+
+	let features = [
+		{
+			name: "Rouen",
+			position: { lat: 49.4431, lng: 1.0993 },
+			content: contentest
+		},
+		{
+			name: "Barentin",
+			position: { lat: 49.55, lng: 0.95 },
+			content: contentest
+		},
+		{
+			name: "Franqueville-Saint-Pierre",
+			position: { lat: 49.401, lng: 1.1807 },
+			content: contentest
+		}
+	];
+
+	features.forEach(function(feature) {
+		let infoWindow = new google.maps.InfoWindow({
+			content: feature.content
+		});
+		let marker = new google.maps.Marker({
+			position: feature.position,
+			map: map,
+			title: feature.name,
+			icon: icons[0]
+		});
+		marker.addListener('click', function() {
+			infoWindow.open(map, marker);
+			marker.setIcon(icons[1]);
+		});
+
+		
+		//Close button
+		google.maps.event.addListener(infoWindow, 'domready', function() {
+
+			var iwOuter = $('.gm-style-iw');
+			var iwBackground = iwOuter.prev();
+
+			iwBackground.children(':nth-child(2)').css({'display' : 'none'});
+			iwBackground.children(':nth-child(4)').css({'display' : 'none'});
+
+			iwBackground.children(':nth-child(1)').attr('style', function(i,s){ return s + 'left: 76px !important;'});
+			iwBackground.children(':nth-child(3)').attr('style', function(i,s){ return s + 'left: 76px !important;'});
+			iwBackground.children(':nth-child(3)').find('div').children().css({'box-shadow': 'rgba(72, 181, 233, 0.6) 0px 1px 6px', 'z-index' : '1'});
+
+			let iwCloseBtn = iwOuter.next();
+			iwCloseBtn.css({
+			'display':'none'
+			});
+		});
+
 	});
 }
 </script>
