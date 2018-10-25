@@ -523,6 +523,7 @@ lightbox {
    height: 225px !important;
    z-index: 1;
    top: 30px !important;
+   left: 25px !important;
    background-color: transparent;
    box-shadow: none;
 
@@ -557,7 +558,8 @@ lightbox {
 			width: 35px;
 			border-radius: 50%;
 			top: 50%;
-			transform: translateY(30%);
+			left: 50%;
+			transform: translateY(30%) translateX(-50%);
 		}
 	}
 
