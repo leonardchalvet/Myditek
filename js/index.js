@@ -39,7 +39,7 @@ $(window).on('load', function() {
 		}
 	})
 
-	/* STICKY PAGE AGENTS -> AGENDA */
+	/* STICKY PAGE AGENTS -> MESSAGERIE */
 
 	let offsetTopMessageRead = undefined;
 	let heightMessageRead = undefined;
@@ -66,6 +66,12 @@ $(window).on('load', function() {
 			}
 		}
 	});
+
+	/* PAGE FACTURES MORE DETAILS */
+	$('.wrapper-tab-factures .container-factures .facture .container-vissible .container-infos .infos .btn').click(function() {
+		$(this).parent().parent().parent().next().toggleClass('show')
+	})
+	/* END PAGE FACTURES */
 
 	/* LIGHTBOX */
 	$('lightbox .close').click(function() {

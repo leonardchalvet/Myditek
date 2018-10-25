@@ -79,6 +79,8 @@
 
 			.action {
 				display: none;
+				width: 100%;
+				padding-top: 15px;
 
 				font-family:Lato-Regular;
 				font-size: 10px;	
@@ -86,7 +88,7 @@
 			}			
 
 			&:hover {
-
+				padding-top: 0;
 				height: 415px;
 				justify-content: space-around;
 
@@ -107,7 +109,7 @@
 					}
 
 					&:hover {
-						opacity: 0.6;
+						background-color: rgba(0,0,0,0.05);
 					}
 				}
 			}

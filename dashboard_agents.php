@@ -394,8 +394,8 @@ function initMaps() {
 		marker.addListener('click', function() {
 			setTimeout(function(){
 				infoWindow.open(map, marker);
+				marker.setIcon(icons[1]);
 			}, 250);
-			marker.setIcon(icons[1]);
 		});
 		markers.push(marker);
 
@@ -422,6 +422,7 @@ function initMaps() {
 	closeInfoWindow = function() {
 		markers.forEach(function(marker) {
 			marker.infowindow.close(map, marker);
+			marker.setIcon(icons[0]);
 		});
 	};
 	google.maps.event.addListener(map, 'click', closeInfoWindow);

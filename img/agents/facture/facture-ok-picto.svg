@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="42px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>00420932-0D59-46A2-A58E-98950E98BC01</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="DesignDashboardAgents-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="5a-Dashboard-Factures" transform="translate(-99.000000, -493.000000)">
+            <g id="3" transform="translate(70.000000, 467.000000)">
+                <g id="base" transform="translate(30.000000, 10.000000)">
+                    <g id="facture-ok-picto" transform="translate(0.000000, 17.000000)">
+                        <circle id="Oval-2" stroke="#35C850" cx="20" cy="20" r="20"></circle>
+                        <g id="Group" transform="translate(13.000000, 14.000000)" fill="#35C850" fill-rule="nonzero">
+                            <path d="M1.21936199,5.83431458 C0.940416064,5.52189514 0.488155365,5.52189514 0.209209442,5.83431458 C-0.0697364807,6.14673401 -0.0697364807,6.65326599 0.209209442,6.96568542 L4.49492373,11.7656854 C4.77386965,12.0781049 5.22613035,12.0781049 5.50507627,11.7656854 L14.7907906,1.36568542 C15.0697365,1.05326599 15.0697365,0.546734008 14.7907906,0.234314575 C14.5118446,-0.0781048584 14.0595839,-0.0781048584 13.780638,0.234314575 L5,10.0686292 L1.21936199,5.83431458 Z" id="Path-85"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

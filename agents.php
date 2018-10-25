@@ -21,7 +21,7 @@
 
 		<?php include 'lightbox.php'; ?>
 
-		<main class="dashboard">
+		<main class="factures">
 			<div id="head">
 
 				<!-- DASHBOARD -->
@@ -62,12 +62,12 @@
 				<div class="wrapper wrapper-tab-client">
 					
 				</div>
-				<div class="wrapper wrapper-tab-factures">
-					
-				</div>
+				
 				<div class="wrapper wrapper-tab-agents">
 					
 				</div>
+
+				<?php include 'factures_agents.php'; ?>
 				
 				<?php include 'messagerie_agents.php'; ?>
 
