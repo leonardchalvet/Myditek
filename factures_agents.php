@@ -45,7 +45,7 @@
 								<img src="img/agents/common/creditcard.svg">
 								Payer
 							</div>
-							<div class="action">
+							<div class="action supprimer">
 								<img src="img/agents/agenda/supprimer.svg">
 								Supprimer
 							</div>
@@ -123,7 +123,7 @@
 								<img src="img/agents/common/creditcard.svg">
 								Payer
 							</div>
-							<div class="action">
+							<div class="action supprimer">
 								<img src="img/agents/agenda/supprimer.svg">
 								Supprimer
 							</div>
@@ -201,7 +201,7 @@
 								<img src="img/agents/common/creditcard.svg">
 								Payer
 							</div>
-							<div class="action">
+							<div class="action supprimer">
 								<img src="img/agents/agenda/supprimer.svg">
 								Supprimer
 							</div>

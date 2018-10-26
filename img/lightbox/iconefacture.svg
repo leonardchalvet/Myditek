@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="42px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>9FE0179E-CA25-48CD-BCA3-E617A45C4EA9</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="DesignDashboardAgents-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="5a-Dashboard-Factures" transform="translate(-99.000000, -273.000000)">
+            <g id="1" transform="translate(70.000000, 247.000000)">
+                <g id="facture-picto" transform="translate(30.000000, 27.000000)">
+                    <circle id="Oval-2" stroke="#1C2D4F" cx="20" cy="20" r="20"></circle>
+                    <g id="Group" transform="translate(15.000000, 19.000000)" fill="#1C2D4F">
+                        <circle id="Oval-351" cx="5.5" cy="1.5" r="1.5"></circle>
+                        <circle id="Oval-351" cx="1.5" cy="1.5" r="1.5"></circle>
+                        <circle id="Oval-351" cx="9.5" cy="1.5" r="1.5"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -69,8 +69,8 @@ $(window).on('load', function() {
 
 	/* PAGE FACTURES MORE DETAILS */
 	$('.wrapper-tab-factures .container-factures .facture .container-vissible .container-infos .infos .btn').click(function() {
-		$(this).parent().parent().parent().next().toggleClass('show')
-	})
+		$(this).parent().parent().parent().next().toggleClass('show');
+	});
 	/* END PAGE FACTURES */
 
 	/* LIGHTBOX */
@@ -86,6 +86,24 @@ $(window).on('load', function() {
 
 	$('.wrapper-tab-messagerie .message-interaction .messages-action .message-add').click(function() {
 		initLightbox('.newMessage');
+	});
+
+	$('.wrapper-tab-factures .container-factures .facture .container-vissible .container-infos .container-action .dropdown .supprimer').click(function() {
+		initLightbox('.delFacture');
+	});
+
+	$('.wrapper-tab-factures .message-search .container-action .new-facture').click(function() {
+		initLightbox('.addFacture');
+	});
+	$('lightbox .addFacture .first form .container-action .validate').click(function() {
+		$('lightbox .addFacture .first').removeClass('show');
+		$('lightbox .addFacture .last').addClass('show');
+		$('lightbox .addFacture .container-title.under .change').html('2');
+	});
+	$('lightbox .addFacture .last form .container-action .cancel').click(function() {
+		$('lightbox .addFacture .last').removeClass('show');
+		$('lightbox .addFacture .first').addClass('show');
+		$('lightbox .addFacture .container-title.under .change').html('1');
 	});
 
 	function initLightbox(el) {

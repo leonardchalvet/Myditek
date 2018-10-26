@@ -477,7 +477,10 @@ lightbox {
 				justify-content: space-between;
 				height: 50px;
 
-				button {
+				button, .button {
+					display: flex;
+					justify-content: center;
+					align-items: center;
 					cursor: pointer;
 					height: 50px;	
 					width: 45%;	
@@ -507,6 +510,107 @@ lightbox {
 
 					&:hover {
 						opacity: 0.8;
+					}
+				}
+			}
+		}
+
+		&.delFacture {
+			.container-infos {
+				flex-direction: column;
+			}
+		}
+
+		&.big {
+			width: 725px;
+
+			.container-title.under {
+				width: 350px;
+				.purple {
+					color: #937BF3;
+				}
+			}
+
+			.first {
+				width: 100%;
+				display: none;
+				&.show {
+					display: block;
+				}
+			}
+
+			.last {
+				width: 100%;
+				display: none;
+				&.show {
+					display: block;
+				}
+			}
+
+			table {
+				padding: 30px 0;
+				tr td {
+					@include styleParagraphSmall();
+					padding: 10px 50px 10px 0;
+					opacity: 1;
+				}
+
+				tbody tr td, tfoot tr td {
+					font-size: 13px;
+					img {
+						cursor: pointer;
+						height: 12px;	
+						width: 10px;
+					}
+				}
+
+				tbody {
+					tr td:first-child {
+						color: $colorMain_1;
+					}
+				}
+			}
+
+			.line {
+				width: 350px;
+				margin: auto;
+				height: 1px;
+				background-color: #E9E9F4;
+				margin-bottom: 40px;
+			}
+
+			form {
+
+				.container-action {
+					margin: auto;
+					width: 350px;
+				}
+
+				.row {
+					display: flex;
+					justify-content: space-between;
+					.col {
+						width: 300px;
+
+						.date {
+							input {
+								width: 20%;
+								&:nth-child(3) {
+									width: 30%;
+								}
+							}
+						}
+
+						.row {
+							.input {
+								label {
+									font-size: 13px;
+								}
+								input, select {
+									width: 85px;
+								}
+							}
+						}
 					}
 				}
 			}
