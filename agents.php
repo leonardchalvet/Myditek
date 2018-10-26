@@ -21,7 +21,7 @@
 
 		<?php include 'lightbox.php'; ?>
 
-		<main class="factures">
+		<main class="profil">
 			<div id="head">
 
 				<!-- DASHBOARD -->
@@ -36,6 +36,13 @@
 					<img class="obj-2" src="img/agents/common/Womencover.svg" alt="">
 				</div>
 
+				<!--FACTURES-->
+				<div class="wrapper wrapper-tab-factures">
+					<div class="container-text">
+						<h1>Factures</h1>
+					</div>
+				</div>
+
 				<!-- MESSAGERIE -->
 				<div class="wrapper wrapper-tab-messagerie">
 					<div class="container-text">
@@ -43,10 +50,10 @@
 					</div>
 				</div>
 
-				<!--FACTURES-->
-				<div class="wrapper wrapper-tab-factures">
+				<!--PROFIL-->
+				<div class="wrapper wrapper-tab-profil">
 					<div class="container-text">
-						<h1>Factures</h1>
+						<h1>Mon compte</h1>
 					</div>
 				</div>
 
@@ -70,6 +77,8 @@
 				<?php include 'factures_agents.php'; ?>
 				
 				<?php include 'messagerie_agents.php'; ?>
+
+				<?php include 'profil_agents.php'; ?>
 
 				<div class="cta-common">
 					<div class="container-text">

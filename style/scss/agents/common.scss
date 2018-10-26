@@ -162,6 +162,22 @@ main {
 			}
 		}
 	}
+
+	&.profil {
+		#head .wrapper-tab-profil {
+			display: block;
+		}
+
+		#container {
+			margin-top: -100px;
+			.wrapper-tab-profil {
+				display: block;
+			}
+			.cta-common {
+				margin-top: 25px;
+			}
+		}
+	}
 }
 
 /* ---------------------------------------------------------------- */

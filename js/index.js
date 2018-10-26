@@ -24,7 +24,7 @@ $(window).on('load', function() {
 			}
 		}
 	});
-	$('header .profil .messagerie').click(function() {
+	$('header .profil .cta').click(function() {
 		$('header .nav .container-action').removeClass('active');
 		let data = $(this).attr('data-tab');
 
@@ -34,6 +34,7 @@ $(window).on('load', function() {
 
 			switch (data) {
 				case 'messagerie': $('main').addClass('messagerie'); break;
+				case 'profil': $('main').addClass('profil'); break;
 				default: break;
 			}
 		}
@@ -72,6 +73,13 @@ $(window).on('load', function() {
 		$(this).parent().parent().parent().next().toggleClass('show');
 	});
 	/* END PAGE FACTURES */
+
+	/* PAGE PROFIL */
+	$('.wrapper-tab-profil .container-profil form .row .col .choix .sexe').click(function(){
+		$('.wrapper-tab-profil .container-profil form .row .col .choix .sexe').removeClass('active');
+		$(this).addClass('active');
+	})
+	/* END PAGE PROFIL */
 
 	/* LIGHTBOX */
 	$('lightbox .close').click(function() {

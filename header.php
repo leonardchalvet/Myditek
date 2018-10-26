@@ -67,15 +67,15 @@
 	</div>
 
 	<div class="profil">
-		<div class="notif" href="">
+		<div class="notif cta" href="">
 			<img src="img/header/notif-picto.svg">
 		</div>
-		<div class="notif messagerie" data-tab="messagerie" href="">
+		<div class="notif cta" data-tab="messagerie" href="">
 			<img src="img/header/mail-notif.svg">
 			<div class="exposant">2</div>
 		</div>
 		<div class="point"></div>
-		<div class="compte">
+		<div class="compte cta" data-tab="profil">
 			<img src="img/header/people.jpg">
 			<div class="container-text">COMPTE</div>
 		</div>
