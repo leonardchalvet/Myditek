@@ -298,7 +298,7 @@
 <script>
 function initMaps() {
 
-	//Les trois bouttons coord => changer les coord
+	//Les trois bouttons coord => changer les coord - DASHBOARD
 	let butC1 = new google.maps.Map(document.getElementById('butC1'), {
 		center: { lat: 49.4431, lng: 1.0993 },
 		zoom: 4,
@@ -312,6 +312,14 @@ function initMaps() {
 		draggable: false
 	}); 
 	let butC3 = new google.maps.Map(document.getElementById('butC3'), {
+		center: { lat: 49.4431, lng: 1.0993 },
+		zoom: 4,
+		disableDefaultUI: true,
+		draggable: false
+	});
+
+	//buttons exploitation - PROFIL EXPLOITATION
+	let butE = new google.maps.Map(document.getElementById('butE1'), {
 		center: { lat: 49.4431, lng: 1.0993 },
 		zoom: 4,
 		disableDefaultUI: true,

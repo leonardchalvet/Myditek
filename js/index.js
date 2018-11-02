@@ -78,7 +78,31 @@ $(window).on('load', function() {
 	$('.wrapper-tab-profil .container-profil form .row .col .choix .sexe').click(function(){
 		$('.wrapper-tab-profil .container-profil form .row .col .choix .sexe').removeClass('active');
 		$(this).addClass('active');
+
+		$('.wrapper-tab-profil .container-profil form .row .col .choix input').attr('checked', false);
+
+		let sexeChoice = "";
+		switch ($(this).attr('data-num')) {
+			case "1": sexeChoice = "homme"; break;
+			case "2": sexeChoice = "femme"; break;
+		}
+		$('.wrapper-tab-profil .container-profil form .row .col .choix .' + sexeChoice).attr('checked', true);
 	})
+
+	$('.wrapper-tab-profil .container-profil .container-nav .menu li').click(function() {
+		$('.wrapper-tab-profil .container-profil .container-nav .menu li').removeClass('active');
+		$(this).addClass('active');
+
+		let blockShow = "";
+		switch ($(this).attr('data-num')) {
+			case "1": blockShow = "information"; break;
+			case "2": blockShow = "password"; break;
+			case "3": blockShow = "exploitation"; break;
+			default: blockShow = "information"; break;
+		}
+		$('.wrapper-tab-profil .container-profil form').removeClass('show');
+		$('.wrapper-tab-profil .container-profil form.' + blockShow).addClass('show');
+	});
 	/* END PAGE PROFIL */
 
 	/* LIGHTBOX */
@@ -112,6 +136,10 @@ $(window).on('load', function() {
 		$('lightbox .addFacture .last').removeClass('show');
 		$('lightbox .addFacture .first').addClass('show');
 		$('lightbox .addFacture .container-title.under .change').html('1');
+	});
+
+	$('.wrapper-tab-profil .container-profil .exploitation .add').click(function() {
+		initLightbox('.addExploitation');
 	});
 
 	function initLightbox(el) {

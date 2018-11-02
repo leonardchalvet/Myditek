@@ -229,4 +229,65 @@
 		</div>
 	</div>
 
+	<div class="box big addExploitation">
+		<div class="container-title">
+			Ajout
+		</div>
+		<div class="container-picto">
+			<img src="img/header/people.jpg">
+		</div>
+		<div class="container-title under">
+			Exploitation
+		</div>
+		<form class="container-form">
+			<div class="row">
+				<div class="col">
+					<div class="input">
+						<label>Client</label>
+						<select name="nameClient">
+							<option value="Michel Dumont">Michel Dumont</option> 
+							<option value="valeur1">Valeur 1</option> 
+							<option value="valeur2">Valeur 2</option>
+							<option value="valeur3">Valeur 3</option>
+						</select>
+					</div>
+					<div class="input">
+						<label>Nom exploitation</label>
+						<input type="text" name="nameExploitation">
+					</div>
+					<div class="input">
+						<label>Type d'exploitation</label>
+						<input type="text" name="typeExploitation">
+					</div>
+					<div class="input">
+						<label>Téléphone</label>
+						<input type="text" name="telExploitation">
+					</div>
+				</div>
+				<div class="col">
+					<div class="input">
+						<label>Adresse</label>
+						<input type="text" name="adressExploitation">
+					</div>
+					<div class="input">
+						<label>Complément</label>
+						<input type="text" name="complementExploitation">
+					</div>
+					<div class="input">
+						<label>Code postal</label>
+						<input type="text" name="codepostalExploitation">
+					</div>
+					<div class="input">
+						<label>Email</label>
+						<input type="text" name="mailExploitation">
+					</div>
+				</div>
+			</div>
+			<div class="container-action">
+				<button class="cancel">Annuler</button>
+				<button class="button validate">Valider</button>
+			</div>
+		</form>
+	</div>
+
 </lightbox>
