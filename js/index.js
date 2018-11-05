@@ -25,15 +25,31 @@ $(window).on('load', function() {
 		}
 	});
 	$('header .profil .cta').click(function() {
+		$(this).children('.dropdown').toggleClass('show');
+	})
+	$('header .profil .notif .dropdown .title .container-action .action').click(function() {
 		$('header .nav .container-action').removeClass('active');
-		let data = $(this).attr('data-tab');
+		let data = $(this).attr('data-message');
 
 		if(data != undefined) {
 
 			$('main').removeClass();
 
 			switch (data) {
-				case 'messagerie': $('main').addClass('messagerie'); break;
+				case 'all': $('main').addClass('messagerie'); break;
+				case 'new': $('main').addClass('messagerie');
+					        initLightbox('.newMessage'); 
+					        break;
+				default: break;
+			}
+		}
+	})
+	$('header .profil .compte').click(function() {
+		$('header .nav .container-action').removeClass('active');
+		let data = $(this).attr('data-tab');
+		if(data != undefined) {
+			$('main').removeClass();
+			switch (data) {
 				case 'profil': $('main').addClass('profil'); break;
 				default: break;
 			}

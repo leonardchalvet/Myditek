@@ -229,7 +229,7 @@ main
 
 		/*----------  PARAGRAPH BIG  ----------*/
 		@mixin styleParagraphBig{
-			font-family: $font_1;
+			font-family: $font_2;
 		  	color: $colorMain_1;
 			font-size: $paragraphBig_textsize_desktop;
 			line-height: $paragraphBig_lineheight_desktop;
@@ -237,7 +237,7 @@ main
 
 		/*----------  PARAGRAPH MEDIUM  ----------*/
 		@mixin styleParagraphMedium{
-			font-family: $font_1;
+			font-family: $font_2;
 		  	color: $colorMain_1;
 			font-size: $paragraphMedium_textsize_desktop;
 			line-height: $paragraphMedium_lineheight_desktop;
@@ -245,7 +245,7 @@ main
 
 		/*----------  PARAGRAPH SMALL  ----------*/
 		@mixin styleParagraphSmall{
-			font-family: $font_1;
+			font-family: $font_2;
 		  	color: $colorMain_2;
 		  	opacity: 0.6;
 			font-size: $paragraphSmall_textsize_desktop;
@@ -259,7 +259,7 @@ main
 		  	border-radius: 4px;
 		  	background-color: $colorMain_4;
 			.btn-text{
-				font-family: $font_1;
+				font-family: $font_2;
 				font-size: $button_textsize_desktop;
 				line-height: $button_lineheight_desktop;
 			}
