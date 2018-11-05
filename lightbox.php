@@ -49,7 +49,7 @@
 			</div>
 			<div class="input">
 				<label>Destinataire</label>
-				<select id="monselect" name="destinataire">
+				<select name="destinataire">
 					<option value="Michel Dumont">Michel Dumont</option> 
 					<option value="valeur1">Valeur 1</option> 
 					<option value="valeur2" selected>Valeur 2</option>
@@ -123,7 +123,7 @@
 						</div>
 						<div class="input">
 							<label>Client associé</label>
-							<select id="monselect" name="clientAssocie">
+							<select name="clientAssocie">
 								<option value="Michel Dumont">Michel Dumont</option> 
 								<option value="valeur1">Valeur 1</option> 
 								<option value="valeur2">Valeur 2</option>
@@ -203,7 +203,7 @@
 						<div class="row">
 							<div class="input">
 								<label>Nb exemplaires</label>
-								<select id="monselect" name="clientAssocie">
+								<select name="clientAssocie">
 									<option value="10">10</option> 
 									<option value="20">20</option> 
 									<option value="30">30</option>

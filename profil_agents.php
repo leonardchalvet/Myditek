@@ -52,10 +52,12 @@
 					<div class="input">
 						<label>Nom</label>
 						<input type="text" name="nameProfil">
+						<div class="erreur">Vérifiez votre nom</div>
 					</div>
 					<div class="input">
 						<label>Prénom</label>
 						<input type="text" name="prenomProfil">
+						<div class="erreur">Vérifiez votre prénom</div>
 					</div>
 					<div class="input">
 						<label>Date de naissance</label>
@@ -66,28 +68,34 @@
 							&nbsp;/&nbsp;
 							<input type="text" name="anneeProfil" placeholder="AAAA">
 						</div>
+						<div class="erreur">Vérifiez votre date de naissance</div>
 					</div>
 				</div>
 				<div class="col">
 					<div class="input">
 						<label>Adresse</label>
 						<input type="text" name="adresseProfil">
+						<div class="erreur">Vérifiez votre adresse</div>
 					</div>
 					<div class="input">
 						<label>Complément</label>
 						<input type="text" name="completementProfil">
+						<div class="erreur">Vérifiez votre complément d'adresse</div>
 					</div>
 					<div class="input">
 						<label>Code postal</label>
 						<input type="text" name="codepostalProfil">
+						<div class="erreur">Vérifiez votre code postal</div>
 					</div>
-					<div class="input">
+					<div class="input neg">
 						<label>Mail</label>
 						<input type="mail" name="mailProfil">
+						<div class="erreur">Vérifiez votre email</div>
 					</div>
 					<div class="input">
 						<label>Téléphone</label>
 						<input type="text" name="telProfil">
+						<div class="erreur">Vérifiez votre téléphone</div>
 					</div>
 				</div>
 			</div>
@@ -133,7 +141,7 @@
 					Actions
 					<div class="dropdown">
 						<div class="action modifier">
-							<img src="img/agents/agenda/supprimer.svg">
+							<img src="img/agents/profil/edit.svg">
 							Modifier
 						</div>
 						<div class="action supprimer">

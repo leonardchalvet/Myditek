@@ -289,7 +289,7 @@
 						box-shadow: 0 5px 20px 0 rgba(0,0,0,0.1);
 
 						.action {
-							padding: 15px;
+							padding: 15px 15px 0;
 							display: flex;
 							align-items: center;
 
@@ -305,6 +305,10 @@
 
 							&:hover {
 								text-decoration: underline;
+							}
+
+							&:last-child {
+								margin-bottom: 15px;
 							}
 						}
 					}
@@ -355,6 +359,7 @@
 			width: 720px;
 			
 			.input {
+				position: relative;
 				margin-bottom: 25px;
 				label {
 					@include styleParagraphSmall;
@@ -378,8 +383,28 @@
 						border: 0.5px solid #E9E5FD;	
 					}
 
-					&.neg {
+					/*&.neg {
 						border: 0.5px solid #E9E5FD;
+					}*/
+				}
+
+				.erreur {
+					display: none;
+					position: absolute;
+					right: 0;
+					@include styleParagraphSmall();
+					opacity: 1;
+					color: $colorMain_4;
+					font-size: 12px;
+				}
+
+				&.neg {
+					input, select {
+						border: 0.5px solid $colorMain_4;
+					}
+
+					.erreur {
+						display: block;
 					}
 				}
 			}

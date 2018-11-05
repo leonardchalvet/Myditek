@@ -470,6 +470,15 @@ lightbox {
 					outline: none;
 					opacity: 1;
 					color: #1C2D4F;
+
+					&:focus {
+						background-color: #E9E5FD;
+						border: 0.5px solid #E9E5FD;	
+
+						option {
+							background-color: #fff;
+						}
+					}
 				}
 			}
 
