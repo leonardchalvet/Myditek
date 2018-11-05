@@ -43,6 +43,13 @@
 					</div>
 				</div>
 
+				<!--AGENDA-->
+				<div class="wrapper wrapper-tab-agenda">
+					<div class="container-text">
+						<h1>Agenda</h1>
+					</div>
+				</div>
+
 				<!-- MESSAGERIE -->
 				<div class="wrapper wrapper-tab-messagerie">
 					<div class="container-text">
@@ -75,6 +82,8 @@
 				</div>
 
 				<?php include 'factures_agents.php'; ?>
+
+				<?php include 'agenda_agents.php'; ?>
 				
 				<?php include 'messagerie_agents.php'; ?>
 

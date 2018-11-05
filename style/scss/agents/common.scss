@@ -80,7 +80,7 @@
 			.action {
 				display: none;
 				width: 100%;
-				padding-top: 15px;
+				padding-top: 20px;
 
 				font-family:Lato-Regular;
 				font-size: 10px;	
@@ -143,6 +143,30 @@ main {
 			}
 			.cta-common {
 				margin-top: 25px;
+			
+				.container-action .action:nth-child(5) {
+					background-color: rgba(0,0,0,0.05);
+				}
+			}
+		}
+	}
+
+	&.agenda {
+		#head .wrapper-tab-agenda {
+			display: block;
+		}
+
+		#container {
+			margin-top: -100px;
+			.wrapper-tab-agenda {
+				display: block;
+			}
+			.cta-common {
+				margin-top: 25px;
+
+				.container-action .action:nth-child(6) {
+					background-color: rgba(0,0,0,0.05);
+				}
 			}
 		}
 	}
