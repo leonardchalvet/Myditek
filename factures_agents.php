@@ -41,7 +41,7 @@
 					<div class="container-action">
 						Action
 						<div class="dropdown">
-							<div class="action">
+							<div class="action payer">
 								<img src="img/agents/common/creditcard.svg">
 								Payer
 							</div>
@@ -119,7 +119,7 @@
 					<div class="container-action">
 						Action
 						<div class="dropdown">
-							<div class="action">
+							<div class="action payer">
 								<img src="img/agents/common/creditcard.svg">
 								Payer
 							</div>
@@ -197,7 +197,7 @@
 					<div class="container-action">
 						Action
 						<div class="dropdown">
-							<div class="action">
+							<div class="action payer">
 								<img src="img/agents/common/creditcard.svg">
 								Payer
 							</div>
