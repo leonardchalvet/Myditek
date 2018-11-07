@@ -163,6 +163,10 @@ $(window).on('load', function() {
 					dayLine.attr('data-month') == $(this).attr('data-month') &&  
 					dayLine.attr('data-year')  == $(this).attr('data-year')     ) {
 					$(this).parent().addClass('active');
+
+					if(dayLine.is(':visible')) {
+						$(this).parent().addClass('now');
+					}
 				}
 			});
 		});
@@ -269,6 +273,10 @@ $(window).on('load', function() {
 
 	$('.wrapper-tab-factures .container-factures .facture .container-vissible .container-infos .container-action .dropdown .payer').click(function() {
 		initLightbox('.payerFacture');
+	})
+
+	$('.wrapper-tab-agenda .message-search .container-action .new-event').click(function() {
+		initLightbox('.addEvent');
 	})
 
 	function initLightbox(el) {

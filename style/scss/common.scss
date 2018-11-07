@@ -482,6 +482,35 @@ lightbox {
 				}
 			}
 
+			.date {
+				input {
+					width: 20%;
+					&:nth-child(3) {
+						width: 30%;
+					}
+				}
+			}
+
+			.time {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+
+				.input {
+					.hour {
+						input {
+							width: 55px;
+						}
+					}
+				}
+
+				.point {
+					height: 4px;	
+					width: 4px;	
+					background-color: #D8D8D8;
+				}
+			}
+
 			.container-action {
 				display: flex;
 				justify-content: space-between;
@@ -601,15 +630,6 @@ lightbox {
 					justify-content: space-between;
 					.col {
 						width: 300px;
-
-						.date {
-							input {
-								width: 20%;
-								&:nth-child(3) {
-									width: 30%;
-								}
-							}
-						}
 
 						.row {
 							.input {

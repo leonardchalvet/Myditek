@@ -229,6 +229,21 @@
 		</div>
 	</div>
 
+	<!-- <div class="box payerFacture">
+		<form action="your-server-side-code" method="POST">
+		<script
+			src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+			data-key="pk_test_SPDVk05qhu3h7Cq7CNwvJRnP"
+			data-amount="999"
+			data-name="Stripe.com"
+			data-description="Example charge"
+			data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+			data-locale="auto"
+			data-zip-code="true">
+		</script>
+		</form>
+	</div> -->
+
 	<div class="box big addExploitation">
 		<div class="container-title">
 			Ajout
@@ -280,6 +295,57 @@
 					<div class="input">
 						<label>Email</label>
 						<input type="text" name="mailExploitation">
+					</div>
+				</div>
+			</div>
+			<div class="container-action">
+				<button class="cancel">Annuler</button>
+				<button class="button validate">Valider</button>
+			</div>
+		</form>
+	</div>
+
+	<div class="box addEvent">
+		<div class="container-title">
+			Ajout
+		</div>
+		<div class="container-picto">
+			<img src="img/lightbox/event-picto.svg">
+		</div>
+		<div class="container-title under">
+			Evenement
+		</div>
+		<form class="container-form">
+			<div class="input">
+				<label>Nom de l'évènement</label>
+				<input type="text" name="titleEvent">
+			</div>
+			<div class="input">
+				<label>Date de l'évènement</label>
+				<div class="date">
+					<input type="text" name="jourCreation" placeholder="JJ">
+					&nbsp;/&nbsp;
+					<input type="text" name="moisCreation" placeholder="MM">
+					&nbsp;/&nbsp;
+					<input type="text" name="anneeCreation" placeholder="AAAA">
+				</div>
+			</div>
+			<div class="time">
+				<div class="input">
+					<label>heure de début</label>
+					<div class="hour">
+						<input type="text" name="jourCreation" placeholder="HH">
+						&nbsp;:&nbsp;
+						<input type="text" name="moisCreation" placeholder="MM">
+					</div>
+				</div>
+				<div class="point"></div>
+				<div class="input">
+					<label>heure de fin</label>
+					<div class="hour">
+						<input type="text" name="jourCreation" placeholder="HH">
+						&nbsp;:&nbsp;
+						<input type="text" name="moisCreation" placeholder="MM">
 					</div>
 				</div>
 			</div>

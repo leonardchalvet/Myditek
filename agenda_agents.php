@@ -2,7 +2,7 @@
 
 	<div class="message-search">
 		<div class="container-action">
-			<div class="new-facture">
+			<div class="new-event">
 				<img src="img/agents/common/plus.svg">
 			</div>
 			<form role="search">
