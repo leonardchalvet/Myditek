@@ -23,7 +23,7 @@
 
 		<?php include 'lightbox.php'; ?>
 
-		<main class="factures">
+		<main class="clients">
 			<div id="head">
 
 				<!-- DASHBOARD -->
@@ -36,6 +36,13 @@
 						</p>
 					</div>
 					<img class="obj-2" src="img/agents/common/Womencover.svg" alt="">
+				</div>
+
+				<!--CLIENTS-->
+				<div class="wrapper wrapper-tab-clients">
+					<div class="container-text">
+						<h1>Clients</h1>
+					</div>
 				</div>
 
 				<!--FACTURES-->
@@ -75,9 +82,8 @@
 				<div class="wrapper wrapper-tab-product">
 					
 				</div>
-				<div class="wrapper wrapper-tab-client">
-					
-				</div>
+				
+				<?php include 'clients_agents.php'; ?>
 				
 				<div class="wrapper wrapper-tab-agents">
 					

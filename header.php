@@ -37,7 +37,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="container-action">
+		<div class="container-action" data-tab="clients">
 			<img src="img/header/clients-picto.svg">
 			<div class="container-text">
 				CLIENTS

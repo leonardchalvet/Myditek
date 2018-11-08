@@ -131,6 +131,27 @@ main {
 		}
 	}
 
+	&.clients {
+
+		#head .wrapper-tab-clients {
+			display: block;
+		}
+
+		#container {
+			margin-top: -100px;
+			.wrapper-tab-clients {
+				display: block;
+			}
+			.cta-common {
+				margin-top: 25px;
+			
+				.container-action .action:nth-child(4) {
+					background-color: rgba(0,0,0,0.05);
+				}
+			}
+		}
+	}
+
 	&.factures {
 		#head .wrapper-tab-factures {
 			display: block;

@@ -47,6 +47,11 @@ header {
 
 			&:hover, &.active {
 				opacity: 1;
+
+				.container-number {
+					border: 1px solid $colorMain_4;
+				    background-color: $colorMain_4;
+				}
 			}
 
 			img {

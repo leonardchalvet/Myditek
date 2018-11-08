@@ -18,6 +18,7 @@ $(window).on('load', function() {
 
 			switch (data) {
 				case 'dashboard': $('main').addClass('dashboard'); break;
+				case 'clients': $('main').addClass('clients'); break;
 				case 'factures': $('main').addClass('factures'); break;
 				case 'agenda': $('main').addClass('agenda'); break;
 				default: break;
@@ -97,6 +98,14 @@ $(window).on('load', function() {
 		$(this).parent().parent().parent().next().toggleClass('show');
 	});
 	/* END PAGE FACTURES */
+
+	/* PAGE CLIENTS */
+	let sizeClient = $('.wrapper-tab-clients.list .container-clients .client').length;
+	$('.wrapper-tab-clients.list .container-clients .client').each(function() {
+		$(this).css('z-index', sizeClient);
+		sizeClient -= 1;
+	});
+	/* END PAGE CLIENTS */
 
 	/* PAGE PROFIL */
 	$('.wrapper-tab-profil .container-profil form .row .col .choix .sexe').click(function(){

@@ -144,16 +144,16 @@
 					display: flex;
 					flex-direction: column;
 					width: 100%;
-
+					
 					.name {
 						@include styleH5();
 					}
-
+					
 					.numero {
 						@include styleParagraphSmall();
 						font-size: 13px;
 					}
-
+					
 					.infos {
 						display: flex;
 						justify-content: space-between;
