@@ -229,20 +229,41 @@
 		</div>
 	</div>
 
-	<!-- <div class="box payerFacture">
-		<form action="your-server-side-code" method="POST">
-		<script
-			src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-			data-key="pk_test_SPDVk05qhu3h7Cq7CNwvJRnP"
-			data-amount="999"
-			data-name="Stripe.com"
-			data-description="Example charge"
-			data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
-			data-locale="auto"
-			data-zip-code="true">
-		</script>
+	<div class="box payerFacture">
+		<div class="container-title">
+			Ajout
+		</div>
+		<ul>
+			<li>N°de la facture : 01889887</li>
+			<li><span>Echéance : </span>25 juin 2018</li>
+		</ul>
+		<form class="container-form">
+			<div class="input">
+				<img src="img/agents/facture/picto-homme.svg">
+				<input type="text" name="nameProduit" placeholder="Titulaire de la carte">
+			</div>
+			<div class="input top" >
+				<img src="img/agents/common/creditcard.svg">
+				<input type="text" name="nameProduit" placeholder="Numéro de carte">
+			</div>
+			<div class="row">
+				<div class="input left" >
+					<img src="img/agents/facture/calendrier.svg">
+					<input type="text" name="nameProduit" placeholder="MM / AA">
+				</div>
+				<div class="input right" >
+					<img src="img/agents/facture/cadenas.svg">
+					<input type="text" name="nameProduit" placeholder="CVV">
+				</div>
+			</div>
+			<div class="input check">
+				<input type="checkbox" name="save">Se souvenir de moi
+			</div>
+			<div class="container-action">
+				<button class="button validate">Payer 500.00€</button>
+			</div>
 		</form>
-	</div> -->
+	</div>
 
 	<div class="box big addExploitation">
 		<div class="container-title">

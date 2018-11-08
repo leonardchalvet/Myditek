@@ -13,6 +13,8 @@
 
 		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 
+		<script src="https://js.stripe.com/v3/"></script>
+
 	</head>
 	
 	<body>
@@ -21,7 +23,7 @@
 
 		<?php include 'lightbox.php'; ?>
 
-		<main class="agenda">
+		<main class="factures">
 			<div id="head">
 
 				<!-- DASHBOARD -->
