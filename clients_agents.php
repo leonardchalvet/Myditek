@@ -339,19 +339,19 @@
 					</div>
 				</div>
 				<div class="container-exploitations">
-					<div class="exploitation">
+					<div class="exploitation neg">
 						Elevage (Bovins) <span>20%</span>
 						<img src="img/agents/common/graph.svg">
 						<img src="img/agents/common/graph-neg.svg">
 					</div>
 					<div class="point"></div>
-					<div class="exploitation">
+					<div class="exploitation neg">
 						Elevage (Bovins) <span>20%</span>
 						<img src="img/agents/common/graph.svg">
 						<img src="img/agents/common/graph-neg.svg">
 					</div>
 					<div class="point"></div>
-					<div class="exploitation">
+					<div class="exploitation neg">
 						Elevage (Bovins) <span>20%</span>
 						<img src="img/agents/common/graph.svg">
 						<img src="img/agents/common/graph-neg.svg">
