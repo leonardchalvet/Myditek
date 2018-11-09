@@ -377,4 +377,163 @@
 		</form>
 	</div>
 
+	<div class="box delClient">
+		<div class="container-title">
+			Supprimer
+		</div>
+		<div class="container-picto">
+			<img src="img/header/people.jpg">
+		</div>
+		<div class="infos-message">
+			<div class="container-name">
+				Barthélémy Chalvet
+			</div>
+			<div class="container-infos">
+				<div class="numero">
+					3 exploitations
+				</div>
+			</div>
+		</div>
+		<form class="container-form">
+			<div class="container-action">
+				<button class="cancel">Annuler</button>
+				<button class="delete">Supprimer</button>
+			</div>
+		</form>
+	</div>
+
+	<div class="box big modifClient">
+		<div class="container-title">
+			Modifier
+		</div>
+		<div class="container-picto">
+			<img src="img/header/people.jpg">
+		</div>
+		<div class="container-title under">
+			Barthélémy Chalvet
+			<span>3 exploitations</span>
+		</div>
+		<form class="container-form">
+			<div class="row">
+				<div class="col">
+					<div class="input">
+						<label>Nom</label>
+						<input type="text" name="nomClient">
+					</div>
+					<div class="input">
+						<label>Prénom</label>
+						<input type="text" name="prenomClient">
+					</div>
+					<div class="input">
+						<label>Téléphone</label>
+						<input type="text" name="telClient">
+					</div>
+				</div>
+				<div class="col">
+					<div class="input">
+						<label>Adresse</label>
+						<input type="text" name="adressClient">
+					</div>
+					<div class="input">
+						<label>Code postal</label>
+						<input type="text" name="codepostalClient">
+					</div>
+					<div class="input">
+						<label>Email</label>
+						<input type="text" name="mailClient">
+					</div>
+				</div>
+			</div>
+			<div class="container-action">
+				<button class="cancel">Annuler</button>
+				<button class="button validate">Valider</button>
+			</div>
+		</form>
+	</div>
+
+	<div class="box big addClient">
+		<div class="container-title">
+			Ajout
+		</div>
+		<div class="container-picto">
+			<img src="img/agents/common/client-no-pictures.svg">
+			<div class="parcourir">
+				<img src="img/agents/profil/photo.svg">
+			</div>
+		</div>
+		<div class="container-title under">
+			Client
+		</div>
+		<form class="container-form">
+			<div class="row">
+				<div class="col">
+					<div class="input">
+						<label>Nom du client</label>
+						<input type="text" name="nomClient">
+					</div>
+					<div class="input">
+						<label>Prénom du client</label>
+						<input type="text" name="prenomClient">
+					</div>
+					<div class="input">
+						<label>Date de naissance</label>
+						<div class="date">
+							<input type="text" name="jourCreation" placeholder="JJ">
+							&nbsp;/&nbsp;
+							<input type="text" name="moisCreation" placeholder="MM">
+							&nbsp;/&nbsp;
+							<input type="text" name="anneeCreation" placeholder="AAAA">
+						</div>
+					</div>
+					<div class="input">
+						<label>Nombre d'exploitation</label>
+						<select name="nbExploitationClient">
+							<option value="1">1</option>
+							<option value="2">2</option> 
+							<option value="3">3</option> 
+							<option value="4" selected>4</option>
+							<option value="5">5</option>
+						</select>
+					</div>
+					<div class="input">
+						<label>Type d'offre</label>
+						<select name="offreClient">
+							<option value="Offre capteurs + drones">Offre capteurs + drones</option>
+							<option value="Offre capteurs + drones">Offre capteurs + drones</option>
+							<option value="Offre capteurs + drones">Offre capteurs + drones</option>
+							<option value="Offre capteurs + drones">Offre capteurs + drones</option>
+						</select>
+					</div>
+				</div>
+				<div class="col">
+					<div class="input">
+						<label>Téléphone</label>
+						<input type="text" name="telClient">
+					</div>
+					<div class="input">
+						<label>Email</label>
+						<input type="text" name="mailClient">
+					</div>
+					<div class="input">
+						<label>Adresse</label>
+						<input type="text" name="adressClient">
+					</div>
+					<div class="input">
+						<label>Complément</label>
+						<input type="text" name="complementClient">
+					</div>
+					<div class="input">
+						<label>Code postal</label>
+						<input type="text" name="codepostalClient">
+					</div>
+					
+				</div>
+			</div>
+			<div class="container-action">
+				<button class="cancel">Annuler</button>
+				<button class="button validate">Valider</button>
+			</div>
+		</form>
+	</div>
+
 </lightbox>

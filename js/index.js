@@ -109,12 +109,12 @@ $(window).on('load', function() {
 	$('.wrapper-tab-clients .message-search .container-text .action:last-child').click(function() {
 		$('.wrapper-tab-clients').removeClass('tuile');
 		$('.wrapper-tab-clients').addClass('list');
-	});
 
-	let sizeClient = $('.wrapper-tab-clients.list .container-clients .client').length;
-	$('.wrapper-tab-clients.list .container-clients .client').each(function() {
-		$(this).css('z-index', sizeClient);
-		sizeClient -= 1;
+		let sizeClient = $('.wrapper-tab-clients.list .container-clients .client').length;
+		$('.wrapper-tab-clients.list .container-clients .client').each(function() {
+			$(this).css('z-index', sizeClient);
+			sizeClient -= 1;
+		});
 	});
 	/* END PAGE CLIENTS */
 
@@ -299,10 +299,24 @@ $(window).on('load', function() {
 		initLightbox('.addEvent');
 	})
 
+	$('.wrapper-tab-clients .container-clients .client .container-action .dropdown .action.supprimer').click(function() {
+		initLightbox('.delClient');
+	})
+
+	$('.wrapper-tab-clients .container-clients .client .container-action .dropdown .action.modifier').click(function() {
+		initLightbox('.modifClient');
+	})
+
+	$('.wrapper-tab-clients .message-search .container-action .new-client').click(function() {
+		initLightbox('.addClient');
+	})
+
 	function initLightbox(el) {
+		let height = $('main').height();
 		$('body').addClass('lightbox');
 		$('lightbox').addClass('active');
 		$('lightbox ' + el).addClass('active');
+		$('lightbox').css('height', height + "px");
 	}
 	/* END LIGHTBOX */
 })
