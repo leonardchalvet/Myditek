@@ -100,6 +100,17 @@ $(window).on('load', function() {
 	/* END PAGE FACTURES */
 
 	/* PAGE CLIENTS */
+	
+	$('.wrapper-tab-clients .message-search .container-text .action:first-child').click(function() {
+		$('.wrapper-tab-clients').removeClass('list');
+		$('.wrapper-tab-clients').addClass('tuile');
+	});
+
+	$('.wrapper-tab-clients .message-search .container-text .action:last-child').click(function() {
+		$('.wrapper-tab-clients').removeClass('tuile');
+		$('.wrapper-tab-clients').addClass('list');
+	});
+
 	let sizeClient = $('.wrapper-tab-clients.list .container-clients .client').length;
 	$('.wrapper-tab-clients.list .container-clients .client').each(function() {
 		$(this).css('z-index', sizeClient);
