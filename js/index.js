@@ -115,6 +115,8 @@ $(window).on('load', function() {
 			}
 		}
 	});
+	/* END PAGE MESSAGERIE */
+
 
 	/* PAGE FACTURES MORE DETAILS */
 	$('.wrapper-tab-factures .container-factures .facture .container-vissible .container-infos .infos .btn').click(function() {
@@ -122,8 +124,8 @@ $(window).on('load', function() {
 	});
 	/* END PAGE FACTURES */
 
+
 	/* PAGE CLIENTS */
-	
 	$('.wrapper-tab-clients .message-search .container-text .action:first-child').click(function() {
 		$('.wrapper-tab-clients').removeClass('list');
 		$('.wrapper-tab-clients').addClass('tuile');
@@ -138,6 +140,20 @@ $(window).on('load', function() {
 			$(this).css('z-index', sizeClient);
 			sizeClient -= 1;
 		});
+	});
+
+	$('.wrapper-tab-clients .container-clients .client .container-infos .container-exploitations .exploitation').each(function() {
+		if( $(this).html().split("<span>")[0].trim().length > 16) {
+			let newText = $(this).text().trim().substr(0,16) + ' ...';
+			newText += "<span>" + $(this).html().split("<span>")[1];
+			$(this).html(newText);
+		}
+	});
+	$('.wrapper-tab-clients.tuile .container-clients .client .container-infos .container-base .name').each(function() {
+		if( $(this).text().trim().length > 40) {
+			let newText = $(this).text().trim().substr(0,40) + ' ...';
+			$(this).html(newText);
+		}
 	});
 	/* END PAGE CLIENTS */
 

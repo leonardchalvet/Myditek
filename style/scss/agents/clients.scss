@@ -119,8 +119,6 @@
 				color: $colorMain_1;
 
 				.exploitation {
-					margin-right: 50px;
-
 					span {
 						margin-left: 10px;
 						color: $colorMain_5;
@@ -143,6 +141,13 @@
 							display: initial;
 						}
 					}
+				}
+
+				.point {
+					height: 4px;	
+					width: 4px;
+					border-radius: 50%;	
+					background-color: #D8D8D8;
 				}
 			}
 
@@ -228,7 +233,7 @@
 		.container-clients {
 
 			.client {
-
+				width: 1125px;
 				&:last-child {
 					margin-bottom: 130px;
 					box-shadow: 0 20px 40px 0 rgba(108,96,255,0.1);
@@ -238,6 +243,7 @@
 				padding: 16px 15px;
 				display: flex;
 				align-items: center;
+				justify-content: space-between;
 				height: 70px;	
 				border-radius: 4px;	
 				background-color: #FFFFFF;	
@@ -249,7 +255,9 @@
 					align-items: center;
 
 					.row-n-col {
+						width: 800px;
 						display: flex;
+						justify-content: space-between;
 					}
 				}
 
@@ -264,7 +272,6 @@
 				}
 			
 				.container-base {
-					margin-right: 70px;
 
 					.name {
 						line-height: 15px;
@@ -279,11 +286,14 @@
 					}
 				}
 
+				.container-exploitations {
+					width: 570px;
+				}
+
 				.map {
 					height: 35px;	
 					width: 35px;
 					border-radius: 4px;
-					margin-right: 60px;
 
 					.button {
 						display: none;
@@ -291,10 +301,7 @@
 				}
 
 				.container-action {
-					padding-left: 20px;
-    				padding-bottom: 20px;
-					top: calc(50% + 10px);
-					transform: translateY(-50%);
+					position: relative;
 				}
 			}
 		}
@@ -331,6 +338,7 @@
 				.container-infos {
 					display: flex;
 					align-items: center;
+					flexflow: row wrap;
 					width: 100%;
 
 					.container-img {
@@ -373,6 +381,9 @@
 						.exploitation:nth-child(1n+2) {
 							display: none;
 						}
+						.point {
+							display: none;
+						}
 					}
 				}
 
@@ -406,12 +417,15 @@
 					}
 
 					.container-infos .container-exploitations {
+						width: 550px;
 						.exploitation {
-							margin-right: 35px;
 
 							&:nth-child(1n+2) {
 								display: block;
 							}
+						}
+						.point {
+							display: block;
 						}
 					}
 				}
