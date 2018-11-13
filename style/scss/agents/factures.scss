@@ -285,15 +285,18 @@
 
 				table {
 					border-collapse: collapse; 
-					margin-left: 85px;
+					margin: auto;
 
 					tr td {
 						@include styleParagraphSmall();
-						padding: 10px 50px 10px 0;
+						padding: 10px 55px 10px 0;
 						opacity: 1;
 						&:first-child {
 							width: 560px;
 							padding-right: 250px;
+						}
+						&:last-child {
+							padding-right: 0;
 						}
 					}
 
