@@ -161,6 +161,7 @@ main {
 			margin-top: -100px;
 			.wrapper-tab-capteurs {
 				display: flex;
+				flex-direction: column;
 			}
 			.cta-common {
 				margin-top: 25px;

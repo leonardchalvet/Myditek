@@ -4,7 +4,7 @@
 			32 Drones disponibles
 		</div>
 		<div class="container-action">
-			<div class="new-produit">
+			<div class="new-produit drone">
 				<img src="img/agents/common/plus.svg">
 			</div>
 			<form role="search">
