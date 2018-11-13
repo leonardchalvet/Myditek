@@ -202,7 +202,7 @@
 						<div class="num-prct">91</div>
 						<div class="num-lgd">RDV</div>
 					</div>
-					<svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="180" height="180" xmlns="http://www.w3.org/2000/svg">
+					<svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862"xmlns="http://www.w3.org/2000/svg">
 						<circle class="circle-chart__background" stroke-width="1" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
 						<?php $pourcent = 100 - 71; //VALEUR A CHANGER POUR LE % => 100 - VALEUR?>
 						<circle class="circle-chart__circle" <?php echo 'style="stroke-dashoffset:'.$pourcent.';"'; ?> stroke-width="1" stroke-dasharray="25,100" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
