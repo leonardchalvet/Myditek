@@ -536,4 +536,63 @@
 		</form>
 	</div>
 
+	<div class="box big infoClient">
+		<div class="container-infos">
+			<div class="container-img">
+				<img src="img/header/people.jpg">
+			</div>
+			<div class="row-n-col">
+				<div class="container-base">
+					<div class="name">
+						Barthélémy Chalvet
+					</div>
+					<div class="row">
+						<div class="number">
+							1 exploitation
+						</div>
+						<div class="point"></div>
+						<div class="online">
+							En ligne il y a 2jrs
+						</div>
+						<div class="point"></div>
+						<div class="capteur">
+							5 capteurs installées
+						</div>
+					</div>
+				</div>
+				<div class="container-exploitations">
+					<div class="exploitation">
+						Elevage (Bovins) <span>20%</span>
+						<img src="img/agents/common/graph.svg">
+						<img src="img/agents/common/graph-neg.svg">
+					</div>
+					<div class="point"></div>
+					<div class="exploitation">
+						Elevage (Bovins) <span>20%</span>
+						<img src="img/agents/common/graph.svg">
+						<img src="img/agents/common/graph-neg.svg">
+					</div>
+					<div class="point"></div>
+					<div class="exploitation">
+						Elevage (Bovins) <span>20%</span>
+						<img src="img/agents/common/graph.svg">
+						<img src="img/agents/common/graph-neg.svg">
+					</div>
+				</div>
+				<div class="container-perso">
+					<div class="perso">
+						Adresse : <span>1451 boulebard magenta, 75010 , Paris</span>
+					</div>
+					<div class="perso">
+						Téléphone : <span>06 22 76 11 00</span>
+					</div>
+					<div class="perso">
+						Offre : <span>Drone + Capteur</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a class="map"></a>
+	</div>
+
 </lightbox>

@@ -8,6 +8,7 @@ $(window).on('load', function() {
 	$('header .nav .container-action').click(function() {
 
 		$('header .nav .container-action').removeClass('active');
+		$('header .nav .container-action .dropdown .container-illu').removeClass('active');
 		$(this).addClass('active');
 
 		let data = $(this).attr('data-tab');
@@ -17,14 +18,35 @@ $(window).on('load', function() {
 			$('main').removeClass();
 
 			switch (data) {
-				case 'dashboard': $('main').addClass('dashboard'); break;
-				case 'clients': $('main').addClass('clients'); break;
+				case 'dashboard': $('main').addClass('dashboard'); 
+								  initMapsDashboard(); 
+								  break; 
+				case 'clients': $('main').addClass('clients'); 
+								initMapsClient();
+								break;
 				case 'factures': $('main').addClass('factures'); break;
 				case 'agenda': $('main').addClass('agenda'); break;
 				default: break;
 			}
 		}
 	});
+	$('header .nav .container-action .dropdown .container-illu').click(function() {
+		$('header .nav .container-action').removeClass('active');
+		$('header .nav .container-action .dropdown .container-illu').removeClass('active');
+		$(this).addClass('active');
+		let data = $(this).attr('data-tab');
+
+		if(data != undefined) {
+
+			$('main').removeClass();
+
+			switch (data) {
+				case 'drones': $('main').addClass('drones'); break;
+				case 'capteurs': $('main').addClass('capteurs'); break;
+				default: break;
+			}
+		}
+	})
 	$('header .profil .cta img').click(function() {
 		let cta = $(this);
 		setTimeout(function() {
@@ -38,6 +60,7 @@ $(window).on('load', function() {
 	})
 	$('header .profil .notif .dropdown .title .container-action .action').click(function() {
 		$('header .nav .container-action').removeClass('active');
+		$('header .nav .container-action .dropdown .container-illu').removeClass('active');
 		let data = $(this).attr('data-message');
 
 		if(data != undefined) {
@@ -309,6 +332,13 @@ $(window).on('load', function() {
 
 	$('.wrapper-tab-clients .message-search .container-action .new-client').click(function() {
 		initLightbox('.addClient');
+	})
+
+	$('.wrapper-tab-clients.tuile .container-clients .client .map').click(function() {
+		initLightbox('.infoClient');
+	})
+	$('.wrapper-tab-clients .container-clients .client .container-action .dropdown .information').click(function() {
+		initLightbox('.infoClient');
 	})
 
 	function initLightbox(el) {

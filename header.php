@@ -20,7 +20,7 @@
 				<img src="img/header/down-arrow.svg">
 			</div>
 			<div class="dropdown">
-				<div class="container-illu">
+				<div class="container-illu" data-tab="drones">
 					<img src="img/header/drone.svg">
 					<div class="container-text">
 						DRONES
@@ -28,7 +28,7 @@
 					</div>
 				</div>
 				<div class="line"></div>
-				<div class="container-illu">
+				<div class="container-illu" data-tab="capteurs">
 					<img src="img/header/capteur.svg">
 					<div class="container-text">
 						CAPTEUR

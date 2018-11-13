@@ -131,6 +131,47 @@ main {
 		}
 	}
 
+	&.drones {
+		#head .wrapper-tab-drones {
+			display: block;
+		}
+
+		#container { 
+			margin-top: -100px;
+			.wrapper-tab-drones {
+				display: flex;
+				flex-direction: column;
+			}
+			.cta-common {
+				margin-top: 25px;
+			
+				.container-action .action:nth-child(2) {
+					background-color: rgba(0,0,0,0.05);
+				}
+			}
+		}
+	}
+
+	&.capteurs {
+		#head .wrapper-tab-capteurs {
+			display: block;
+		}
+
+		#container { 
+			margin-top: -100px;
+			.wrapper-tab-capteurs {
+				display: flex;
+			}
+			.cta-common {
+				margin-top: 25px;
+			
+				.container-action .action:nth-child(3) {
+					background-color: rgba(0,0,0,0.05);
+				}
+			}
+		}
+	}
+
 	&.clients {
 
 		#head .wrapper-tab-clients {
