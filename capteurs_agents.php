@@ -19,8 +19,11 @@
 
 		<div class="produit">
 			<div class="left">
+				<div class="container-img">
+					<img src="img/agents/produit/moutons.svg">
+				</div>
 				<div class="col">
-					<div class="title">Drones</div>
+					<div class="title">Ovins</div>
 					<ul>
 						<li>Drone <span class="color">01</span></li>
 						<li class="point"></li>
@@ -60,8 +63,11 @@
 	
 		<div class="produit">
 			<div class="left">
+				<div class="container-img">
+					<img src="img/agents/produit/poule.svg">
+				</div>
 				<div class="col">
-					<div class="title">Drones</div>
+					<div class="title">Ovins</div>
 					<ul>
 						<li>Drone <span class="color">01</span></li>
 						<li class="point"></li>
@@ -101,8 +107,11 @@
 
 		<div class="produit neg">
 			<div class="left">
+				<div class="container-img">
+					<img src="img/agents/produit/moutons.svg">
+				</div>
 				<div class="col">
-					<div class="title">Drones</div>
+					<div class="title">Ovins</div>
 					<ul>
 						<li>Drone <span class="color">01</span></li>
 						<li class="point"></li>
@@ -142,8 +151,11 @@
 
 		<div class="produit">
 			<div class="left">
+				<div class="container-img">
+					<img src="img/agents/produit/poule.svg">
+				</div>
 				<div class="col">
-					<div class="title">Drones</div>
+					<div class="title">Ovins</div>
 					<ul>
 						<li>Drone <span class="color">01</span></li>
 						<li class="point"></li>
@@ -183,8 +195,11 @@
 
 		<div class="produit">
 			<div class="left">
+				<div class="container-img">
+					<img src="img/agents/produit/moutons.svg">
+				</div>
 				<div class="col">
-					<div class="title">Drones</div>
+					<div class="title">Ovins</div>
 					<ul>
 						<li>Drone <span class="color">01</span></li>
 						<li class="point"></li>
@@ -224,8 +239,11 @@
 
 		<div class="produit">
 			<div class="left">
+				<div class="container-img">
+					<img src="img/agents/produit/poule.svg">
+				</div>
 				<div class="col">
-					<div class="title">Drones</div>
+					<div class="title">Ovins</div>
 					<ul>
 						<li>Drone <span class="color">01</span></li>
 						<li class="point"></li>
@@ -265,8 +283,11 @@
 
 		<div class="produit">
 			<div class="left">
+				<div class="container-img">
+					<img src="img/agents/produit/moutons.svg">
+				</div>
 				<div class="col">
-					<div class="title">Drones</div>
+					<div class="title">Ovins</div>
 					<ul>
 						<li>Drone <span class="color">01</span></li>
 						<li class="point"></li>

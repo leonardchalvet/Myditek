@@ -99,6 +99,16 @@
 				display: flex;
 				align-items: center;
 
+				.container-img {
+					height: 66px;	
+					width: 62px;
+					margin-left: 10px;
+					margin-right: 30px;
+					img {
+						width: 100%;
+					}
+				}
+
 				.col {
 					display: flex;
 					flex-direction: column;
