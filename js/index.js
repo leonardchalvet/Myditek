@@ -423,6 +423,30 @@ $(window).on('load', function() {
 		initLightbox('.infoClient');
 	})
 
+	$('.wrapper-tab-drones .container-produit .produit .left .container-action .dropdown .supprimer').click(function() {
+		initLightbox('.delDrone');
+	})
+
+	$('.wrapper-tab-drones .message-search .container-action .new-produit.drone').click(function() {
+		initLightbox('.addDrone');	
+	})
+
+	$('.wrapper-tab-drones .container-produit .produit .left .container-action .dropdown .modifier').click(function() {
+		initLightbox('.modifDrone');
+	})
+
+	$('.wrapper-tab-capteurs .container-produit .produit .left .container-action .dropdown .supprimer').click(function() {
+		initLightbox('.delCapteur');
+	})
+
+	$('.wrapper-tab-capteurs .message-search .container-action .new-produit.capteur').click(function() {
+		initLightbox('.addCapteur');	
+	})
+
+	$('.wrapper-tab-capteurs .container-produit .produit .left .container-action .dropdown .modifier').click(function() {
+		initLightbox('.modifCapteur');
+	})
+
 	function initLightbox(el) {
 		let height = $('main').height();
 		$('body').addClass('lightbox');
@@ -430,5 +454,24 @@ $(window).on('load', function() {
 		$('lightbox ' + el).addClass('active');
 		$('body').scrollTop(0);
 	}
+
+
+	$('lightbox .box.modifDrone .container-form .input input').keyup(function() {
+		if($(this).val().length > 0) {
+			$('lightbox .box.modifDrone .container-form .container-action button.delete').addClass('validate').removeClass('delete');
+		}
+		else {
+			$('lightbox .box.modifDrone .container-form .container-action button.validate').addClass('delete').removeClass('validate');
+		}
+	})
+
+	$('lightbox .box.modifCapteur .container-form .input input').keyup(function() {
+		if($(this).val().length > 0) {
+			$('lightbox .box.modifCapteur .container-form .container-action button.delete').addClass('validate').removeClass('delete');
+		}
+		else {
+			$('lightbox .box.modifCapteur .container-form .container-action button.validate').addClass('delete').removeClass('validate');
+		}
+	})
 	/* END LIGHTBOX */
 })

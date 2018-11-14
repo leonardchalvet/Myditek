@@ -633,6 +633,51 @@ lightbox {
 			}
 		}
 
+		&.delDrone, &.modifDrone, &.delCapteur, &.modifCapteur {
+
+			.container-picto {
+				width: 100px;
+			}
+
+			.container-title.under {
+				margin-top: 10px;
+			}
+
+			.container-infos {
+				flex-wrap: wrap;
+				justify-content: space-between;
+
+				.numero {
+					width: 100%;
+
+					&.neg .color {
+						display: inline;
+						color: $colorMain_4;
+					}
+				}
+
+				.by, .date {
+					width: 50%;
+					margin-top: 15px;
+				
+					.color {
+						color: $colorMain_5;
+					}
+
+					img {
+						opacity: 0.4;
+						margin-left: 5px;
+					}
+				}
+			}
+		}
+
+		&.addDrone {
+			.container-picto {
+				width: 100px;
+			}
+		}
+
 		&.big {
 			width: 725px;
 

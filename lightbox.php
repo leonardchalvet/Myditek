@@ -595,4 +595,249 @@
 		<a class="map"></a>
 	</div>
 
+	<div class="box delDrone">
+		<div class="container-title">
+			Supprimer
+		</div>
+		<div class="container-picto">
+			<img src="img/agents/dashboard/drone.svg">
+		</div>
+		<div class="infos-message">
+			<div class="container-name">
+				Drones
+			</div>
+			<div class="container-infos">
+				<div class="numero">
+					<span>Mise en service : 24 Juin 2018</span>
+				</div>
+				<div class="by">
+					Température : <span class="color">28°</span>
+				</div>
+				<div class="date">
+					Position : <span>Carte</span> 
+					<img src="img/agents/produit/arrow-right.svg">
+				</div>
+			</div>
+		</div>
+		<form class="container-form">
+			<div class="container-action">
+				<button class="cancel">Annuler</button>
+				<button class="delete">Supprimer</button>
+			</div>
+		</form>
+	</div>
+
+	<div class="box addDrone">
+		<div class="container-title">
+			Ajout
+		</div>
+		<div class="container-picto">
+			<img src="img/agents/dashboard/drone.svg">
+		</div>
+		<div class="container-title under">
+			Drones
+		</div>
+		<form class="container-form">
+			<div class="input">
+				<label>Nom de drone</label>
+				<input type="text" name="titleDrone">
+			</div>
+			<div class="input">
+				<label>Client associé</label>
+				<select name="clientDrone">
+					<option value="1">1</option>
+					<option value="2">2</option> 
+					<option value="3">3</option> 
+					<option value="4" selected>4</option>
+					<option value="5">5</option>
+				</select>
+			</div>
+			<div class="input">
+				<label>Exploitation associée</label>
+				<select name="exploitationDrone">
+					<option value="1">1</option>
+					<option value="2">2</option> 
+					<option value="3">3</option> 
+					<option value="4" selected>4</option>
+					<option value="5">5</option>
+				</select>
+			</div>
+			<div class="input">
+				<label>Date mise en service</label>
+				<div class="date">
+					<input type="text" name="jourCreation" placeholder="JJ">
+					&nbsp;/&nbsp;
+					<input type="text" name="moisCreation" placeholder="MM">
+					&nbsp;/&nbsp;
+					<input type="text" name="anneeCreation" placeholder="AAAA">
+				</div>
+			</div>
+			<div class="container-action">
+				<button class="cancel">Annuler</button>
+				<button class="button validate">Valider</button>
+			</div>
+		</form>
+	</div>
+
+	<div class="box modifDrone">
+		<div class="container-title">
+			Modifier
+		</div>
+		<div class="container-picto">
+			<img src="img/agents/dashboard/drone.svg">
+		</div>
+		<div class="infos-message">
+			<div class="container-name">
+				Drones
+			</div>
+			<div class="container-infos">
+				<div class="numero">
+					<span>Mise en service : 24 Juin 2018</span>
+				</div>
+				<div class="by">
+					Température : <span class="color">28°</span>
+				</div>
+				<div class="date">
+					Position : <span>Carte</span> 
+					<img src="img/agents/produit/arrow-right.svg">
+				</div>
+			</div>
+		</div>
+		<div class="container-title under"></div>
+		<form class="container-form">
+			<div class="input">
+				<label>Renommer</label>
+				<input type="text" name="titleDrone">
+			</div>
+			<div class="container-action">
+				<button class="cancel">Annuler</button>
+				<button class="delete">Valider</button>
+			</div>
+		</form>
+	</div>
+
+	<div class="box delCapteur">
+		<div class="container-title">
+			Supprimer
+		</div>
+		<div class="container-picto">
+			<img src="img/agents/produit/moutons.svg">
+		</div>
+		<div class="infos-message">
+			<div class="container-name">
+				Capteur
+			</div>
+			<div class="container-infos">
+				<div class="numero">
+					<span>Mise en service : 24 Juin 2018</span>
+				</div>
+				<div class="by">
+					Température : <span class="color">28°</span>
+				</div>
+				<div class="date">
+					Position : <span>Carte</span> 
+					<img src="img/agents/produit/arrow-right.svg">
+				</div>
+			</div>
+		</div>
+		<form class="container-form">
+			<div class="container-action">
+				<button class="cancel">Annuler</button>
+				<button class="delete">Supprimer</button>
+			</div>
+		</form>
+	</div>
+
+	<div class="box addCapteur">
+		<div class="container-title">
+			Ajout
+		</div>
+		<div class="container-picto">
+			<img src="img/agents/produit/moutons.svg">
+		</div>
+		<div class="container-title under">
+			Capteur
+		</div>
+		<form class="container-form">
+			<div class="input">
+				<label>Nom de capteur</label>
+				<input type="text" name="titleCapteur">
+			</div>
+			<div class="input">
+				<label>Type de capteur</label>
+				<select name="typeCapteur">
+					<option value="1">1</option>
+					<option value="2">2</option> 
+					<option value="3">3</option> 
+					<option value="4" selected>4</option>
+					<option value="5">5</option>
+				</select>
+			</div>
+			<div class="input">
+				<label>Client associé</label>
+				<select name="clientCapteur">
+					<option value="1">1</option>
+					<option value="2">2</option> 
+					<option value="3">3</option> 
+					<option value="4" selected>4</option>
+					<option value="5">5</option>
+				</select>
+			</div>
+			<div class="input">
+				<label>Date mise en service</label>
+				<div class="date">
+					<input type="text" name="jourCreation" placeholder="JJ">
+					&nbsp;/&nbsp;
+					<input type="text" name="moisCreation" placeholder="MM">
+					&nbsp;/&nbsp;
+					<input type="text" name="anneeCreation" placeholder="AAAA">
+				</div>
+			</div>
+			<div class="container-action">
+				<button class="cancel">Annuler</button>
+				<button class="button validate">Valider</button>
+			</div>
+		</form>
+	</div>
+
+	<div class="box modifCapteur">
+		<div class="container-title">
+			Modifier
+		</div>
+		<div class="container-picto">
+			<img src="img/agents/produit/moutons.svg">
+		</div>
+		<div class="infos-message">
+			<div class="container-name">
+				Ovins
+			</div>
+			<div class="container-infos">
+				<div class="numero neg">
+					<span>Capteur <div class="color">25</div></span>
+				</div>
+				<div class="numero">
+					<span>Mise en service : 24 Juin 2018</span>
+				</div>
+				<div class="by">
+					Température : <span class="color">28°</span>
+				</div>
+				<div class="date">
+					Position : <span>Carte</span> 
+					<img src="img/agents/produit/arrow-right.svg">
+				</div>
+			</div>
+		</div>
+		<div class="container-title under"></div>
+		<form class="container-form">
+			<div class="input">
+				<label>Renommer le capteur</label>
+				<input type="text" name="titleDrone">
+			</div>
+			<div class="container-action">
+				<button class="cancel">Annuler</button>
+				<button class="delete">Valider</button>
+			</div>
+		</form>
+	</div>
+
 </lightbox>

@@ -34,7 +34,7 @@
 				<div class="container-action">
 					Action
 					<div class="dropdown">
-						<div class="action payer">
+						<div class="action modifier">
 							<img src="img/agents/clients/edit-picto.svg">
 							Modifier
 						</div>
@@ -75,7 +75,7 @@
 				<div class="container-action">
 					Action
 					<div class="dropdown">
-						<div class="action payer">
+						<div class="action modifier">
 							<img src="img/agents/clients/edit-picto.svg">
 							Modifier
 						</div>
@@ -116,7 +116,7 @@
 				<div class="container-action">
 					Action
 					<div class="dropdown">
-						<div class="action payer">
+						<div class="action modifier">
 							<img src="img/agents/clients/edit-picto.svg">
 							Modifier
 						</div>
@@ -157,7 +157,7 @@
 				<div class="container-action">
 					Action
 					<div class="dropdown">
-						<div class="action payer">
+						<div class="action modifier">
 							<img src="img/agents/clients/edit-picto.svg">
 							Modifier
 						</div>
@@ -198,7 +198,7 @@
 				<div class="container-action">
 					Action
 					<div class="dropdown">
-						<div class="action payer">
+						<div class="action modifier">
 							<img src="img/agents/clients/edit-picto.svg">
 							Modifier
 						</div>
@@ -239,7 +239,7 @@
 				<div class="container-action">
 					Action
 					<div class="dropdown">
-						<div class="action payer">
+						<div class="action modifier">
 							<img src="img/agents/clients/edit-picto.svg">
 							Modifier
 						</div>
@@ -280,7 +280,7 @@
 				<div class="container-action">
 					Action
 					<div class="dropdown">
-						<div class="action payer">
+						<div class="action modifier">
 							<img src="img/agents/clients/edit-picto.svg">
 							Modifier
 						</div>

@@ -23,7 +23,7 @@
 
 		<?php include 'lightbox.php'; ?>
 
-		<main class="profil">
+		<main class="dashboard">
 			<div id="head">
 
 				<!-- DASHBOARD -->
@@ -165,4 +165,7 @@
 
 <script>
 function initMaps() {}
+$(window).on('load', function() {
+	initMapsDashboard();
+});
 </script>
