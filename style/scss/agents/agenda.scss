@@ -172,16 +172,18 @@
 
 					&.active {
 						a {
-
+							position: relative;
 							&:after {
 								content: " ";
 								width: 4px;
 								height: 4px;
 								border-radius: 50%;
 								position: absolute;
-								bottom: 15px;
+								bottom: 0;
 								background-color: $colorMain_4;
 								color: #ffffff;
+								left: 50%;
+								transform: translateX(-50%);
 							}
 						}
 					}
