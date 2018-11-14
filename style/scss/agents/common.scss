@@ -56,7 +56,6 @@
 	}
 
 	.cta-common {
-		width: 65px;
 		.container-text {
 			margin-bottom: 20px;
 			text-align: center;
@@ -66,31 +65,77 @@
 			color: #fff;
 		}
 		.container-action {
+			position: relative;
+			overflow: hidden;
 			display: flex;
 			flex-direction: column;
 			justify-content: flex-start;
 			align-items: center;
-			padding-top: 20px;
-			height: 110px;	
-			width: 65px;	
+			width: 60px;
+			height: 415px;	
 			border-radius: 10px;	
-			background-color: #F8CC6A;	
-			box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1);	
+
+			.nohover {
+				border-radius: 10px;
+				padding: 30px 23px 60px 23px;
+				background-color: #F8CC6A;	
+			}
 
 			.action {
-				display: none;
+				position: relative;
+    			z-index: 1;
+				display: flex;
 				width: 100%;
 				padding-top: 20px;
 
 				font-family:Lato-Regular;
 				font-size: 10px;	
 				font-weight: bold;
-			}			
+				transition-duration: 0.4s;
+				
+				&:nth-child(2) {
+					transform: translateY(-300%);
+				}
+
+				&:nth-child(3) {
+					transform: translateY(-400%);
+				}
+
+				&:nth-child(4) {
+					transform: translateY(-500%);
+				}
+
+				&:nth-child(5) {
+					transform: translateY(-600%);
+				}
+
+				&:nth-child(6) {
+					transform: translateY(-700%);
+				}
+			}	
+
+			&:after {
+				content: " ";
+				position: absolute;
+				z-index: 0;
+				bottom: 0;
+				transform: translateY(-100%); 
+				left: 0;
+				width: 60px;
+				height: 415px;
+				background-color: #F8CC6A;
+				transition-duration: 0.5s;
+			}	
 
 			&:hover {
 				padding-top: 0;
-				height: 415px;
 				justify-content: space-around;
+				transition-duration: 1s;
+				box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1);	
+
+				&:after {
+					transform: translateY(0);
+				}
 
 				.nohover {
 					display: none;
@@ -98,9 +143,9 @@
 
 				.action {
 					cursor: pointer;
-					display: flex;
 					flex-direction: column;
 					align-items: center;
+					transform: translateY(0);
 
 					img {
 						height: 20px;	
@@ -110,6 +155,26 @@
 
 					&:hover {
 						background-color: rgba(0,0,0,0.05);
+					}
+
+					&:nth-child(2) {
+						transition-duration: 0.5s;
+					}
+
+					&:nth-child(3) {
+						transition-duration: 0.7s;
+					}
+
+					&:nth-child(4) {
+						transition-duration: 0.9s;
+					}
+
+					&:nth-child(5) {
+						transition-duration: 1.1s;
+					}
+
+					&:nth-child(6) {
+						transition-duration: 1.3s;
 					}
 				}
 			}
