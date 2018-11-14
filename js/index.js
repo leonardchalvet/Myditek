@@ -429,13 +429,6 @@ $(window).on('load', function() {
 		$('lightbox').addClass('active');
 		$('lightbox ' + el).addClass('active');
 		$('body').scrollTop(0);
-
-		console.log($('lightbox ' + el).height());
-
-		if( ($('lightbox ' + el).height() + 150) > $(window).height() ) {
-			$('lightbox').css({'position':'fixed', 'overflow':'scroll'});
-			$('lightbox ' + el).css({'position':'relative','left':'0','transform':'none'});
-		}
 	}
 	/* END LIGHTBOX */
 })

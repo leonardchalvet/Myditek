@@ -363,9 +363,6 @@ main
     cursor:pointer;
     display:inline-block;
     position:relative;
-    font:normal 11px/22px Arial, Sans-Serif;
-    color:black;
-    border:1px solid #ccc;
 }
 .styledSelect {
     position:absolute;
@@ -375,20 +372,17 @@ main
     left:0;
     background-color:white;
     padding:0 10px;
-    font-weight:bold;
 }
 .styledSelect:after {
     content:"";
-    width:0;
-    height:0;
-    border:5px solid transparent;
-    border-color:black transparent transparent transparent;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-color: black transparent transparent transparent;
     position:absolute;
-    top:9px;
-    right:6px;
-}
-.styledSelect:active, .styledSelect.active {
-    background-color:#eee;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-2px);
 }
 .options {
     display:none;
@@ -397,23 +391,17 @@ main
     right:0;
     left:0;
     z-index:999;
-    margin:0 0;
-    padding:0 0;
     list-style:none;
-    border:1px solid #ccc;
     background-color:white;
-    -webkit-box-shadow:0 1px 2px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow:0 1px 2px rgba(0, 0, 0, 0.2);
     box-shadow:0 1px 2px rgba(0, 0, 0, 0.2);
 }
 .options li {
-    padding:0 6px;
-    margin:0 0;
-    padding:0 10px;
+    padding: 0 15px;
+    line-height: 50px;
+    border-bottom:0.5px solid #ccc;
 }
 .options li:hover {
-    background-color:#39f;
-    color:white;
+    background-color: #E9E5FD;
 }
 
 /* ------------------------------------------------------ */
@@ -425,7 +413,7 @@ main
 /* ---------------------------------------------------- */
 
 lightbox {
-	position: absolute;
+	position: fixed;
 	display: none;
 	flex-direction: column;
 	align-items: center;
@@ -434,6 +422,7 @@ lightbox {
 	left: 0;
 	width: 100%;
 	height: 100vh;
+	overflow-y: auto;
 
 	background-color: rgba(32, 54, 96, 0.8);
 
@@ -457,6 +446,7 @@ lightbox {
 
 	.box {
 		position: absolute;
+		top: 125px;
     	left: 50%;
     	transform: translateX(-50%);
 		padding: 30px;
@@ -466,6 +456,7 @@ lightbox {
 		width: 360px;	
 		border-radius: 4px;	
 		background-color: #FFFFFF;
+		margin-bottom: 75px;
 
 		&.active {
 			display: flex;
@@ -535,10 +526,6 @@ lightbox {
 					width: 100%;
 				}
 
-				select {
-
-				}
-
 				input, .select, .styledSelect {
 					padding-left: 15px;
 					@include styleParagraphSmall;
@@ -550,8 +537,9 @@ lightbox {
 					outline: none;
 					opacity: 1;
 					color: #1C2D4F;
+					line-height: 50px;
 
-					&:focus {
+					&:focus, &.active {
 						transition-duration: 0.2s;
 						background-color: #E9E5FD;
 						border: 0.5px solid #E9E5FD;	
@@ -560,6 +548,10 @@ lightbox {
 							background-color: #fff;
 						}
 					}
+				}
+
+				.select {
+					border: none;
 				}
 			}
 
