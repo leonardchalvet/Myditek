@@ -35,6 +35,7 @@
 				align-items: center;
 
 				.name {
+					padding: 0 20px;
 					margin-top: 40px;
 					@include styleH4();
 				}
@@ -96,8 +97,9 @@
 					&:after {
 						content: " ";
 						position: absolute;
-						top: -3px;
-						right: -20px;
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%,-50%);
 						width: 4px;
 						height: 4px;
 						margin: 8px;
@@ -247,12 +249,22 @@
 
 				.titre {
 					@include styleH5();
+					overflow: hidden;
+					height: 30px;
+					width: 150px;
+					white-space: nowrap;
+					text-overflow: ellipsis;
 				}
 
 				.text {
 					@include styleParagraphSmall();
 					color: $colorMain_1;
 					opacity: 1;
+					overflow: hidden;
+					height: 20px;
+					width: 150px;
+					white-space: nowrap;
+					text-overflow: ellipsis;
 				}
 
 				.container-action {
@@ -406,6 +418,10 @@
 					.erreur {
 						display: block;
 					}
+				}
+
+				&:last-child {
+					margin-bottom: 0;
 				}
 			}
 

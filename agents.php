@@ -23,7 +23,7 @@
 
 		<?php include 'lightbox.php'; ?>
 
-		<main class="capteurs">
+		<main class="profil">
 			<div id="head">
 
 				<!-- DASHBOARD -->
