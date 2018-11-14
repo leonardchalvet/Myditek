@@ -43,6 +43,19 @@
 		</div>
 
 		<div class="agenda-day">
+			<div class="day show default">
+				<div class="title"></div>
+
+				<div class="planing">
+					<ul class="time">
+						<?php  
+						for($i=9; $i <= 18; $i++ ) {
+							echo '<li data-hour="'.$i.'" >'. ( $i < 10 ? '0'.$i : $i ).'h00</li>';
+						}
+						?>
+					</ul>
+				</div>
+			</div>
 			<div class="day" data-day="14" data-month="11" data-year="2018">
 				<div class="title">14 November</div>
 

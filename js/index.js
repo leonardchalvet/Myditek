@@ -223,20 +223,21 @@ $(window).on('load', function() {
 					dayLine.attr('data-year')  == $(this).attr('data-year')     ) {
 					$(this).parent().addClass('active');
 
-					if(dayLine.is(':visible')) {
+					/*if(dayLine.is(':visible')) {
 						$(this).parent().addClass('now');
-					}
+					}*/
 				}
 			});
 		});
 
 		//Si on clique sur un jour active on affiche
-		$('.wrapper-tab-agenda .container-agenda .agenda-month .responsive-calendar .day.active a').click(function() {
+		$('.wrapper-tab-agenda .container-agenda .agenda-month .responsive-calendar .day a').click(function() {
 			let y = $(this).attr('data-year');
 			let m = $(this).attr('data-month');
 			let d = $(this).attr('data-day');
 
 			$('.wrapper-tab-agenda .container-agenda .agenda-month .responsive-calendar .day').removeClass('now');
+			$('.wrapper-tab-agenda .container-agenda .agenda-month .responsive-calendar .day.default').removeClass('now');
 			$('.wrapper-tab-agenda .container-agenda .agenda-day .day').removeClass('show');
 			
 			let now = $(this);
@@ -244,12 +245,14 @@ $(window).on('load', function() {
 				now.parent().addClass('now');
 			}, 100);
 			
-
+			let bool = 0;
 			$('.wrapper-tab-agenda .container-agenda .agenda-day .day').each(function() {
 				if( d == $(this).attr('data-day')   && 
 					m == $(this).attr('data-month') &&  
 					y == $(this).attr('data-year')     ) {
 					
+					bool = 1;
+
 					$(this).addClass('show');			
 
 					$(this).children().children('.container-line').children().each(function() {
@@ -281,6 +284,10 @@ $(window).on('load', function() {
 					});
 				}
 			});
+
+			if(!bool) {
+				$('.wrapper-tab-agenda .container-agenda .agenda-day .day.default').addClass('show');
+			}
 		});
 	}
 
