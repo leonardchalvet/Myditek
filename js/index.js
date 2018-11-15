@@ -41,8 +41,12 @@ $(window).on('load', function() {
 			$('main').removeClass();
 
 			switch (data) {
-				case 'drones': $('main').addClass('drones'); break;
-				case 'capteurs': $('main').addClass('capteurs'); break;
+				case 'drones': $('main').addClass('drones'); 
+							   initMapsDrones();
+							   break;
+				case 'capteurs': $('main').addClass('capteurs'); 
+								 initMapsCapteurs();
+								 break;
 				default: break;
 			}
 		}
@@ -454,6 +458,13 @@ $(window).on('load', function() {
 		initLightbox('.modifCapteur');
 	})
 
+	$('.wrapper-tab-drones .container-produit .produit .left .col').click(function() {
+		initLightbox('.infoDrone');
+	})
+
+	$('.wrapper-tab-capteurs .container-produit .produit .left .col').click(function() {
+		initLightbox('.infoCapteur');
+	})
 	
 
 	function initLightbox(el) {

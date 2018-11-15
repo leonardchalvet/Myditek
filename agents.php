@@ -23,7 +23,7 @@
 
 		<?php include 'lightbox.php'; ?>
 
-		<main class="dashboard">
+		<main class="drones">
 			<div id="head">
 
 				<!-- DASHBOARD -->

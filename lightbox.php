@@ -840,4 +840,146 @@
 		</form>
 	</div>
 
+	<div class="box big infoDrone">
+		<div class="container-infos">
+			<div class="container-img">
+				<img src="img/agents/dashboard/drone.svg">
+			</div>
+			<div class="row-n-col">
+				<div class="container-base">
+					<div class="name">
+						Drones
+					</div>
+					<ul class="row neg">
+						<li>Drone <span class="color">02</span></li>
+						<li class="point"></li>
+						<li>Mise en service : 24 Juin 2018</li>
+					</ul>
+					<ul class="row blue">
+						<li>Température <span class="color">28°</span></li>
+					</ul>
+				</div>
+				<ul class="content">
+					<li>
+						Client :<span>Barthélémy chalvet</span>
+					</li>
+					<li>
+						Exploitation :<span>Ovins en folie</span>
+					</li>
+					<li>
+						Offre :<span>Drone + Capteur</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="map"></div>
+		<div class="messages-list">
+			<ul>
+				<?php for($i=0;$i<4;$i++) { ?>
+				<li>
+					<div class="logo">
+						<img class="nohover" src="img/agents/agenda/iconemessage-black.svg">
+						<img class="hover" src="img/agents/agenda/iconemessage-violet.svg">
+					</div>
+					<div class="container-text">
+						<h3>
+							Dernier message
+						</h3>
+						<p>
+							Outdoor advertising is a low budget and effective way of advertising a company’s
+						</p>
+					</div>
+				</li>
+				<?php } ?>
+			</ul>
+			<a class="button">
+				Voir plus
+			</a>
+		</div>
+		<div class="container-action">
+			Actions
+			<div class="dropdown">
+				<div class="action modifier">
+					<img src="img/agents/clients/edit-picto.svg">
+					Modifier
+				</div>
+				<div class="action supprimer">
+					<img src="img/agents/agenda/supprimer.svg">
+					Supprimer
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="box big infoCapteur">
+		<div class="container-infos">
+			<div class="container-img">
+				<img src="img/agents/produit/moutons.svg">
+			</div>
+			<div class="row-n-col">
+				<div class="container-base">
+					<div class="name">
+						Ovins
+					</div>
+					<ul class="row neg">
+						<li>Capteur <span class="color">25</span></li>
+						<li class="point"></li>
+						<li>Mise en service : 24 Juin 2018</li>
+					</ul>
+					<ul class="row blue">
+						<li>Température <span class="color">28°</span></li>
+					</ul>
+				</div>
+				<ul class="content">
+					<li>
+						Client :<span>Barthélémy chalvet</span>
+					</li>
+					<li>
+						Exploitation :<span>Ovins en folie</span>
+					</li>
+					<li>
+						Offre :<span>Drone + Capteur</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="map"></div>
+		<div class="messages-list">
+			<ul>
+				<?php for($i=0;$i<4;$i++) { ?>
+				<li>
+					<div class="logo">
+						<img class="nohover" src="img/agents/agenda/iconemessage-black.svg">
+						<img class="hover" src="img/agents/agenda/iconemessage-violet.svg">
+					</div>
+					<div class="container-text">
+						<h3>
+							Dernier message
+						</h3>
+						<p>
+							Outdoor advertising is a low budget and effective way of advertising a company’s
+						</p>
+					</div>
+				</li>
+				<?php } ?>
+			</ul>
+			<a class="button">
+				Voir plus
+			</a>
+		</div>
+		<div class="container-action">
+			Actions
+			<div class="dropdown">
+				<div class="action modifier">
+					<img src="img/agents/clients/edit-picto.svg">
+					Modifier
+				</div>
+				<div class="action supprimer">
+					<img src="img/agents/agenda/supprimer.svg">
+					Supprimer
+				</div>
+			</div>
+		</div>
+	</div>
+
 </lightbox>
