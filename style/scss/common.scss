@@ -1070,7 +1070,7 @@ lightbox {
 			}
 		}
 
-		&.infoDrone, &.infoCapteur {
+		&.infoDrone, &.infoCapteur, &.infoAgents {
 			align-items: flex-start;
 			flex-flow: row wrap;
 			justify-content: space-around;
@@ -1351,6 +1351,83 @@ lightbox {
 					justify-content: center;
 					align-items: center;
 				}
+			}
+		}
+
+		&.infoAgents {
+
+			.row-n-col {
+				width: 100%
+			}
+
+			.container-infos .container-img {
+				padding-top: 0;
+			}
+
+			.container-infos .container-base .row {
+				width: 400px;
+
+				&:last-child {
+					li {
+						display: flex;
+						align-items: center;
+						justify-content: space-between;
+						width: 200px;
+
+						span {
+							color: $colorMain_4;
+						}
+					}
+				}
+			}
+
+			.container-exploitations {
+				margin-top: 10px;
+				width: 90%;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				@include styleParagraphSmall();
+				opacity: 1;
+				color: $colorMain_1;
+
+				.exploitation {
+					span {
+						margin-left: 10px;
+						color: $colorMain_5;
+					}
+
+					img:nth-child(3) {
+						display: none;
+					}
+
+					&.neg {
+						span {
+							color: $colorMain_4;
+						}
+						
+						img:nth-child(2) {
+							display: none;
+						}
+						
+						img:nth-child(3) {
+							display: initial;
+						}
+					}
+				}
+
+				.point {
+					height: 4px;	
+					width: 4px;
+					border-radius: 50%;	
+					background-color: #D8D8D8;
+				}
+			}
+
+			.map {
+				margin-top: 35px;
+				width: 100%;
+				height: 455px;
 			}
 		}
 	}

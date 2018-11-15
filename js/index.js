@@ -24,7 +24,9 @@ $(window).on('load', function() {
 				case 'clients': $('main').addClass('clients'); 
 								initMapsClient();
 								break;
-				case 'agents': $('main').addClass('agents'); break;
+				case 'agents': $('main').addClass('agents'); 
+							   initMapsAgents();
+							   break;
 				case 'factures': $('main').addClass('factures'); break;
 				case 'agenda': $('main').addClass('agenda'); break;
 				default: break;
@@ -467,6 +469,9 @@ $(window).on('load', function() {
 		initLightbox('.infoCapteur');
 	})
 	
+	$('.wrapper-tab-agents .container-agents .agent .container-action .dropdown .information').click(function() {
+		initLightbox('.infoAgents');
+	})
 
 	function initLightbox(el) {
 		let height = $('main').height();

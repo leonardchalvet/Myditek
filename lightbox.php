@@ -982,4 +982,69 @@
 		</div>
 	</div>
 
+	<div class="box big infoAgents">
+		<div class="container-infos">
+			<div class="container-img">
+				<img src="img/header/people.jpg">
+			</div>
+			<div class="row-n-col">
+				<div class="container-base">
+					<div class="name">
+						Barthélémy Chalvet
+					</div>
+					<ul class="row">
+						<li>3 clients à charge</li>
+						<li class="point"></li>
+						<li>En ligne : Il y a 2 jrs</li>
+						<li class="point"></li>
+						<li>Tel : 06 22 76 11 00</li>
+					</ul>
+					<ul class="row">
+						<li>
+							Martin Dupont <span>3 exploitations</span> <img src="img/lightbox/arrow-down.svg">
+							<ul class="dropdown">
+								<li>Sophie Dumont</li>
+								<li>Marc Lagrange</li>
+								<li>Martin Dupont</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="container-exploitations">
+					<div class="exploitation">
+						Elevage (Bovins) <span>20%</span>
+						<img src="img/agents/common/graph.svg">
+						<img src="img/agents/common/graph-neg.svg">
+					</div>
+					<div class="point"></div>
+					<div class="exploitation">
+						Elevage (Bovins) <span>20%</span>
+						<img src="img/agents/common/graph.svg">
+						<img src="img/agents/common/graph-neg.svg">
+					</div>
+					<div class="point"></div>
+					<div class="exploitation">
+						Elevage (Bovins) <span>20%</span>
+						<img src="img/agents/common/graph.svg">
+						<img src="img/agents/common/graph-neg.svg">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="map"></div>
+		<div class="container-action">
+			Actions
+			<div class="dropdown">
+				<div class="action modifier">
+					<img src="img/agents/clients/edit-picto.svg">
+					Modifier
+				</div>
+				<div class="action supprimer">
+					<img src="img/agents/agenda/supprimer.svg">
+					Supprimer
+				</div>
+			</div>
+		</div>
+	</div>
+
 </lightbox>
