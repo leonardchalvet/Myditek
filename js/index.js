@@ -454,6 +454,8 @@ $(window).on('load', function() {
 		initLightbox('.modifCapteur');
 	})
 
+	
+
 	function initLightbox(el) {
 		let height = $('main').height();
 		$('body').addClass('lightbox');

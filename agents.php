@@ -116,40 +116,45 @@
 						AJOUTER
 					</div>
 					<div class="container-action">
-						<img class="nohover" src="img/agents/common/plus.svg">
-						<div class="action">
-							<img src="img/agents/common/drone-picto.svg">
-							<div class="container-text">
-								DRONES
+						<div class="content">
+							<div class="container-add">
+								+
 							</div>
-						</div>
-						<div class="action">
-							<img src="img/agents/common/capteur-picto.svg">
-							<div class="container-text">
-								CAPTEURS
-							</div>
-						</div>
-						<div class="action">
-							<img src="img/agents/common/clients-picto.svg">
-							<div class="container-text">
-								CLIENTS
-							</div>
-						</div>
-						<div class="action">
-							<img src="img/agents/common/facture-picto.svg">
-							<div class="container-text">
-								FACTURES
-							</div>
-						</div>
-						<div class="action">
-							<img src="img/agents/common/agenda-picto.svg">
-							<div class="container-text">
-								AGENDA
+							<div class="container-el">
+								<div class="el">
+									<div class="icn">
+										<img src="img/agents/common/drone-picto.svg">
+									</div>
+									<div class="text">DRONE</div>
+								</div>
+								<div class="el">
+									<div class="icn">
+										<img src="img/agents/common/capteur-picto.svg">
+									</div>
+									<div class="text">CAPTEURS</div>
+								</div>
+								<div class="el">
+									<div class="icn">
+										<img src="img/agents/common/clients-picto.svg">
+									</div>
+									<div class="text">CLIENTS</div>
+								</div>
+								<div class="el">
+									<div class="icn">
+										<img src="img/agents/common/facture-picto.svg">
+									</div>
+									<div class="text">FACTURES</div>
+								</div>
+								<div class="el">
+									<div class="icn">
+										<img src="img/agents/common/agenda-picto.svg">
+									</div>
+									<div class="text">AGENDA</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-
 			</div>
 
 		</main>
