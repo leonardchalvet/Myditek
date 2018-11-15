@@ -24,6 +24,7 @@ $(window).on('load', function() {
 				case 'clients': $('main').addClass('clients'); 
 								initMapsClient();
 								break;
+				case 'agents': $('main').addClass('agents'); break;
 				case 'factures': $('main').addClass('factures'); break;
 				case 'agenda': $('main').addClass('agenda'); break;
 				default: break;

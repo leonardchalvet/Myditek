@@ -230,6 +230,22 @@ main {
 		}
 	}
 
+	&.agents {
+		#head .wrapper-tab-agents {
+			display: block;
+		}
+
+		#container {
+			margin-top: -100px;
+			.wrapper-tab-agents {
+				display: block;
+			}
+			.cta-common {
+				margin-top: 25px;
+			}
+		}
+	}
+
 	&.factures {
 		#head .wrapper-tab-factures {
 			display: block;

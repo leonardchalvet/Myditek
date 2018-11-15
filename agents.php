@@ -23,7 +23,7 @@
 
 		<?php include 'lightbox.php'; ?>
 
-		<main class="drones">
+		<main class="agents">
 			<div id="head">
 
 				<!-- DASHBOARD -->
@@ -56,6 +56,13 @@
 				<div class="wrapper wrapper-tab-clients">
 					<div class="container-text">
 						<h1>Clients</h1>
+					</div>
+				</div>
+
+				<!--AGENTS-->
+				<div class="wrapper wrapper-tab-agents">
+					<div class="container-text">
+						<h1>Agents</h1>
 					</div>
 				</div>
 
@@ -99,9 +106,7 @@
 				
 				<?php include 'clients_agents.php'; ?>
 				
-				<div class="wrapper wrapper-tab-agents">
-					
-				</div>
+				<?php include 'agents_agents.php'; ?>
 
 				<?php include 'factures_agents.php'; ?>
 
