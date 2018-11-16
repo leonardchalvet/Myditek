@@ -123,7 +123,7 @@
 					<div class="container-action">
 						<div class="content">
 							<div class="container-add">
-								+
+								<img src="img/agents/common/plus.svg">
 							</div>
 							<div class="container-el">
 								<div class="el">

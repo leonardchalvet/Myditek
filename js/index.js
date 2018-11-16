@@ -102,6 +102,9 @@ $(window).on('load', function() {
 	$('header.mobile .burger').click(function() {
 		$(this).parent().toggleClass('active');
 	})
+	$('#container .cta-common .container-action .container-add').click(function(){
+		$(this).parent().toggleClass('active');
+	})
 
 	/* STICKY PAGE AGENTS -> MESSAGERIE */
 
