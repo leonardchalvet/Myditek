@@ -6,12 +6,65 @@
 ================================*/
 
 body{
-	background-color: yellow;
+	
 }
 
 
 /*====================================
 =            END PAGE HOME           =
 =====================================*/
+
+/* --------------------------------------------------- */
+/* ******************** START 404 ******************** */
+/* --------------------------------------------------- */
+
+.wrapper-tab-404 {
+	width: 100%;
+	height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	.title {
+		font-family: Lato-Regular;
+		color: $colorMain_1;
+		font-size: 210px;
+		font-weight: 900;
+		line-height: 250px;
+	}
+
+	.text {
+		@include styleParagraphSmall();
+		font-size: 18px;
+	}
+
+	.button {
+		margin-top: 100px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 50px;	
+		width: 105px;	
+		border-radius: 4px;
+		background-color: $colorMain_4;
+		text-decoration: none;
+		font-family:ClanPro-Regular;
+		font-size: 13px;
+		color: #fff;
+	}
+
+	img {
+		position: absolute;
+		z-index: -1;
+		width: 100%;
+		bottom: 0;
+	}
+}
+
+/* --------------------------------------------------- */
+/* ********************* END 404 ********************* */
+/* --------------------------------------------------- */
 
 @import 'footer.scss';
