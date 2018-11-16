@@ -1003,9 +1003,9 @@
 						<li>
 							Martin Dupont <span>3 exploitations</span> <img src="img/lightbox/arrow-down.svg">
 							<ul class="dropdown">
-								<li>Sophie Dumont</li>
-								<li>Marc Lagrange</li>
-								<li>Martin Dupont</li>
+								<li><div class="point"></div>Sophie Dumont</li>
+								<li><div class="point"></div>Marc Lagrange</li>
+								<li class="neg"><div class="point"></div>Martin Dupont</li>
 							</ul>
 						</li>
 					</ul>
