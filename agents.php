@@ -23,7 +23,7 @@
 
 		<?php include 'lightbox.php'; ?>
 
-		<main class="agents">
+		<main class="dashboard">
 			<div id="head">
 
 				<!-- DASHBOARD -->

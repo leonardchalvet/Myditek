@@ -16,6 +16,7 @@ $(window).on('load', function() {
 		if(data != undefined) {
 
 			$('main').removeClass();
+			$('header.mobile').removeClass('active');
 
 			switch (data) {
 				case 'dashboard': $('main').addClass('dashboard'); 
@@ -42,6 +43,7 @@ $(window).on('load', function() {
 		if(data != undefined) {
 
 			$('main').removeClass();
+			$('header.mobile').removeClass('active');
 
 			switch (data) {
 				case 'drones': $('main').addClass('drones'); 
@@ -73,6 +75,7 @@ $(window).on('load', function() {
 		if(data != undefined) {
 
 			$('main').removeClass();
+			$('header.mobile').removeClass('active');
 
 			switch (data) {
 				case 'all': $('main').addClass('messagerie'); break;
@@ -88,11 +91,16 @@ $(window).on('load', function() {
 		let data = $(this).attr('data-tab');
 		if(data != undefined) {
 			$('main').removeClass();
+			$('header.mobile').removeClass('active');
 			switch (data) {
 				case 'profil': $('main').addClass('profil'); break;
 				default: break;
 			}
 		}
+	})
+
+	$('header.mobile .burger').click(function() {
+		$(this).parent().toggleClass('active');
 	})
 
 	/* STICKY PAGE AGENTS -> MESSAGERIE */
