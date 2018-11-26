@@ -63,7 +63,7 @@ main
 
 	/*----------  MAIN COLORS  ----------*/
 	$colorMain_1: #1C2D4F;
-	$colorMain_2: #9495A0;
+	$colorMain_2: #9B99BE;
 	$colorMain_3: #937BF3;
 	$colorMain_4: #E3667A;
 	$colorMain_5: #35C850;
@@ -131,8 +131,8 @@ main
 
 	/*----------  PARAGRAPH SMALL  ----------*/
 		/*----------  DESKTOP  ----------*/
-		$paragraphSmall_textsize_desktop: 14px;
-		$paragraphSmall_lineheight_desktop: 24px;
+		$paragraphSmall_textsize_desktop: 13px;
+		$paragraphSmall_lineheight_desktop: 16px;
 
 
 	/*----------  LINK  ----------*/
@@ -374,15 +374,15 @@ main
     padding:0 10px;
 }
 .styledSelect:after {
-    content:"";
-    width: 0;
-    height: 0;
-    border: 5px solid transparent;
-    border-color: black transparent transparent transparent;
-    position:absolute;
-    top: 50%;
-    right: 15px;
-    transform: translateY(-2px);
+    content: " ";
+	position: absolute;
+	width: 5px;
+    height: 5px;
+    margin: 8px;
+	border-right: 1.4px solid #0B1D4C;
+	border-bottom: 1.4px solid #0B1D4C;
+	right: 5%;
+	transform: translateY(-50%) rotate(45deg);
 }
 .options {
     display:none;
@@ -469,7 +469,7 @@ lightbox {
 				width: 100%;
 				text-align: center;
 				margin-top: 25px;
-				padding-bottom: 25px;
+				padding-bottom: 30px;
 				border-bottom: 1px solid #E9E9F4;
 
 				span {
@@ -510,14 +510,14 @@ lightbox {
 				color: #0B1D4C;
 				span {
 					@include styleParagraphSmall;
-					font-size: 12px;
+					font-size: 13px;
 				}
 			}
 		}
 
 		.container-form {
 			width: 100%;
-			margin-top: 35px;
+			margin-top: 30px;
 
 			.input {
 				margin-bottom: 25px;
@@ -546,6 +546,14 @@ lightbox {
 							background-color: #fff;
 						}
 					}
+				}
+
+				input:read-only { 
+					color: $colorMain_2;
+				}
+
+				.styledSelect {
+					line-height: 18px;
 				}
 
 				.select {
@@ -583,6 +591,7 @@ lightbox {
 			}
 
 			.container-action {
+				margin-top: 30px;
 				display: flex;
 				justify-content: space-between;
 				height: 50px;

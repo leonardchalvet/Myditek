@@ -70,12 +70,12 @@
 						&:after {
 							content: " ";
 							position: absolute;
-							top: -3px;
-							left: -3px;
+							top: -4px;
+							left: -4px;
 							width: 39px;
 							height: 39px;
-							border-radius: 11px;
-							border: 1px solid $colorMain_4;
+							border-radius: 12px;
+							border: 2px solid $colorMain_4;
 						}
 
 						img {
@@ -90,22 +90,22 @@
 					position: relative;
 					cursor: pointer;
 					margin-top: 20px;
-					padding-bottom: 5px;
+					padding-bottom: 12px;
 					@include styleParagraphSmall();
 					opacity: 1;
+					width: 60px;
 
 					&:after {
 						content: " ";
 						position: absolute;
-						top: 50%;
-						left: 50%;
-						transform: translate(-50%,-50%);
+						top: -2px;
+						right: -5%;
 						width: 4px;
 						height: 4px;
 						margin: 8px;
 						border-right: 1.4px solid $colorMain_2;
 						border-bottom: 1.4px solid $colorMain_2;
-						transform: translateY(75%) rotate(45deg);
+						transform: rotate(45deg);
 					}
 
 					.dropdown {
@@ -132,10 +132,6 @@
 								margin-right: 15px;
 								height: 12px;	
 								width: 10px;
-							}
-
-							&:hover {
-								text-decoration: underline;
 							}
 						}
 					}
@@ -191,10 +187,6 @@
 			&.show {
 				display: block;
 			}
-
-			.submit {
-				background-color: $colorMain_5;
-			}
 		}
 
 		.password {
@@ -249,6 +241,7 @@
 
 				.titre {
 					@include styleH5();
+					font-family: Lato-regular;
 					overflow: hidden;
 					height: 30px;
 					width: 150px;
@@ -276,6 +269,7 @@
 					padding-bottom: 5px;
 					@include styleParagraphSmall();
 					opacity: 1;
+					line-height: 24px;
 
 					&:after {
 						content: " ";
@@ -315,10 +309,6 @@
 								width: 10px;
 							}
 
-							&:hover {
-								text-decoration: underline;
-							}
-
 							&:last-child {
 								margin-bottom: 15px;
 							}
@@ -341,6 +331,7 @@
 				border: 0.5px solid #1C2D4F;
 				background-color: transparent;
 				@include styleH5();
+				font-family: Lato-regular;
 
 				.container-img {
 					display: flex;
@@ -398,6 +389,10 @@
 					/*&.neg {
 						border: 0.5px solid #E9E5FD;
 					}*/
+
+					&::placeholder {
+						color: $colorMain_2;
+					}
 				}
 
 				.erreur {
@@ -507,6 +502,7 @@
 			}
 
 			.submit {
+				font-family: Lato-regular;
 				cursor: pointer;
 				height: 50px;	
 				width: 105px;	
@@ -518,9 +514,15 @@
 				color: #fff;
 				outline: none;
 				border: none;
+				font-weight: 500;
+				font-size: 13px;
 
 				&:hover {
 					opacity: .9;
+				}
+
+				&.validate {
+					background-color: $colorMain_5;
 				}
 			}
 		}

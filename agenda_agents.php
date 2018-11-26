@@ -56,6 +56,26 @@
 					</ul>
 				</div>
 			</div>
+
+			<!-- Lors de la boucle mettre ce block en default avec la date -->
+			<?php  
+			for($i=1; $i <= 13; $i++ ) {
+				echo '<div class="day none" data-day="'.$i.'" data-month="11" data-year="2018">
+						<div class="title">'.$i.' November</div>'
+			?>
+				<div class="planing">
+					<ul class="time">
+						<?php  
+						for($j=9; $j <= 18; $j++ ) {
+							echo '<li data-hour="'.$j.'" >'. ( $j < 10 ? '0'.$j : $j ).'h00</li>';
+						}
+						?>
+					</ul>
+				</div>
+			</div>
+			<?php } ?>
+
+
 			<div class="day" data-day="14" data-month="11" data-year="2018">
 				<div class="title">14 November</div>
 

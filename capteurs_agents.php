@@ -1,7 +1,7 @@
 <div class="wrapper wrapper-tab-capteurs produit">
 	<div class="message-search">
 		<div class="container-text">
-			32 Drones disponibles
+			32 capteurs disponibles
 		</div>
 		<div class="container-action">
 			<div class="new-produit capteur">

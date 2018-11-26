@@ -23,7 +23,7 @@
 
 		<?php include 'lightbox.php'; ?>
 
-		<main class="dashboard">
+		<main class="profil">
 			<div id="head">
 
 				<!-- DASHBOARD -->

@@ -19,8 +19,10 @@
 			</div>
 			<div class="messages-list">
 				<ul>
-					<?php for($i=0;$i<15;$i++) { ?>
-					<li>
+					<?php 
+					for($i=0;$i<15;$i++) { 
+						if($i == 2) { echo('<li class="active">'); } else { echo('<li>'); };
+					?>
 						<div class="logo">
 							<img class="nohover" src="img/agents/agenda/iconemessage-black.svg">
 							<img class="hover" src="img/agents/agenda/iconemessage-violet.svg">

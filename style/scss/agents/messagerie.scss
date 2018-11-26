@@ -108,7 +108,7 @@
 						list-style: none;
 						display: flex;
 						align-items: center;
-						padding: 25px 25px;
+						padding: 30px 25px;
 						cursor: pointer;
 
 						.logo {
@@ -119,7 +119,7 @@
 								display: none;
 							}
 						}
-						&:hover {
+						&:hover, &.active {
 
 							background-color: #E9E9F4;
 
@@ -145,6 +145,7 @@
 							p {
 								@include styleParagraphSmall;
 								font-size: 13px;
+								line-height:16px
 							}
 						}
 
@@ -282,6 +283,7 @@
 					.date {
 						@include styleParagraphSmall;
 						font-size: 13px;
+						margin-bottom: 20px;
 					}
 					.message {
 						@include styleParagraphMedium;
@@ -330,6 +332,7 @@
 						font-family:Lato-Regular;
 						font-size: 13px;
 						color: #fff;
+						font-weight: 500;
 
 						transition-duration: 0.2s;
 

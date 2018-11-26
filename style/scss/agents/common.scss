@@ -53,6 +53,18 @@
 		margin-left: 0;
 		position: relative;
 		display: none;
+
+		.container-action {
+			.dropdown .action {
+				padding: 10px;
+				margin: 5px;
+				border-radius: 4px;
+				width: 135px;
+			}
+			.dropdown .action:hover {
+				background-color: rgba(0,0,0,0.1);
+			}
+		}
 	}
 
 	.cta-common {

@@ -293,29 +293,29 @@
 					</div>
 					<div class="input">
 						<label>Type d'exploitation</label>
-						<input type="text" name="typeExploitation">
+						<input type="text" name="typeExploitation" value="test" readonly="readonly">
 					</div>
 					<div class="input">
 						<label>Téléphone</label>
-						<input type="text" name="telExploitation">
+						<input type="text" name="telExploitation" value="test" readonly="readonly">
 					</div>
 				</div>
 				<div class="col">
 					<div class="input">
 						<label>Adresse</label>
-						<input type="text" name="adressExploitation">
+						<input type="text" name="adressExploitation" value="test" readonly="readonly">
 					</div>
 					<div class="input">
 						<label>Complément</label>
-						<input type="text" name="complementExploitation">
+						<input type="text" name="complementExploitation" value="test" readonly="readonly">
 					</div>
 					<div class="input">
 						<label>Code postal</label>
-						<input type="text" name="codepostalExploitation">
+						<input type="text" name="codepostalExploitation" value="test" readonly="readonly">
 					</div>
 					<div class="input">
 						<label>Email</label>
-						<input type="text" name="mailExploitation">
+						<input type="text" name="mailExploitation" value="test" readonly="readonly">
 					</div>
 				</div>
 			</div>
