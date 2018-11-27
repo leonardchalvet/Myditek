@@ -40,7 +40,7 @@
 		
 		<div class="el">
 			<div class="head">
-				<h4>Colliers actif</h4>
+				<h4>Colliers actifs</h4>
 				<div class="container-dropdown">
 					<div class="container-rslt">
 						<div class="rslt">
@@ -146,7 +146,7 @@
 
 		<div class="el">
 			<div class="head head-2">
-				<h4>Rendez-vous repporté / En attente</h4>
+				<h4>rendez-vous reportés / En attente</h4>
 				<div class="container-dropdown">
 					<div class="container-rslt">
 						<div class="rslt">
@@ -204,6 +204,8 @@
 					</div>
 					<svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862"xmlns="http://www.w3.org/2000/svg">
 						<circle class="circle-chart__background" stroke-width="1" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+					</svg>
+					<svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862"xmlns="http://www.w3.org/2000/svg">
 						<?php $pourcent = 100 - 71; //VALEUR A CHANGER POUR LE % => 100 - VALEUR?>
 						<circle class="circle-chart__circle" <?php echo 'style="stroke-dashoffset:'.$pourcent.';"'; ?> stroke-width="1" stroke-dasharray="25,100" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
 					</svg>

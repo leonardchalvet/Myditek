@@ -135,21 +135,21 @@
 						<div class="input">
 							<label>Date de création</label>
 							<div class="date">
-								<input type="text" name="jourCreation">
+								<input type="text" name="jourCreation" placeholder="JJ">
 								&nbsp;/&nbsp;
-								<input type="text" name="moisCreation">
+								<input type="text" name="moisCreation" placeholder="MM">
 								&nbsp;/&nbsp;
-								<input type="text" name="anneeCreation">
+								<input type="text" name="anneeCreation" placeholder="AAAA">
 							</div>
 						</div>
 						<div class="input">
 							<label>Date d'échéance de payement</label>
 							<div class="date">
-								<input type="text" name="jourPayement">
+								<input type="text" name="jourPayement" placeholder="JJ">
 								&nbsp;/&nbsp;
-								<input type="text" name="moisPayement">
+								<input type="text" name="moisPayement" placeholder="MM">
 								&nbsp;/&nbsp;
-								<input type="text" name="anneePayement">
+								<input type="text" name="anneePayement" placeholder="AAAA">
 							</div>
 						</div>
 						<div class="input">
@@ -231,7 +231,7 @@
 
 	<div class="box payerFacture">
 		<div class="container-title">
-			Ajout
+			Nom de la facture
 		</div>
 		<ul>
 			<li>N°de la facture : 01889887</li>
@@ -257,7 +257,9 @@
 				</div>
 			</div>
 			<div class="input check">
-				<input type="checkbox" name="save">Se souvenir de moi
+				<input type="checkbox" name="save">
+				<span></span>
+				Se souvenir de moi
 			</div>
 			<div class="container-action">
 				<button class="button validate">Payer 500.00€</button>
@@ -418,29 +420,29 @@
 				<div class="col">
 					<div class="input">
 						<label>Nom</label>
-						<input type="text" name="nomClient">
+						<input type="text" name="nomClient" value="Chalvet">
 					</div>
 					<div class="input">
 						<label>Prénom</label>
-						<input type="text" name="prenomClient">
+						<input type="text" name="prenomClient" value="Barthélémy">
 					</div>
 					<div class="input">
 						<label>Téléphone</label>
-						<input type="text" name="telClient">
+						<input type="text" name="telClient" value="0678595978">
 					</div>
 				</div>
 				<div class="col">
 					<div class="input">
 						<label>Adresse</label>
-						<input type="text" name="adressClient">
+						<input type="text" name="adressClient" value="13 rue de le nostre">
 					</div>
 					<div class="input">
 						<label>Code postal</label>
-						<input type="text" name="codepostalClient">
+						<input type="text" name="codepostalClient" value="76000">
 					</div>
 					<div class="input">
 						<label>Email</label>
-						<input type="text" name="mailClient">
+						<input type="text" name="mailClient" value="Barthelemy@gmail.com">
 					</div>
 				</div>
 			</div>

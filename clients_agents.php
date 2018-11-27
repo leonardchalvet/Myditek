@@ -49,7 +49,7 @@
 							</div>
 							<div class="point"></div>
 							<div class="online">
-								En ligne il y a 2jrs
+								En ligne il y a 2 jrs
 							</div>
 						</div>
 					</div>

@@ -127,6 +127,7 @@
 					.container-infos .infos ul li {
 						&:nth-child(5) span, &:nth-child(7) span {
 							color: $colorMain_4;
+							opacity: 1;
 						}
 					}			
 				}
@@ -211,12 +212,13 @@
 					.container-action {
 						position: absolute;
 						top: 15px;
-	    				right: 40px;
+	    				right: 30px;
 	    				cursor: pointer;
 						@include styleParagraphSmall;
 						opacity: 1;
 						padding-left: 5px;
 						padding-bottom: 15px;
+						line-height: 24px;
 
 						&:after {
 							content: " ";
@@ -292,8 +294,9 @@
 						padding: 10px 55px 10px 0;
 						opacity: 1;
 						&:first-child {
-							width: 560px;
-							padding-right: 250px;
+							width: 400px;
+							padding-right: 175px;
+							box-sizing: content-box;
 						}
 						&:last-child {
 							padding-right: 0;

@@ -1,7 +1,7 @@
 <div class="wrapper wrapper-tab-factures">
 	<div class="message-search">
 		<div class="container-text">
-			32 Factures disponible
+			32 factures disponibles
 		</div>
 		<div class="container-action">
 			<div class="new-facture">

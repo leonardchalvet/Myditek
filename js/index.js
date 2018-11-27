@@ -140,6 +140,13 @@ $(window).on('load', function() {
 	$('.wrapper-tab-factures .container-factures .facture .container-vissible .container-infos .infos .btn').click(function() {
 		$(this).parent().parent().parent().next().toggleClass('show');
 	});
+	$('lightbox .box.payerFacture .container-form .input.check span').click(function(){
+		let bool = true;
+		if($('lightbox .box.payerFacture .container-form .input.check input').is(':checked')) {
+			bool = false;
+		}
+		$('lightbox .box.payerFacture .container-form .input.check input').prop( "checked", bool);
+	})
 	/* END PAGE FACTURES */
 
 

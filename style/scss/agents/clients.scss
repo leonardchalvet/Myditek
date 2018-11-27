@@ -164,6 +164,7 @@
 				right: 35px;
 				@include styleParagraphSmall();
 				opacity: 1;
+				line-height: 24px;
 				&:after {
 					content: " ";
 					position: absolute;
@@ -203,10 +204,6 @@
 							margin-right: 15px;
 							height: 12px;	
 							width: 14px;
-						}
-
-						&:hover {
-							text-decoration: underline;
 						}
 					}
 				}
@@ -355,6 +352,7 @@
 					}
 
 					.row-n-col {
+						width: 200px;
 						display: flex;
 						flex-direction: column;
 					}
