@@ -81,11 +81,10 @@
 						}
 
 						li {
-							padding: 4px;
+							padding: 10px;
 							border-radius: 4px;
 							list-style: none;
 							color: $colorMain_1;
-							margin-bottom: 10px;
 							@include styleParagraphSmall;
 
 							&:last-child {
@@ -148,6 +147,7 @@
 						@include styleParagraphSmall;
 						border: 1px solid #D4D3E3;
 						opacity: 1;
+						line-height: 22px;
 						&:nth-child(1){
 							border-radius: 15px 0px 0px 15px;
 							padding: 0px 7px 0px 16px;
@@ -490,6 +490,14 @@
 			border-radius: 4px;
 			width: 100%;
 			height: 100%;
+
+			.button {
+				cursor: pointer;
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				z-index: 100;
+			}
 		}
 	}
 }

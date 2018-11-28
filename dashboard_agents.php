@@ -249,7 +249,7 @@
 					<div class="container-title">
 						Survol passé
 					</div>
-					<a class="container-coord" href="#">
+					<a class="container-coord" onclick="gotopage('drones')">
 						<div class="coord" id="butC1"></div>
 						<div class="date">
 							18/09/18
@@ -259,7 +259,7 @@
 							<img src="img/agents/dashboard/right-arrow.svg">
 						</div>
 					</a>
-					<a class="container-coord" href="#">
+					<a class="container-coord" onclick="gotopage('drones')">
 						<div class="coord" id="butC2"></div>
 						<div class="date">
 							20/09/18
@@ -269,7 +269,7 @@
 							<img src="img/agents/dashboard/right-arrow.svg">
 						</div>
 					</a>
-					<a class="container-coord" href="#">
+					<a class="container-coord" onclick="gotopage('drones')">
 						<div class="coord" id="butC3"></div>
 						<div class="date">
 							21/09/18
@@ -299,6 +299,52 @@
 
 <!-- GRAPH -->
 <script type="text/javascript">
+
+function ZoomControl(controlDiv, map) {
+  
+  // Creating divs & styles for custom zoom control
+  controlDiv.style.padding = '5px';
+  controlDiv.classList.add("container-zoom");
+
+  // Set CSS for the control wrapper
+  var controlWrapper = document.createElement('div');
+  controlWrapper.style.cursor = 'pointer';
+  controlWrapper.style.display = 'flex';
+  controlWrapper.style.flexDirection = 'column';
+  controlWrapper.style.justifyContent = 'space-between';
+  controlWrapper.style.width = '75px'; 
+  controlWrapper.style.height = '100px';
+  controlDiv.appendChild(controlWrapper);
+  
+  // Set CSS for the zoomIn
+  var zoomInButton = document.createElement('div');
+  zoomInButton.style.width = '60px'; 
+  zoomInButton.style.height = '50px';
+  /* Change this to be the .png image you want to use */
+  zoomInButton.style.backgroundPosition = '100% 40%';
+  zoomInButton.style.backgroundImage = 'url("../img/lightbox/btn+.svg")';
+  controlWrapper.appendChild(zoomInButton);
+    
+  // Set CSS for the zoomOut
+  var zoomOutButton = document.createElement('div');
+  zoomOutButton.style.width = '60px'; 
+  zoomOutButton.style.height = '50px';
+  /* Change this to be the .png image you want to use */
+  zoomOutButton.style.backgroundPosition = '100% 40%';
+  zoomOutButton.style.backgroundImage = 'url("../img/lightbox/btn-.svg")';
+  controlWrapper.appendChild(zoomOutButton);
+
+  // Setup the click event listener - zoomIn
+  google.maps.event.addDomListener(zoomInButton, 'click', function() {
+    map.setZoom(map.getZoom() + 1);
+  });
+    
+  // Setup the click event listener - zoomOut
+  google.maps.event.addDomListener(zoomOutButton, 'click', function() {
+    map.setZoom(map.getZoom() - 1);
+  });    
+}
+
 function initMapsDashboard() {
 		//Les trois bouttons coord => changer les coord - DASHBOARD
 	let butC1 = new google.maps.Map(document.getElementById('butC1'), {
@@ -334,6 +380,13 @@ function initMapsDashboard() {
 
 	// map dashboard
 	let map = new google.maps.Map(document.getElementById('map'), {
+		center: { lat: 49.4431, lng: 1.0993 },
+		zoom: 10,
+		disableDefaultUI: true
+	});
+
+	// map dashboard lightbox
+	let mapL = new google.maps.Map(document.getElementById('mapL'), {
 		center: { lat: 49.4431, lng: 1.0993 },
 		zoom: 10,
 		disableDefaultUI: true
@@ -443,6 +496,79 @@ function initMapsDashboard() {
 	markers.forEach(function(marker) {
 		google.maps.event.addListener(marker, 'click', closeInfoWindow);
 	});
+
+
+	/* LIGHTBOX */
+	features.forEach(function(feature) {
+		let infoWindow = new google.maps.InfoWindow({
+			content: feature.content
+		});
+		let marker = new google.maps.Marker({
+			position: feature.position,
+			map: mapL,
+			title: feature.name,
+			icon: icons[0],
+			infowindow: infoWindow
+		});
+		marker.addListener('click', function() {
+			setTimeout(function(){
+				infoWindow.open(mapL, marker);
+				marker.setIcon(icons[1]);
+			}, 250);
+		});
+		markers.push(marker);
+
+		//STYLE INFOWINDOW
+		google.maps.event.addListener(infoWindow, 'domready', function() {
+
+			var iwOuter = $('.gm-style-iw');
+			var iwBackground = iwOuter.prev();
+
+			iwBackground.children(':nth-child(2)').css({'display' : 'none'});
+			iwBackground.children(':nth-child(4)').css({'display' : 'none'});
+
+			iwBackground.children(':nth-child(1)').attr('style', function(i,s){ return s + 'left: 76px !important;'});
+			iwBackground.children(':nth-child(3)').attr('style', function(i,s){ return s + 'left: 76px !important;'});
+			iwBackground.children(':nth-child(3)').find('div').children().css({'box-shadow': 'rgba(72, 181, 233, 0.6) 0px 1px 6px', 'z-index' : '1'});
+
+			let iwCloseBtn = iwOuter.next();
+			iwCloseBtn.css({
+			'display':'none'
+			});
+		});
+	});
+
+	closeInfoWindow = function() {
+		markers.forEach(function(marker) {
+			marker.infowindow.close(mapL, marker);
+			marker.setIcon(icons[0]);
+		});
+	};
+	google.maps.event.addListener(mapL, 'click', closeInfoWindow);
+	markers.forEach(function(marker) {
+		google.maps.event.addListener(marker, 'click', closeInfoWindow);
+	});
+
+	var zoomControlDiv = document.createElement('div');
+	var zoomControl = new ZoomControl(zoomControlDiv, mapL);
+
+	zoomControlDiv.index = 1;
+	mapL.controls[google.maps.ControlPosition.TOP_LEFT].push(zoomControlDiv);
+
+
+
+
+	$('.wrapper-tab-dashboard .container-map #map').append('<img class="button" src="img/agents/clients/bigger-map.svg">');
+
+	setTimeout(function() {
+		$('.wrapper-tab-dashboard .container-map #map .button').click(function() {
+			let height = $('main').height();
+			$('body').addClass('lightbox');
+			$('lightbox').addClass('active');
+			$('lightbox .zoomDashboard').addClass('active');
+			$('body').scrollTop(0);
+		})
+	}, 500);
 }
 </script>
 <script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>

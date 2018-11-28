@@ -19,11 +19,28 @@
 	
 	<body>
 
+		<script type="text/javascript">
+			/* FONCTION A APPELER POUR CHANGER DE PAGE POUR LES BACK */
+			function gotopage(page) {
+				$('main').removeClass();
+				$('main').addClass(page);
+
+				switch (page) {
+					case 'dashboard': initMapsDashboard(); break; 
+					case 'clients':   initMapsClient();    break;
+					case 'agents':    initMapsAgents();    break;
+					case 'drones':    initMapsDrones();    break;
+					case 'capteurs':  initMapsCapteurs();  break;
+					default: break;
+				}
+			}
+		</script>
+
 		<?php include 'header.php'; ?>
 
 		<?php include 'lightbox.php'; ?>
 
-		<main class="agents">
+		<main class="dashboard">
 			<div id="head">
 
 				<!-- DASHBOARD -->

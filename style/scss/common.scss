@@ -1114,6 +1114,21 @@ lightbox {
 			}
 		}
 
+		&.zoomDashboard {
+			display: flex;
+			justify-content: center;
+			width: 800px;
+			.map {
+				height: 630px;	
+				width: 740px;
+			}
+
+			.container-zoom {
+				top: calc(100% - 120px) !important;
+				left: calc(100% - 60px) !important;
+			}
+		}
+
 		&.infoDrone, &.infoCapteur, &.infoAgents {
 			align-items: flex-start;
 			flex-flow: row wrap;

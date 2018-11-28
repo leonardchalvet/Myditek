@@ -1049,4 +1049,8 @@
 		</div>
 	</div>
 
+	<div class="box big zoomDashboard">
+		<div class="map" id="mapL"></div>
+	</div>
+
 </lightbox>

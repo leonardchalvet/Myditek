@@ -218,6 +218,8 @@ header {
 
 					.container-action {
 						position: absolute;
+						top: 50%;
+    					transform: translateY(-50%);
 						right: 25px;
 						display: flex;
 						align-items: center;
