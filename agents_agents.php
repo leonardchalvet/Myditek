@@ -1,7 +1,7 @@
 <div class="wrapper wrapper-tab-agents">
 	<div class="message-search">
 		<div class="container-text">
-			32 agents disponible
+			32 agents disponibles
 		</div>
 		<div class="container-action">
 			<div class="new-agents">

@@ -558,7 +558,7 @@
 						</div>
 						<div class="point"></div>
 						<div class="capteur">
-							5 capteurs installées
+							5 capteurs installés
 						</div>
 					</div>
 				</div>
@@ -586,7 +586,7 @@
 						Adresse : <span>1451 boulebard magenta, 75010 , Paris</span>
 					</div>
 					<div class="perso">
-						Téléphone : <span>06 22 76 11 00</span>
+						Téléphone : <span><a>06 22 76 11 00</a></span>
 					</div>
 					<div class="perso">
 						Offre : <span>Drone + Capteur</span>
@@ -999,7 +999,7 @@
 						<li class="point"></li>
 						<li>En ligne : Il y a 2 jrs</li>
 						<li class="point"></li>
-						<li>Tel : 06 22 76 11 00</li>
+						<li><a>Tel : 06 22 76 11 00</a></li>
 					</ul>
 					<ul class="row">
 						<li>
