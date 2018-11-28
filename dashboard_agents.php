@@ -558,7 +558,7 @@ function initMapsDashboard() {
 
 
 
-	$('.wrapper-tab-dashboard .container-map #map').append('<img class="button" src="img/agents/clients/bigger-map.svg">');
+	$('.wrapper-tab-dashboard .container-map #map').append('<img class="button" src="img/agents/dashboard/zoom.svg">');
 
 	setTimeout(function() {
 		$('.wrapper-tab-dashboard .container-map #map .button').click(function() {

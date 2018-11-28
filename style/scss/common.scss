@@ -1115,7 +1115,6 @@ lightbox {
 		}
 
 		&.zoomDashboard {
-			display: flex;
 			justify-content: center;
 			width: 800px;
 			.map {
@@ -1157,7 +1156,7 @@ lightbox {
 				@include styleParagraphSmall();
 				opacity: 1;
 				color: $colorMain_1;
-				margin-bottom: 20px;
+				margin: 20px 0;
 
 				li {
 					list-style: none;
@@ -1221,7 +1220,7 @@ lightbox {
 						line-height: 0;
 
 						img {
-							margin-right: 15px;
+							margin-right: 10px;
 							height: 12px;	
 							width: 14px;
 						}
@@ -1302,7 +1301,6 @@ lightbox {
 
 				.content {
 					width: 550px;
-					margin-top: 5px;
 				}
 			}
 
@@ -1386,6 +1384,7 @@ lightbox {
 								@include styleParagraphSmall;
 								font-size: 13px;
 								line-height: 20px;
+								width: 275px;
 							}
 						}
 

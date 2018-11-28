@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="170px" height="110px" viewBox="0 0 170 110" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>E651F8C4-3297-41AC-8F16-269801A171C4</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="110" height="50" rx="5"></rect>
+        <filter x="-45.5%" y="-80.0%" width="190.9%" height="300.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="10" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="15" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="DesignDashboardAgents-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1a-Dashboard-Overview" transform="translate(-1033.000000, -770.000000)">
+            <g id="tables" transform="translate(55.000000, 345.000000)">
+                <g id="button-agrandir-big" transform="translate(1008.000000, 445.000000)">
+                    <g id="Rectangle-3">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                    <text id="Agrandir" font-family="Helvetica" font-size="13" font-weight="normal" fill="#0B1D4C">
+                        <tspan x="40" y="30">Agrandir</tspan>
+                    </text>
+                    <g id="agrandir-" transform="translate(16.000000, 17.000000)" fill="#937BF3">
+                        <circle id="Oval-3" opacity="0.1" cx="8.5" cy="8.5" r="8.5"></circle>
+                        <path d="M6.22321429,10.847285 L10.2401422,6.83035714 L8.87946429,6.83035714 C8.66989195,6.83035714 8.5,6.6604652 8.5,6.45089286 C8.5,6.24132052 8.66989195,6.07142857 8.87946429,6.07142857 L11.15625,6.07142857 C11.3658223,6.07142857 11.5357143,6.24132052 11.5357143,6.45089286 L11.5357143,8.72767857 C11.5357143,8.93725091 11.3658223,9.10714286 11.15625,9.10714286 C10.9466777,9.10714286 10.7767857,8.93725091 10.7767857,8.72767857 L10.7767857,7.36700068 L6.75985783,11.3839286 L8.12053571,11.3839286 C8.33010805,11.3839286 8.5,11.5538205 8.5,11.7633929 C8.5,11.9729652 8.33010805,12.1428571 8.12053571,12.1428571 L5.84375,12.1428571 C5.63417766,12.1428571 5.46428571,11.9729652 5.46428571,11.7633929 L5.46428571,9.48660714 C5.46428571,9.2770348 5.63417766,9.10714286 5.84375,9.10714286 C6.05332234,9.10714286 6.22321429,9.2770348 6.22321429,9.48660714 L6.22321429,10.847285 L6.22321429,10.847285 Z" id="fleches-agrandir-" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
