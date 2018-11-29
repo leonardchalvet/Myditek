@@ -98,6 +98,7 @@
 				position: relative;
 				z-index: 1;
 				position: relative;
+
 				.container-add{
 					position: absolute;
 					left: 0px;
@@ -357,16 +358,64 @@ main {
 
 	#container .cta-common {
 		width: auto;
+		z-index: 0;
 	}
 	#container .cta-common .container-action {
 		position: relative;
+
+		&:hover{
+			&:before{
+				transform:translateY(0px);
+			}
+			.container-add{
+				opacity: 1;
+			}
+			.container-el .el{
+				opacity: 0;
+			}
+		}
+	}
+	#container .cta-common.active {
+		.container-action .content {
+			&:before{
+				transform:translateY(0px);
+			}
+			.container-el {
+				transform: translateY(20px);
+			}
+			.container-el .el{
+				@for $i from 1 to 10 {
+				    &:nth-child(#{$i}) { transition-delay: $i * 0.1s; }
+				}
+				opacity: 1;
+				transform: scale(1);
+			}
+		}
+	}
+	#container .cta-common .container-action .content {
+		width: 245px;
+		height: 370px;
 	}
 	#container .cta-common .container-action:before {
 		content: none;
 	}
-	#container .cta-common .container-action .content .container-el .el .icn img:hover {
-		transform: rotate(45deg);
+	#container .cta-common .container-action .content .container-el .el {
+		width: 50%;
 	}
+	#container .cta-common .container-action .content .container-el .el:nth-child(1) {
+		border-radius: 10px 0 0 0;
+	}
+	#container .cta-common .container-action .content .container-el .el:nth-child(2) {
+		border-radius: 0 10px 0 0;
+	}
+	/*
+	#container .cta-common .container-action .content .container-el .el:nth-child(5) {
+		border-radius: 0 0 0 10px;
+	}
+	#container .cta-common .container-action .content .container-el .el:nth-child(6) {
+		border-radius: 0 0 10px 0;
+	}
+	*/
 	#container .cta-common .container-text {
 		display: none;
 	}
@@ -390,17 +439,26 @@ main {
 	#container .cta-common .container-action .container-add img {
 		transition-duration: 0.2s;
 	}
-	#container .cta-common .container-action .content.active .container-add img {
+	#container .cta-common.active .container-action .content .container-add img {
 		transform: rotate(45deg) scale(1.1);
 	}
 
 	#container .cta-common .container-action .content .container-el {
 		position: absolute;
 		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
 		border-radius: 10px;
 		background-color: #F8CC6A;
 		width: 245px;
-		transform: translateY(100px);
+		height: 260px;
+		transform: translateY(400px);
+		transition-duration: 0.4s;
+	}
+
+	main #container .wrapper {
+		z-index: 1;
+		transform: translateY(-245px);
 	}
 }
 

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="5px" height="5px" viewBox="0 0 5 5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>top</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Responsive-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1a-Dashboard-Overview-responsive" transform="translate(-286.000000, -2365.000000)" fill="#937BF3" fill-rule="nonzero">
+            <g id="top-button-" transform="translate(260.000000, 2342.000000)">
+                <g id="icon" transform="translate(20.000000, 17.000000)">
+                    <path d="M8.87946429,11 L8.12053571,11 L8.12053571,7.26674591 L7.15839115,8.22889047 C7.01020113,8.37708049 6.76993763,8.37708049 6.62174761,8.22889047 C6.47355759,8.08070045 6.47355759,7.84043695 6.62174761,7.69224693 L8.23167823,6.08231631 C8.37986825,5.93412629 8.62013175,5.93412629 8.76832177,6.08231631 L10.3782524,7.69224693 C10.5264424,7.84043695 10.5264424,8.08070045 10.3782524,8.22889047 C10.2300624,8.37708049 9.98979887,8.37708049 9.84160885,8.22889047 L8.87946429,7.26674591 L8.87946429,11 Z" id="top"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -286,6 +286,13 @@
 				</div>
 			</div>
 		</div>
+
+		<div class="goTop">
+			<div class="content-arrow">
+				<img src="img/agents/common/arrowTop.svg">
+			</div>
+			Top
+		</div>
 	</div>
 
 	<div class="container-map">
@@ -377,6 +384,12 @@ function initMapsDashboard() {
 	});
 
 	/* ---------------- */
+
+	if (window.matchMedia("(max-width: 800px)").matches) {
+		let copyMap = $('.container-map').clone();
+		$('.container-map').remove();
+		$('.wrapper-tab-dashboard .container-el .el:nth-child(2)').append(copyMap);
+	}
 
 	// map dashboard
 	let map = new google.maps.Map(document.getElementById('map'), {

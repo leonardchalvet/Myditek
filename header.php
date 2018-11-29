@@ -214,6 +214,7 @@
 					</div>
 				</div>
 				<div class="more">Load more</div>
+				<div class="more close">Fermer</div>
 			</div>
 		</div>
 		<div class="notif cta" data-tab="messagerie" href="">
@@ -283,6 +284,7 @@
 						</div>
 					</div>
 				</div>
+				<div class="more close">Fermer</div>
 			</div>
 		</div>
 		<div class="compte" data-tab="profil">

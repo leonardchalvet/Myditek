@@ -267,6 +267,7 @@ header {
 					}
 
 					.circle {
+						transform: translateY(2px);
 						border-radius: 50%;
 						border: 1px solid #E9E9F4;
 						width: 12px;
@@ -355,6 +356,51 @@ header.mobile {
 			.exposant {
 				right: 0;
 			}
+			.dropdown {
+				position: fixed;
+				padding-bottom: 15px;
+				border-radius: 0;
+				top: 70px;
+				width: 100%;
+				left: 0;
+
+				.message {
+					.container-text .text {
+						width: 300px;
+					}
+
+					.circle {
+						transform: translateY(4px);
+						background-color: #E9E9F4;
+						border: none;
+					}
+
+					&.active .circle {
+						background-color: #937BF3;
+						border: none;
+					}
+				}
+
+				.more {
+					margin: auto;
+					width: 315px;
+					border-radius: 4px;
+					margin-top: 15px;
+				}
+			}
+
+			&:first-child .dropdown{
+				
+				.message:nth-last-child(3) {
+					border: none;
+				}
+
+				.more:last-child {
+					background-color: #fff;
+					color: $colorMain_1;
+					border: 1px solid $colorMain_1;
+				}
+			}
 		}
 	}
 
@@ -399,6 +445,7 @@ header.mobile {
 		.container-action {
 			padding: 40px 0;
 			flex-wrap: wrap;
+			max-width: 350px;
 
 			.dropdown {
 				position: relative;
@@ -416,16 +463,16 @@ header.mobile {
 			.line {
 				width: 24px;
 				&:first-child {
-					transform: rotate(45deg) translateX(5px) translateY(5px);
+					transform: rotate(45deg) translateX(2px) translateY(2px);
 				}
 				&:last-child {
-					transform: rotate(-45deg) translateX(0px) translateY(-4px);
+					transform: rotate(-45deg) translateX(0) translateY(0);
 				}
 			}
 		}
 
 		.nav {
-			transform: translateY(0);
+			transform: translateY(-2px);
 		}
 	}
 }
