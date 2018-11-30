@@ -37,18 +37,7 @@
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
-			width: 410px;
-
-			.new-agents {
-				cursor: pointer;
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				height: 37px;	
-				width: 37px;
-				border-radius: 50%;
-				background-color: #E3667A;
-			}
+			width: 360px;
 
 			form {
 				position: relative;
@@ -343,6 +332,68 @@
 				width: 727px;
 			}
 		}
+
+		.more {
+			display: none;
+
+			margin: auto;
+			margin-top: 10px;
+			border: 0.5px solid #0B1D4C;
+			border-radius: 4px;
+			width: 315px;
+			height: 50px;
+
+			@include styleParagraphSmall();
+			color: $colorMain_1;
+			opacity: 1;
+
+			justify-content: center;
+			align-items: center;
+		}
+	}
+}
+
+@media screen and (max-width: 800px) {
+
+	main.agents {
+		#container {
+			margin-top: -150px;
+			margin-bottom: -160px;
+			padding: 0;
+			.wrapper {
+				transform: translateY(-435px);
+			}
+		}
+		#head {
+			padding-bottom: 200px;
+		}
+	}
+
+	.wrapper-tab-agents .message-search {
+		padding: 0 25px;
+		flex-direction: column-reverse;
+		align-items: flex-start;
+		height: 185px;
+		margin-bottom: 5px;
+	}
+	.wrapper-tab-agents .message-search .container-action {
+		flex-direction: column;
+		width: 100%;
+	}
+	.wrapper-tab-agents .message-search .container-action form {
+		width: 100%;
+	}
+	.wrapper-tab-agents .message-search .container-action .search-input {
+		width: 100%;
+	}
+
+	.wrapper-tab-agents .container-agents .agent {
+		border-radius: 0;
+		width: 100%;
+	}
+
+	.wrapper-tab-agents .container-agents .more {
+		display: flex;
 	}
 }
 

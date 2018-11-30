@@ -4,9 +4,6 @@
 			32 agents disponibles
 		</div>
 		<div class="container-action">
-			<div class="new-agents">
-				<img src="img/agents/common/plus.svg">
-			</div>
 			<form role="search">
 				<input type="search" value="" placeholder="Rechercher un agents, exploitation…" class="search-input">
 				<button type="submit" class="search-button">
@@ -366,6 +363,8 @@
 				</div>
 			</div>
 		</div>
+
+		<div class="more">Voir plus</div>
 
 	</div>
 </div>

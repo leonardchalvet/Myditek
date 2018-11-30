@@ -1671,13 +1671,110 @@ lightbox {
 	.lightbox .box {
 		width: 300px;
 
+		.container-form .container-action {
+			flex-direction: column;
+			height: auto;
+			button, .button {
+				width: 100%;
+
+				&:first-child {
+					margin-bottom: 25px;
+				}
+			}
+		}
+
 		&.big {
 			width: 100%;
+
+			.container-title.under {
+				width: 100%;
+			}
+
+			.container-form {
+				.container-action {
+					width: 100%;
+				}
+				.row {
+					flex-direction: column;
+					.col {
+						width: 100%;
+						.row {
+							flex-direction: row;
+							.input {
+								width: 100px;
+							}
+						}
+					}
+				}
+			}
+
+			.line {
+				width: 100%;
+			}
+
+			table tr td {
+				padding-right: 0;
+
+				&:last-child {
+					padding-left: 0;
+				}
+			}
 		}
 
 		.map {
 			width: 100% !important;
 		}
-	}
+	
+		&.payerFacture .container-form .container-action {
+			height: 50px;
+			flex-direction: row;
+			button {
+				margin-bottom: 0;
+			}
+		}
 
+		&.infoAgents .container-infos,
+		&.infoClient .container-infos {
+
+			.row-n-col {
+				width: auto;
+			}
+
+			.container-exploitations {
+				flex-direction: column;
+				align-items: flex-start;
+				border:none;
+
+				.exploitation {
+					margin-bottom: 10px;
+				}
+
+				.point {
+					display: none;
+				}
+			}
+			.container-base {
+				margin-right: 0;
+				.row {
+					flex-direction: column;
+					align-items: flex-start;
+					width: 225px;
+					li:last-child, .capteur {
+						display: none;
+					}
+
+					.point {
+						display: none;
+					}
+
+					.point:nth-last-child(2) {
+						display: none;
+					}
+				}
+			}
+			.container-perso {
+				display: none;
+			}
+		}
+	}
 }

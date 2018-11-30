@@ -325,6 +325,8 @@
 			</a>
 		</div>
 
+		<div class="more">Voir plus</div>
+		
 	</div>
 </div>
 <script>

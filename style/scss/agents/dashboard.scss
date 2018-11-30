@@ -539,7 +539,7 @@
 
 	main.dashboard #container {
 		padding: 0;
-		margin-bottom: -200px;
+		margin-bottom: 75px;
 	}
 	#container .wrapper {
 		padding: 0;
@@ -565,7 +565,7 @@
 		color: $colorMain_1;
 		font-weight: bold;
 	}
-	.wrapper-tab-dashboard .container-el .el:last-child .container-ist.row {
+	.wrapper-tab-dashboard .container-el .el:nth-last-child(2) .container-ist.row {
 		height: auto;
 		flex-direction: column;
 
@@ -635,6 +635,11 @@
 		#map {
 			margin-top: 0;
 		}
+	}
+
+	main #container .wrapper-tab-dashboard {
+		z-index: 1;
+		transform: translateY(-245px);
 	}
 }
 

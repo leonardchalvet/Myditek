@@ -96,6 +96,8 @@
 
 		<?php } ?>
 
+		<div class="more">Voir plus</div>
+
 	</div>
 </div>
 <script type="text/javascript">

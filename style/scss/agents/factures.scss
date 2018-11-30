@@ -321,11 +321,118 @@
 						tr td {
 							padding-top: 20px;
 							color: $colorMain_1;
+
+							&:first-child {
+								text-align: right;
+								padding-right: 55px;
+							}
 						}
 					}
 				}
 			}
 		}
 
+		.more {
+			display: none;
+
+			margin: auto;
+			border: 0.5px solid #0B1D4C;
+			border-radius: 4px;
+			width: 315px;
+			height: 50px;
+
+			@include styleParagraphSmall();
+			color: $colorMain_1;
+			opacity: 1;
+
+			justify-content: center;
+			align-items: center;
+		}
+
+	}
+}
+
+@media screen and (max-width: 800px) {
+
+	main.factures {
+		#container {
+			margin-top: -150px;
+			margin-bottom: -230px;
+			padding: 0;
+			.wrapper {
+				transform: translateY(-525px);
+			}
+		}
+		#head {
+			padding-bottom: 300px;
+		}
+	}
+
+	.wrapper-tab-factures .message-search {
+		padding: 0 25px;
+		flex-direction: column-reverse;
+		align-items: flex-start;
+		height: 275px;
+		margin-bottom: 5px;
+	}
+	.wrapper-tab-factures .message-search .container-action {
+		flex-direction: column;
+		width: 100%;
+	}
+	.wrapper-tab-factures .message-search .container-action form {
+		width: 100%;
+	}
+	.wrapper-tab-factures .message-search .container-action .new-facture {
+		width: 55.5px;
+		height: 55.5px;
+		margin-bottom: 30px;
+	}
+	.wrapper-tab-factures .message-search .container-action .search-input {
+		width: 100%;
+	}
+
+	.wrapper-tab-factures .container-factures .facture {
+		border-radius: 0;
+	}
+	.wrapper-tab-factures .container-factures .facture .container-vissible {
+		position: relative;
+		height: 250px;
+		align-items: baseline;
+	}
+	.wrapper-tab-factures .container-factures .facture .container-vissible img {
+		transform: translateY(25px);
+	}
+	.wrapper-tab-factures .container-factures .facture .container-vissible .container-infos .infos ul {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.wrapper-tab-factures .container-factures .facture .container-vissible .container-infos .infos ul li.point {
+		display: none;
+	}
+	.wrapper-tab-factures .container-factures .facture .container-vissible .container-infos .infos .btn {
+		position: absolute;
+		width: 315px;
+		height: 50px;
+		bottom: 25px;
+	    left: 50%;
+	    transform: translateX(-50%);
+	}
+	.wrapper-tab-factures .container-factures .facture .container-vissible .container-infos .container-action .dropdown .action img {
+		transform: none;
+	}
+
+	.wrapper-tab-factures .container-factures .facture .container-details table tr td {
+		padding-right: 25px !important;
+	}
+	.wrapper-tab-factures .container-factures .facture .container-details table tr td:last-child {
+		padding-right: 15px;
+		min-width: 60px;
+	}
+	.wrapper-tab-factures .container-factures .facture .container-details table tfoot tr td:first-child {
+		text-align: left;
+	}
+
+	.wrapper-tab-factures .container-factures .more {
+		display: flex;
 	}
 }

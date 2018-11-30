@@ -105,12 +105,33 @@ $(window).on('load', function() {
 	})
 	$('#container .cta-common .container-action .container-add').click(function(){
 		$(this).parent().parent().parent().toggleClass('active');
+
+		var matrix = $('main #container .wrapper').css('transform').replace(/[^0-9\-.,]/g, '').split(',');
+		var y = matrix[13] || matrix[5];
+		console.log(y);
+
 		if( $('#container .cta-common').hasClass('active') ) {
 			$('#container .cta-common').css('z-index', 2);
+			$('#container .cta-common .container-action .content').css('height', '370px');
+			$('main #container .wrapper').css('top', 0);
+
+			switch ( $('main').attr('class') ) {
+				case 'dashboard' : $('main #container').css('marginBottom', '-200px'); break; 
+				case 'drones'    : $('main #container').css('marginBottom', '-500px'); break; 
+				case 'capteurs'  : $('main #container').css('marginBottom', '-500px'); break;
+				case 'clients'   : $('main #container').css('marginBottom', '-525px'); break;
+				case 'agents'    : $('main #container').css('marginBottom', '-430px'); break;
+				case 'factures'  : $('main #container').css('marginBottom', '-525px'); break;
+				case 'agenda'    : break;
+				default: break;
+			}
 		}
 		else {
 			setTimeout(function() {
 				$('#container .cta-common').css('z-index', 0);
+				$('#container .cta-common .container-action .content').css('height', '80px');
+				$('main #container .wrapper').css('top', '290px');
+				$('main #container').css('marginBottom', '');
 			}, 500);
 		}
 	})
@@ -152,6 +173,13 @@ $(window).on('load', function() {
 	/* PAGE FACTURES MORE DETAILS */
 	$('.wrapper-tab-factures .container-factures .facture .container-vissible .container-infos .infos .btn').click(function() {
 		$(this).parent().parent().parent().next().toggleClass('show');
+
+		if($(this).parent().parent().parent().next().hasClass('show')) {
+			$(this).text('moins de détails');
+		}
+		else {
+			$(this).text('voir le détail');
+		}
 	});
 	$('lightbox .box.payerFacture .container-form .input.check span').click(function(){
 		let bool = true;
@@ -560,4 +588,14 @@ $(window).on('load', function() {
 	$('.wrapper-tab-dashboard .container-el .goTop').click(function(){
 		 $("html, body").animate({ scrollTop: 0 }, 600);
 	})
+
+	if (window.matchMedia("(max-width: 800px)").matches) {
+		$('.wrapper-tab-clients.tuile .container-clients .client').each(function() {
+			$(this).removeClass('big');
+		})
+
+		$('.wrapper-tab-agents .container-agents .agent').each(function() {
+			$(this).removeClass('big');
+		})
+	}
 })

@@ -220,6 +220,24 @@
 				}
 			}
 		}
+
+		.more {
+			display: none;
+
+			margin: auto;
+			margin-top: 15px;
+			border: 0.5px solid #0B1D4C;
+			border-radius: 4px;
+			width: 315px;
+			height: 50px;
+
+			@include styleParagraphSmall();
+			color: $colorMain_1;
+			opacity: 1;
+
+			justify-content: center;
+			align-items: center;
+		}
 	}
 
 	&.list {
@@ -431,7 +449,59 @@
 					}
 				}
 			}
-
 		}
+	}
+}
+
+@media screen and (max-width: 800px) {
+
+	main.clients {
+		#container {
+			margin-top: -150px;
+			margin-bottom: -230px;
+			padding: 0;
+			.wrapper {
+				transform: translateY(-525px);
+			}
+		}
+		#head {
+			padding-bottom: 300px;
+		}
+	}
+
+	.wrapper-tab-clients .message-search {
+		padding: 0 25px;
+		flex-direction: column-reverse;
+		align-items: flex-start;
+		height: 275px;
+		margin-bottom: 5px;
+	}
+	.wrapper-tab-clients .message-search .container-action {
+		flex-direction: column;
+		width: 100%;
+	}
+	.wrapper-tab-clients .message-search .container-action form {
+		width: 100%;
+	}
+	.wrapper-tab-clients .message-search .container-action .new-client {
+		width: 55.5px;
+		height: 55.5px;
+		margin-bottom: 30px;
+	}
+	.wrapper-tab-clients .message-search .container-action .search-input {
+		width: 100%;
+	}
+	.wrapper-tab-clients .message-search .container-text {
+		width: 0;
+		overflow: hidden;
+	}
+
+	.wrapper-tab-clients.tuile .container-clients .client {
+		width: 100%;
+		border-radius: 0;
+	}
+
+	.wrapper-tab-clients .container-clients .more {
+		display: flex;
 	}
 }

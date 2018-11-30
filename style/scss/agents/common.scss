@@ -394,7 +394,7 @@ main {
 	}
 	#container .cta-common .container-action .content {
 		width: 245px;
-		height: 370px;
+		height: 80px;
 	}
 	#container .cta-common .container-action:before {
 		content: none;
@@ -416,6 +416,10 @@ main {
 		border-radius: 0 0 10px 0;
 	}
 	*/
+	#container .cta-common .container-action .content .container-el .el:last-child {
+		width: 100%;
+		border-radius: 0 0 10px 10px;
+	}
 	#container .cta-common .container-text {
 		display: none;
 	}
@@ -457,8 +461,7 @@ main {
 	}
 
 	main #container .wrapper {
-		z-index: 1;
-		transform: translateY(-245px);
+		top: 290px;
 	}
 }
 

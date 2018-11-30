@@ -85,9 +85,7 @@
 					</tbody>
 					<tfoot>
 						<tr>
-							<td></td>
-							<td></td>
-							<td>Total TTC</td>
+							<td colspan=3 >Total TTC</td>
 							<td>500 €</td>
 						</tr>
 					</tfoot>
@@ -163,9 +161,7 @@
 					</tbody>
 					<tfoot>
 						<tr>
-							<td></td>
-							<td></td>
-							<td>Total TTC</td>
+							<td colspan=3 >Total TTC</td>
 							<td>500 €</td>
 						</tr>
 					</tfoot>
@@ -241,14 +237,15 @@
 					</tbody>
 					<tfoot>
 						<tr>
-							<td></td>
-							<td></td>
-							<td>Total TTC</td>
+							<td colspan=3 >Total TTC</td>
 							<td>500 €</td>
 						</tr>
 					</tfoot>
 				</table>
 			</div>
 		</div>
+
+		<div class="more">Voir plus</div>
+
 	</div>
 </div>

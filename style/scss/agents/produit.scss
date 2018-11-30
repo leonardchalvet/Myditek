@@ -291,5 +291,116 @@
 				}
 			}
 		}
+
+		.more {
+			display: none;
+
+			margin: auto;
+			margin-top: 25px;
+			border: 0.5px solid #0B1D4C;
+			border-radius: 4px;
+			width: 315px;
+			height: 50px;
+
+			@include styleParagraphSmall();
+			color: $colorMain_1;
+			opacity: 1;
+
+			justify-content: center;
+			align-items: center;
+		}
 	}
+}
+
+@media screen and (max-width: 800px) {
+
+	main.drones,
+	main.capteurs {
+		#container {
+			margin-top: -150px;
+			margin-bottom: -230px;
+			padding: 0;
+			.wrapper {
+				transform: translateY(-525px);
+			}
+		}
+		#head {
+			padding-bottom: 300px;
+		}
+	}
+
+	.wrapper.produit .message-search {
+		padding: 0 25px;
+		flex-direction: column-reverse;
+		align-items: flex-start;
+		height: 275px;
+		margin-bottom: 5px;
+	}
+	.wrapper.produit .message-search .container-action {
+		flex-direction: column;
+		width: 100%;
+	}
+	.wrapper.produit .message-search .container-action form {
+		width: 100%;
+	}
+	.wrapper.produit .message-search .container-action .new-produit {
+		width: 55.5px;
+		height: 55.5px;
+		margin-bottom: 30px;
+	}
+	.wrapper.produit .message-search .container-action .search-input {
+		width: 100%;
+	}
+
+	.wrapper.produit .container-produit {
+		width: 100%;
+	}
+	.wrapper.produit .container-produit .produit {
+		border-radius: 0;
+		flex-direction: column;
+		height: 200px;
+		justify-content: space-between;
+	}
+	.wrapper.produit .container-produit .produit .left,
+	.wrapper.produit .container-produit .produit .right {
+		position: relative;
+		width: 100%;
+	}
+
+	.wrapper.produit .container-produit .produit .left {
+		z-index: 2;
+	}
+	.wrapper.produit .container-produit .produit .right {
+		z-index: 1;
+	}
+	.wrapper.produit .container-produit .produit .left .container-action {
+		top: 10px;
+		right: 30px;
+	}
+	.wrapper.produit .container-produit .produit .left .col ul {
+		width: auto !important;
+	}
+	.wrapper.produit .container-produit .produit .left .col ul:nth-child(2) {
+		flex-direction: column;
+		align-items: flex-start;
+		.point {
+			display: none;
+		}
+	}
+	main.capteurs .wrapper.produit .container-produit .produit .left .col ul:nth-child(2) { 
+		li:first-child {
+			display: none;
+		}
+		li:last-child {
+			margin-bottom: 10px;
+		}
+	}
+	.wrapper.produit .container-produit .produit .right .row .text {
+		width: 90%;
+	}
+
+	.wrapper.produit .container-produit .more {
+		display: flex;
+	}
+
 }
