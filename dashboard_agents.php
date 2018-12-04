@@ -10,7 +10,9 @@
 							Janvier 2018
 						</div>
 						<div class="arrow">
-							<img src="img/header/down-arrow.svg">
+							<svg viewBox="0 0 8 5" xmlns="http://www.w3.org/2000/svg">
+								<path d="M3.97 5L0 1.03 1.03 0l2.94 2.941L6.913 0l1.03 1.03z" fill="#fff" fill-rule="nonzero"/>
+							</svg>
 						</div>
 						<ul class="dropdown">
 							<li>Janvier 2017</li>
@@ -47,7 +49,9 @@
 							Janvier 2018
 						</div>
 						<div class="arrow">
-							<img src="img/header/down-arrow.svg">
+							<svg viewBox="0 0 8 5" xmlns="http://www.w3.org/2000/svg">
+								<path d="M3.97 5L0 1.03 1.03 0l2.94 2.941L6.913 0l1.03 1.03z" fill-rule="nonzero"/>
+							</svg>
 						</div>
 						<ul class="dropdown">
 							<li>Janvier 2017</li>
@@ -99,7 +103,9 @@
 							Janvier 2018
 						</div>
 						<div class="arrow">
-							<img src="img/header/down-arrow.svg">
+							<svg viewBox="0 0 8 5" xmlns="http://www.w3.org/2000/svg">
+								<path d="M3.97 5L0 1.03 1.03 0l2.94 2.941L6.913 0l1.03 1.03z" fill-rule="nonzero"/>
+							</svg>
 						</div>
 						<ul class="dropdown">
 							<li>Janvier 2017</li>
@@ -153,7 +159,9 @@
 							Janvier 2018
 						</div>
 						<div class="arrow">
-							<img src="img/header/down-arrow.svg">
+							<svg viewBox="0 0 8 5" xmlns="http://www.w3.org/2000/svg">
+								<path d="M3.97 5L0 1.03 1.03 0l2.94 2.941L6.913 0l1.03 1.03z" fill-rule="nonzero"/>
+							</svg>
 						</div>
 						<ul class="dropdown">
 							<li>Janvier 2017</li>
@@ -410,12 +418,12 @@ function initMapsDashboard() {
 		{
 			url: "img/agents/common/marker-01.svg",
 			origin: new google.maps.Point(0, 0),
-			anchor: new google.maps.Point(0, 32)
+			anchor: new google.maps.Point(32, 32)
 		},
 		{
 			url: "img/agents/common/marker-02.svg",
 			origin: new google.maps.Point(0, 0),
-			anchor: new google.maps.Point(0, 32)
+			anchor: new google.maps.Point(36, 34)
 		}
 	];
 	//content test
@@ -471,10 +479,13 @@ function initMapsDashboard() {
 			icon: icons[0],
 			infowindow: infoWindow
 		});
+		if(false || !!document.documentMode) { marker.setIcon(); }
 		marker.addListener('click', function() {
 			setTimeout(function(){
 				infoWindow.open(map, marker);
-				marker.setIcon(icons[1]);
+				if( !(false || !!document.documentMode) )  {
+					marker.setIcon(icons[1]);
+				}
 			}, 250);
 		});
 		markers.push(marker);
@@ -502,7 +513,9 @@ function initMapsDashboard() {
 	closeInfoWindow = function() {
 		markers.forEach(function(marker) {
 			marker.infowindow.close(map, marker);
-			marker.setIcon(icons[0]);
+			if( !(false || !!document.documentMode) ) {
+				marker.setIcon(icons[0]);
+			}
 		});
 	};
 	google.maps.event.addListener(map, 'click', closeInfoWindow);
@@ -523,10 +536,13 @@ function initMapsDashboard() {
 			icon: icons[0],
 			infowindow: infoWindow
 		});
+		if(false || !!document.documentMode) { marker.setIcon(); }
 		marker.addListener('click', function() {
 			setTimeout(function(){
 				infoWindow.open(mapL, marker);
-				marker.setIcon(icons[1]);
+				if( !(false || !!document.documentMode) ) {
+					marker.setIcon(icons[1]);
+				}
 			}, 250);
 		});
 		markers.push(marker);
@@ -554,7 +570,9 @@ function initMapsDashboard() {
 	closeInfoWindow = function() {
 		markers.forEach(function(marker) {
 			marker.infowindow.close(mapL, marker);
-			marker.setIcon(icons[0]);
+			if( !(false || !!document.documentMode) ) {
+				marker.setIcon(icons[0]);
+			}
 		});
 	};
 	google.maps.event.addListener(mapL, 'click', closeInfoWindow);

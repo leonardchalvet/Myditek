@@ -448,7 +448,7 @@
 			</div>
 			<div class="container-action">
 				<button class="cancel">Annuler</button>
-				<button class="button validate">Valider</button>
+				<button class="button validate">Enregistrer</button>
 			</div>
 		</form>
 	</div>

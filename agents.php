@@ -40,7 +40,7 @@
 
 		<?php include 'lightbox.php'; ?>
 
-		<main class="agents">
+		<main class="agenda">
 			<div id="head">
 
 				<!-- DASHBOARD -->

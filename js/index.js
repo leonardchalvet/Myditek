@@ -188,6 +188,11 @@ $(window).on('load', function() {
 		}
 		$('lightbox .box.payerFacture .container-form .input.check input').prop( "checked", bool);
 	})
+	let sizeFactures = $('.wrapper-tab-factures .container-factures .facture').length;
+		$('.wrapper-tab-factures .container-factures .facture').each(function() {
+			$(this).css('z-index', sizeFactures);
+			sizeFactures -= 1;
+		});
 	/* END PAGE FACTURES */
 
 
@@ -436,6 +441,14 @@ $(window).on('load', function() {
 		$('lightbox').removeClass('active');
 		$('lightbox .box').removeClass('active');
 	})
+
+	$('lightbox').on('click', function(event) { 
+	    if (!$(event.target).closest('.box').length) {
+	        $('body').removeClass('lightbox');
+			$('lightbox').removeClass('active');
+			$('lightbox .box').removeClass('active');
+	    }
+	});
 
 	$('.wrapper-tab-messagerie .message-interaction .message-read .head .container-action .dropdown .supprimer').click(function() {
 		initLightbox('.delMessage');

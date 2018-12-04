@@ -32,6 +32,9 @@ h1, h2, h3, h4, h5, h6, i
 	font-weight: normal;
 	font-style: normal;
 }
+body {
+	background-color: #F2F5FA;
+}
 body.block
 {
 	overflow:hidden;
@@ -63,7 +66,7 @@ main
 
 	/*----------  MAIN COLORS  ----------*/
 	$colorMain_1: #1C2D4F;
-	$colorMain_2: #9B99BE;
+	$colorMain_2: #9495A0;
 	$colorMain_3: #937BF3;
 	$colorMain_4: #E3667A;
 	$colorMain_5: #35C850;
@@ -249,7 +252,7 @@ main
 		@mixin styleParagraphSmall{
 			font-family: $font_2;
 		  	color: $colorMain_2;
-		  	opacity: 0.6;
+		  	opacity: 0.8;
 			font-size: $paragraphSmall_textsize_desktop;
 			line-height: $paragraphSmall_lineheight_desktop;
 		}
@@ -474,7 +477,6 @@ lightbox {
 
 				span {
 					display: block;
-					font-size: 13px;
 					color: #9495A0;
 				}
 			}
@@ -838,7 +840,7 @@ lightbox {
 						left: -4px;
 						width: 39px;
 						height: 39px;
-						border-radius: 12px;
+						border-radius: 14px;
 						border: 2px solid $colorMain_4;
 					}
 
@@ -900,12 +902,12 @@ lightbox {
 						margin: 0;
 						input {
 							border-radius: 4px 4px 0 0;
-							border-bottom: 0.5px solid #E9E9F4;
+							border-bottom: none;
 
 							&:focus {
 								border-radius: 4px 4px 0 0;
-								border: 1px solid #0B1D4C;
-								border-bottom: 0.5px solid #E9E9F4;
+								border: 0.5px solid #0B1D4C;
+								border-bottom: none;
 							}
 						}
 					}
@@ -957,25 +959,25 @@ lightbox {
 						}
 						&.left input {
 							border-radius: 0 0 0 4px;
-							border-right: 0.5px solid #E9E9F4;
+							border-right: none;
 
 							&:focus {
-								border: 1px solid #0B1D4C;
+								border: 0.5px solid #0B1D4C;
 								border-radius: 0 0 0 4px;
 								border-top: 0.5px solid #E9E9F4;
-								border-right: 0.5px solid #E9E9F4;
+								border-right: none;
 							}
 						}
 
 						&.right input {
 							border-radius: 0 0 4px 0;
-							border-left: 0.5px solid #E9E9F4;
+							border-left: none;
 
 							&:focus {
-								border: 1px solid #0B1D4C;
+								border: 0.5px solid #0B1D4C;
 								border-radius: 0 0 4px 0;
 								border-top: 0.5px solid #E9E9F4;
-								border-left: 0.5px solid #E9E9F4;
+								border-left: none;
 							}
 						}
 					}
@@ -985,10 +987,10 @@ lightbox {
 						position: absolute;
 						left: 50%;
 						transform: translateX(-50%);
-						bottom: 25px;
-						width: 5px;
-						height: 1.5px;
-						background-color: #0B1D4C;
+						bottom: 26px;
+						width: 1px;
+						height: 45px;
+						background-color: #E9E9F4;
 					}
 				}
 				.container-action {

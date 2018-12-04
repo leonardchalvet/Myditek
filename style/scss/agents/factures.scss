@@ -97,9 +97,8 @@
 			flex-direction: column;
 			justify-content: space-between;
 			border-radius: 5px;	
-			background-color: #FFFFFF;	
-			box-shadow: 0 10px 40px 0 rgba(108,96,255,0.1);
-			margin-bottom: 40px;
+			background-color: #FFFFFF;
+			margin-bottom: 15px;
 
 			.container-vissible {
 				padding: 15px;
@@ -175,7 +174,7 @@
 								span {
 									font-size: 12px;
 									color: $colorMain_2;
-									opacity: 0.6;
+									opacity: 0.8;
 								}
 
 								&.point {

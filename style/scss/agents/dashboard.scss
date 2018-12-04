@@ -32,10 +32,18 @@
 						color: $colorMain_1;
 						font-weight: bold;
 					}
+					.container-rslt {
+						.rslt{ 
+							color: #000;
+						}
+						.arrow svg {
+							fill: #000;
+						}
+					}
 				}
 
 				&.marge {
-					margin-top: 25px;
+					margin-top: 41px;
 				}
 
 				h4{
@@ -44,6 +52,7 @@
 					font-family: $font_1;
 					color: #FFF;
 					text-transform: uppercase;
+					font-weight: bold;
 				}
 				.container-rslt{
 					position: relative;
@@ -54,8 +63,16 @@
 					.rslt{
 						margin-right: 5px;
 						@include styleParagraphSmall;
-						color: $colorMain_2;
+						opacity: 1;
+						color: #fff;
 						line-height: 24px;
+					}
+					.arrow {
+						svg {
+							fill: #fff;
+							width: 8px;
+							height: 8px;
+						}
 					}
 					.dropdown {
 						position: absolute;
@@ -110,8 +127,7 @@
 				justify-content: space-between;
 				padding: 15px;
 				border-radius: 5px;	
-				background-color: #FFFFFF;	
-				box-shadow: 0 20px 40px 0 rgba(108,96,255,0.1);
+				background-color: #FFFFFF;
 
 				&.row {
 					flex-direction: row;
@@ -515,6 +531,7 @@
 				font-family: $font_1;
 				color: #FFF;
 				text-transform: uppercase;
+				font-weight: bold;
 			}
 		}
 
@@ -553,6 +570,12 @@
 	}
 	.wrapper-tab-dashboard .container-el .el {
 		width: 100%;
+	}
+	.wrapper-tab-dashboard .container-el .el:nth-child(2) .head .container-rslt .rslt {
+		color: #000;
+	}
+	.wrapper-tab-dashboard .container-el .el:nth-child(2) .head .container-rslt .arrow svg {
+		fill: #000;
 	}
 	.wrapper-tab-dashboard .container-el .el .head {
 		padding: 0 15px;

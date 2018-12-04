@@ -154,6 +154,7 @@ function initMapsClient() {
 				title: feature.name,
 				icon: icons[0]
 			});
+			if(false || !!document.documentMode) { marker.setIcon(); }
 			markers.push(marker);
 		});
 	}
@@ -222,10 +223,13 @@ function initMapsClient() {
 			icon: icons[0],
 			infowindow: infoWindow
 		});
+		if(false || !!document.documentMode) { marker.setIcon(); }
 		marker.addListener('click', function() {
 			setTimeout(function(){
 				infoWindow.open(mapL, marker);
-				marker.setIcon(icons[1]);
+				if( !(false || !!document.documentMode) ) {
+					marker.setIcon(icons[1]);
+				}
 			}, 250);
 		});
 		markersL.push(marker);
@@ -253,7 +257,9 @@ function initMapsClient() {
 	closeInfoWindow = function() {
 		markersL.forEach(function(marker) {
 			marker.infowindow.close(mapL, marker);
-			marker.setIcon(icons[0]);
+			if( !(false || !!document.documentMode) ) {
+				marker.setIcon(icons[0]);
+			}
 		});
 	};
 	google.maps.event.addListener(mapL, 'click', closeInfoWindow);

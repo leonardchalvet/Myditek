@@ -23,10 +23,12 @@
 				width: 350px;
 				margin: auto;
 				@include styleParagraphSmall;
+				font-size: 15px;
+    			line-height: 18px;
 			}
 		}
 		.obj-1{
-			height: 214px;
+			height: 170px;
 			position: absolute;
 			left: -100px;
 			top: 50%;
@@ -74,7 +76,7 @@
 			text-align: center;
 			font-family:ClanPro-Regular;
 			font-size: 11px;	
-			font-weight: 500;
+			font-weight: bold;
 			color: #fff;
 		}
 
@@ -93,6 +95,7 @@
 				background-color: #F8CC6A;
 				transform: translateY(-75%);
 				transition: all 500ms cubic-bezier(0.020, 1.000, 0.825, 0.965);
+				box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1);
 			}
 			.content{
 				position: relative;
@@ -153,6 +156,8 @@
 				}
 			}
 			&:hover{
+				transition-duration: 1.5s;
+				box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1);
 				&:before{
 					transform:translateY(0px);
 				}

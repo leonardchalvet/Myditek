@@ -197,7 +197,7 @@
 
 			.row .col:nth-child(2) {
 				.input {
-					margin-top: 99px;
+					margin-top: 96px;
 				}
 			}
 		}
@@ -367,6 +367,7 @@
 				label {
 					@include styleParagraphSmall;
 					width: 100%;
+					line-height: 20px;
 				}
 
 				input, select {
