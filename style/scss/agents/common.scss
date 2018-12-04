@@ -369,6 +369,8 @@ main {
 		position: relative;
 
 		&:hover{
+			transition-duration: 0s;
+			box-shadow: 0 0 0 0 rgba(0,0,0,0);
 			&:before{
 				transform:translateY(0px);
 			}
@@ -387,6 +389,7 @@ main {
 			}
 			.container-el {
 				transform: translateY(20px);
+				box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1);
 			}
 			.container-el .el{
 				@for $i from 1 to 10 {

@@ -141,32 +141,34 @@ $(window).on('load', function() {
 	})
 
 	/* STICKY PAGE AGENTS -> MESSAGERIE */
+	if (window.matchMedia("(min-width: 800px)").matches) {
 
-	let offsetTopMessageRead = undefined;
-	let heightMessageRead = undefined;
+		let offsetTopMessageRead = undefined;
+		let heightMessageRead = undefined;
 
-	$(window).scroll(function(){
-		
-		if($('main').hasClass('messagerie')) {
+		$(window).scroll(function(){
 			
-			if(offsetTopMessageRead == undefined && heightMessageRead == undefined) {
-				offsetTopMessageRead = $('.wrapper-tab-messagerie .message-interaction .message-read').offset().top;
-				heightMessageRead    = $('.wrapper-tab-messagerie .message-interaction .message-read').height();
-			} else if(offsetTopMessageRead != undefined && heightMessageRead != undefined) {
+			if($('main').hasClass('messagerie')) {
+				
+				if(offsetTopMessageRead == undefined && heightMessageRead == undefined) {
+					offsetTopMessageRead = $('.wrapper-tab-messagerie .message-interaction .message-read').offset().top;
+					heightMessageRead    = $('.wrapper-tab-messagerie .message-interaction .message-read').height();
+				} else if(offsetTopMessageRead != undefined && heightMessageRead != undefined) {
 
-				let scrollBottom = $(window).scrollTop() + $(window).height();
+					let scrollBottom = $(window).scrollTop() + $(window).height();
 
-			    if ( scrollBottom >= (offsetTopMessageRead + heightMessageRead + 30)  ) {
-			    	$('.wrapper-tab-messagerie .message-interaction .message-read').addClass('sticky');
-			    	let left = $('.wrapper-tab-messagerie .message-interaction .messages-action').offset().left + 100;
-			    	$('.wrapper-tab-messagerie .message-interaction .message-read').css("right", left + 'px');
-			    }
-			    else {
-			    	$('.wrapper-tab-messagerie .message-interaction .message-read').removeClass('sticky');
-			    }
+				    if ( scrollBottom >= (offsetTopMessageRead + heightMessageRead + 30)  ) {
+				    	$('.wrapper-tab-messagerie .message-interaction .message-read').addClass('sticky');
+				    	let left = $('.wrapper-tab-messagerie .message-interaction .messages-action').offset().left + 100;
+				    	$('.wrapper-tab-messagerie .message-interaction .message-read').css("right", left + 'px');
+				    }
+				    else {
+				    	$('.wrapper-tab-messagerie .message-interaction .message-read').removeClass('sticky');
+				    }
+				}
 			}
-		}
-	});
+		});
+	}
 	/* END PAGE MESSAGERIE */
 
 

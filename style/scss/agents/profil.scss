@@ -529,3 +529,91 @@
 		}
 	}
 }
+
+@media screen and (max-width: 800px) {
+
+	main.profil {
+		#container {
+			margin-top: -250px;
+			padding: 0;
+			.wrapper {
+				transform: translateY(-250px);
+			}
+		}
+		#head {
+			padding-bottom: 300px;
+		}
+	}
+
+	.wrapper-tab-profil .container-text {
+		padding-left: 25px;
+	}
+	.wrapper-tab-profil .container-profil {
+		flex-direction: column;
+		margin-top: 5px;
+		border-radius: 0;
+	}
+	.wrapper-tab-profil .container-profil .container-nav {
+		width: 100%;
+	}
+	.wrapper-tab-profil .container-profil form {
+		width: 100%;
+		flex-direction: column;
+		align-items: center;
+	}
+	.wrapper-tab-profil .container-profil form .row {
+		flex-direction: column;
+		align-items: center;
+	}
+	.wrapper-tab-profil .container-profil form .submit {
+		position: relative;
+	    display: block;
+	    width: 300px;
+	    right: auto;
+	    bottom: auto;
+	    margin-bottom: 25px;
+	}
+	.wrapper-tab-profil .container-profil .information.show,
+	.wrapper-tab-profil .container-profil .password.show,
+	.wrapper-tab-profil .container-profil .exploitation.show {
+		display: flex;
+	}
+	.wrapper-tab-profil .container-profil .container-nav .menu li:after {
+		transition-duration: 0.2s;
+	}
+	.wrapper-tab-profil .container-profil .container-nav .menu li.active:after {
+		transform: rotate(45deg);
+	}
+	.wrapper-tab-profil .container-profil .container-nav .menu li.active:first-child {
+		margin-bottom: 975px;
+	}
+	.wrapper-tab-profil .container-profil .container-nav .menu li.active:nth-child(2) {
+		margin-bottom: 440px;
+	}
+	.wrapper-tab-profil .container-profil .information {
+		position: absolute;
+    	top: 335px;
+    	left: 50%;
+		transform: translateX(-50%);
+    	border-bottom: 1px solid #F3F3F3;
+	}
+	.wrapper-tab-profil .container-profil .password {
+		position: absolute;
+    	top: 400px;
+    	left: 50%;
+		transform: translateX(-50%);
+    	border-bottom: 1px solid #F3F3F3;
+	}
+	.wrapper-tab-profil .container-profil .information .row .col:last-child {
+		margin-top: 25px;
+	}
+	.wrapper-tab-profil .container-profil .password .row .col:nth-child(2) .input {
+		margin-top: 25px;
+	}
+	.wrapper-tab-profil .container-profil .exploitation .el {
+		margin-left: 0;
+	}
+	.wrapper-tab-profil .container-profil .exploitation .submit {
+		margin-top: 25px;
+	}
+}
