@@ -1685,6 +1685,15 @@ lightbox {
 			}
 		}
 
+		.container-form .input .hour {
+			display: flex;
+			align-items: center;
+			input {
+				padding-right: 0;
+				width: 50px !important;
+			}
+		}
+
 		&.big {
 			width: 100%;
 
