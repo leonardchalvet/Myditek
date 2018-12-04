@@ -8,7 +8,7 @@
 				<img src="img/agents/common/plus.svg">
 			</div>
 			<form role="search">
-				<input type="search" value="" placeholder="Recherche une factures" class="search-input">
+				<input value="" placeholder="Recherche une factures" class="search-input">
 				<button type="submit" class="search-button">
 					<img src="img/agents/agenda/loupe.svg">
 				</button>

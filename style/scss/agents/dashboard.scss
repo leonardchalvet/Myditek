@@ -466,8 +466,14 @@
 						stroke: #15BBDF;
 						animation: circle-chart-fill 1s reverse;
 						transform: rotate(-90deg);
+						-moz-transform: rotate(-90deg) translate(0.5px,-0.5px);
+						-ms-transform: rotate(-90deg);
 						transform-origin: center;
 						stroke-dasharray: 100;
+
+						@supports (-ms-ime-align:auto) {
+						  transform: rotate(-90deg) translate(-0.8px, 0px);
+						}
 					}
 
 					@keyframes circle-chart-fill {

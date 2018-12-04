@@ -6,7 +6,7 @@
 				<img src="img/agents/common/plus.svg">
 			</div>
 			<form role="search">
-				<input type="search" value="" placeholder="Rechercher un evenement" class="search-input">
+				<input value="" placeholder="Rechercher un evenement" class="search-input">
 				<button type="submit" class="search-button">
 					<img src="img/agents/agenda/loupe.svg">
 				</button>

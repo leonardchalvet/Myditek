@@ -1,7 +1,7 @@
 <div class="wrapper wrapper-tab-messagerie">
 	<div class="message-search">
 		<form role="search">
-			<input type="search" value="" placeholder="Rechercher un message" class="search-input">
+			<input value="" placeholder="Rechercher un message" class="search-input">
 			<button type="submit" class="search-button">
 				<img src="img/agents/agenda/loupe.svg">
 			</button>
