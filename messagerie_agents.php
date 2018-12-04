@@ -43,6 +43,9 @@
 		<div class="message-read">
 
 			<div class="head">
+				<div class="container-back">
+					Revenir à la liste des messages
+				</div>
 				<div class="container-title">
 					Dernier message
 				</div>

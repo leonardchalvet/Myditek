@@ -40,7 +40,7 @@
 
 		<?php include 'lightbox.php'; ?>
 
-		<main class="messagerie">
+		<main class="dashboard">
 			<div id="head">
 
 				<!-- DASHBOARD -->

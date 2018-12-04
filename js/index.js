@@ -122,7 +122,9 @@ $(window).on('load', function() {
 				case 'clients'   : $('main #container').css('marginBottom', '-525px'); break;
 				case 'agents'    : $('main #container').css('marginBottom', '-430px'); break;
 				case 'factures'  : $('main #container').css('marginBottom', '-525px'); break;
-				case 'agenda'    : break;
+				case 'agenda'    : $('main #container').css('marginBottom', '-535px'); break;
+				case 'profil'    : $('main #container').css('marginBottom', '-295px'); break;
+				case 'messagerie'   : $('main #container').css('marginBottom', '-450px'); break;
 				default: break;
 			}
 		}
@@ -168,6 +170,14 @@ $(window).on('load', function() {
 				}
 			}
 		});
+	}
+	else {
+		$('.wrapper-tab-messagerie .message-interaction .messages-action .messages-list ul li').click(function() {
+			$('.wrapper-tab-messagerie .message-interaction').addClass('show');
+		})
+		$('.wrapper-tab-messagerie .message-interaction .message-read .head .container-back').click(function() {
+			$('.wrapper-tab-messagerie .message-interaction').removeClass('show');
+		})
 	}
 	/* END PAGE MESSAGERIE */
 
