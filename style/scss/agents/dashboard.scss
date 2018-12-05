@@ -588,6 +588,10 @@
 		color: $colorMain_1;
 		font-weight: bold;
 	}
+	.wrapper-tab-dashboard .container-el .el:nth-last-child(3) .container-ist.row { 
+		align-items: center;
+		.col { height: 125px; }
+	}
 	.wrapper-tab-dashboard .container-el .el:nth-last-child(2) .container-ist.row {
 		height: auto;
 		flex-direction: column;
