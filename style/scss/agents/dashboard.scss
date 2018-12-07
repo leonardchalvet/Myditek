@@ -596,6 +596,28 @@
 	}
 }
 
+@media screen and (max-width: 1250px) {
+
+	.wrapper-tab-dashboard {
+		flex-direction: column;
+	}
+	.wrapper-tab-dashboard .container-map .head h4 {
+		color: $colorMain_1;
+	}
+	.wrapper-tab-dashboard .container-map {
+		width: 100%;
+		margin-bottom: 50px;
+	}
+	.wrapper-tab-dashboard .container-el {
+		width: 700px;
+	}
+	.wrapper-tab-dashboard .container-el .el {
+		width: 340px;
+	}
+
+}
+
+
 @media screen and (max-width: 800px) {
 
 	main.dashboard #container {

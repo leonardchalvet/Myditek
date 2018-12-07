@@ -1500,6 +1500,23 @@ header.mobile {
   header.mobile.active .nav {
     transform: translateY(-2px); }
 
+@media screen and (max-width: 1250px) {
+  header .nav {
+    width: 600px; }
+  header .nav .container-action .container-text {
+    margin-left: 5px; }
+  header .profil {
+    width: 160px;
+    margin-right: 15px; }
+  header .profil .notif:first-child {
+    margin-right: 10px; } }
+
+@media screen and (max-width: 900px) {
+  header .profil .compte .container-text {
+    display: none; }
+  header .profil {
+    width: 100px; } }
+
 @media screen and (max-width: 800px) {
   header.desktop {
     display: none; }
@@ -1801,6 +1818,14 @@ main.profil #container {
     display: block; }
   main.profil #container .cta-common {
     margin-top: 25px; }
+
+@media screen and (max-width: 1250px) {
+  #container {
+    padding: 0 10px;
+    justify-content: space-around; }
+  #container .wrapper {
+    padding: 0;
+    width: auto; } }
 
 @media screen and (max-width: 800px) {
   #head .wrapper .obj-1, #head .wrapper .obj-2 {
@@ -2401,6 +2426,19 @@ main.profil #container {
         right: -15px;
         bottom: -25px;
         z-index: 100; }
+
+@media screen and (max-width: 1250px) {
+  .wrapper-tab-dashboard {
+    flex-direction: column; }
+  .wrapper-tab-dashboard .container-map .head h4 {
+    color: #1C2D4F; }
+  .wrapper-tab-dashboard .container-map {
+    width: 100%;
+    margin-bottom: 50px; }
+  .wrapper-tab-dashboard .container-el {
+    width: 700px; }
+  .wrapper-tab-dashboard .container-el .el {
+    width: 340px; } }
 
 @media screen and (max-width: 800px) {
   main.dashboard #container {
@@ -4340,6 +4378,23 @@ main.profil #container {
           .wrapper-tab-clients.tuile .container-clients .client.big .container-infos .container-exploitations .point {
             display: block; }
 
+@media screen and (max-width: 1250px) {
+  .wrapper-tab-clients.tuile .container-clients,
+  .wrapper-tab-clients.list .container-clients .client {
+    width: 665px; }
+  .wrapper-tab-clients.tuile .container-clients .client {
+    width: 320px;
+    padding: 40px 20px 30px 20px; }
+  .wrapper-tab-clients.list .container-clients .client .container-infos .row-n-col {
+    width: 540px;
+    justify-content: flex-start; }
+  .wrapper-tab-clients.list .container-clients .client .container-exploitations {
+    width: 320px;
+    margin-left: 20px; }
+  .wrapper-tab-clients.list .container-clients .client .container-exploitations .exploitation:last-child,
+  .wrapper-tab-clients.list .container-clients .client .container-exploitations .point:nth-last-child(2) {
+    display: none; } }
+
 @media screen and (max-width: 800px) {
   main.clients #container {
     margin-top: -150px;
@@ -4642,6 +4697,12 @@ main.profil #container {
       opacity: 1;
       justify-content: center;
       align-items: center; }
+
+@media screen and (max-width: 1250px) {
+  .wrapper.produit .container-produit {
+    width: 675px; }
+  .wrapper.produit .container-produit .produit .right .row .text {
+    width: 225px; } }
 
 @media screen and (max-width: 800px) {
   main.drones #container,
@@ -5014,6 +5075,12 @@ main.profil #container {
       opacity: 1;
       justify-content: center;
       align-items: center; }
+
+@media screen and (max-width: 1250px) {
+  .wrapper-tab-agents .container-agents {
+    width: 665px; }
+  .wrapper-tab-agents .container-agents .agent {
+    width: 320px; } }
 
 @media screen and (max-width: 800px) {
   main.agents #container {

@@ -343,6 +343,17 @@ main {
 	}
 }
 
+@media screen and (max-width: 1250px) {
+	#container {
+		padding: 0 10px;
+		justify-content: space-around;
+	}
+	#container .wrapper {
+		padding: 0;
+		width: auto;
+	}
+}
+
 @media screen and (max-width: 800px) {
 
 	#head .wrapper .obj-1, #head .wrapper .obj-2 {

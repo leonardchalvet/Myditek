@@ -353,6 +353,16 @@
 	}
 }
 
+
+@media screen and (max-width: 1250px) {
+	.wrapper-tab-agents .container-agents {
+		width: 665px;
+	}
+	.wrapper-tab-agents .container-agents .agent {
+		width: 320px;
+	}
+}
+
 @media screen and (max-width: 800px) {
 
 	main.agents {

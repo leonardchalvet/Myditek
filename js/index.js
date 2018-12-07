@@ -610,7 +610,7 @@ $(window).on('load', function() {
 		 $("html, body").animate({ scrollTop: 0 }, 600);
 	})
 
-	if (window.matchMedia("(max-width: 800px)").matches) {
+	if (window.matchMedia("(max-width: 1250px)").matches) {
 		$('.wrapper-tab-clients.tuile .container-clients .client').each(function() {
 			$(this).removeClass('big');
 		})

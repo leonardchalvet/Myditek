@@ -450,6 +450,32 @@
 	}
 }
 
+
+@media screen and (max-width: 1250px) {
+	.wrapper-tab-clients.tuile .container-clients,
+	.wrapper-tab-clients.list .container-clients .client {
+		width: 665px;
+	}
+	.wrapper-tab-clients.tuile .container-clients .client {
+		width: 320px;
+		padding: 40px 20px 30px 20px;
+	}
+	.wrapper-tab-clients.list .container-clients .client .container-infos .row-n-col {
+		width: 540px;
+		justify-content: flex-start;
+	}
+	.wrapper-tab-clients.list .container-clients .client .container-exploitations {
+		width: 320px;
+		margin-left: 20px;
+	}
+	.wrapper-tab-clients.list .container-clients .client .container-exploitations {
+		.exploitation:last-child,
+		.point:nth-last-child(2) {
+			display: none;
+		}
+	}
+}
+
 @media screen and (max-width: 800px) {
 
 	main.clients {

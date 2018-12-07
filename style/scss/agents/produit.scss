@@ -312,6 +312,15 @@
 	}
 }
 
+@media screen and (max-width: 1250px) {
+	.wrapper.produit .container-produit {
+		width: 675px;
+	}
+	.wrapper.produit .container-produit .produit .right .row .text {
+		width: 225px;
+	}
+}
+
 @media screen and (max-width: 800px) {
 
 	main.drones,
