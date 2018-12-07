@@ -1,8 +1,4 @@
 $(window).on('load', function() {
-	/*
-	setTimeout(function() {
-	}, 1000);
-	*/
 
 	/* INIT PAGE AGENTS */
 	$('header .nav .container-action').click(function() {
@@ -62,11 +58,6 @@ $(window).on('load', function() {
 			cta.parent().children('.dropdown').toggleClass('show');
 		}, 100);
 	})
-	/*$('body').click(function() {
-		if($('.dropdown').hasClass('show')) {
-			$('.dropdown').removeClass('show');
-		}
-	})*/
 	$('header .profil .notif .dropdown .title .container-action .action').click(function() {
 		$('header .nav .container-action').removeClass('active');
 		$('header .nav .container-action .dropdown .container-illu').removeClass('active');
@@ -99,6 +90,11 @@ $(window).on('load', function() {
 			}
 		}
 	})
+	$('body').on('click', function(event) { 
+	    if (!$(event.target).closest('header .profil .notif .dropdown.show').length) {
+	    	$('header .profil .notif .dropdown').removeClass('show');
+	    }
+	});
 
 	$('header.mobile .burger').click(function() {
 		$(this).parent().toggleClass('active');

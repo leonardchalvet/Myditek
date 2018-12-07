@@ -182,9 +182,53 @@
 				}
 
 				.chartdiv {
+					position: relative;
 					height: 192px !important;
 					a {
 						display: none !important;
+					}
+
+					.popupChart {
+						padding: 0 10px;
+						height: 45px;
+						width: 170px;
+						background-color: #FFFFFF;
+						box-shadow: 0 10px 30px 0 rgba(0,0,0,0.1);
+						border-radius: 10px;
+
+						display: flex;
+						align-items: center;
+						justify-content: space-around;
+
+						position: absolute;
+					    left: 50%;
+					    transform: translateX(-50%);
+					    top: 0px;
+
+						li {
+							list-style: none;
+
+							&.point {
+								width: 3px;
+								height: 3px;
+								border-radius: 50%;
+								background-color: #D8D8D8;
+							}
+
+							&:first-child {
+								font-family:ClanPro-Regular;
+								font-size: 18px;
+								color: $colorMain_1;
+							}
+
+							&:last-child {
+								@include styleParagraphSmall();
+								opacity: 1;
+								span {
+									color: $colorMain_1;
+								}
+							}
+						}
 					}
 				}
 

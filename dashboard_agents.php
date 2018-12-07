@@ -605,6 +605,211 @@ function initMapsDashboard() {
 <script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
 <script type="text/javascript" src="https://www.amcharts.com/lib/3/serial.js"></script>
 <script type="text/javascript">
+let data = [
+	{
+		"date": "2018-09-01",
+		"column-1": "12",
+		"column-2": "6",
+		"popup-1": 18,
+		"popup-2": 29
+	},
+	{
+		"date": "2018-09-02",
+		"column-1": "10",
+		"column-2": "7",
+		"popup-1": 26,
+		"popup-2": 36
+	},
+	{
+		"date": "2018-09-03",
+		"column-1": "8",
+		"column-2": "8",
+		"popup-1": 39,
+		"popup-2": 13
+	},
+	{
+		"date": "2018-09-04",
+		"column-1": "7",
+		"column-2": "7",
+		"popup-1": 19,
+		"popup-2": 37
+	},
+	{
+		"date": "2018-09-06",
+		"column-1": "8",
+		"column-2": "5",
+		"popup-1": 31,
+		"popup-2": 15
+	},
+	{
+		"date": "2018-09-07",
+		"column-1": "9",
+		"column-2": "4",
+		"popup-1": 26,
+		"popup-2": 15
+	},
+	{
+		"date": "2018-09-08",
+		"column-1": "10",
+		"column-2": "7",
+		"popup-1": 31,
+		"popup-2": 33
+	},
+	{
+		"date": "2018-09-09",
+		"column-1": "9",
+		"column-2": "9",
+		"popup-1": 49,
+		"popup-2": 24
+	},
+	{
+		"date": "2018-09-10",
+		"column-1": "11",
+		"column-2": "8",
+		"popup-1": 48,
+		"popup-2": 16
+	},
+	{
+		"date": "2018-09-11",
+		"column-1": "13",
+		"column-2": "7",
+		"popup-1": 23,
+		"popup-2": 26
+	},
+	{
+		"date": "2018-09-12",
+		"column-1": "10",
+		"column-2": "3",
+		"popup-1": 24,
+		"popup-2": 22
+	},
+	{
+		"date": "2018-09-13",
+		"column-1": "8",
+		"column-2": "5",
+		"popup-1": 44,
+		"popup-2": 33
+	},
+	{
+		"date": "2018-09-14",
+		"column-1": "7",
+		"column-2": "6",
+		"popup-1": 26,
+		"popup-2": 40
+	},
+	{
+		"date": "2018-09-15",
+		"column-1": "10",
+		"column-2": "7",
+		"popup-1": 16,
+		"popup-2": 20
+	},
+	{
+		"date": "2018-09-16",
+		"column-1": "20",
+		"column-2": "6",
+		"popup-1": 37,
+		"popup-2": 11
+	},
+	{
+		"date": "2018-09-17",
+		"column-1": "10",
+		"column-2": "3",
+		"popup-1": 28,
+		"popup-2": 23
+	},
+	{
+		"date": "2018-09-18",
+		"column-1": "7",
+		"column-2": "6",
+		"popup-1": 10,
+		"popup-2": 25
+	},
+	{
+		"date": "2018-09-19",
+		"column-1": "6",
+		"column-2": "5",
+		"popup-1": 48,
+		"popup-2": 33
+	},
+	{
+		"date": "2018-09-20",
+		"column-1": "9",
+		"column-2": "6",
+		"popup-1": 29,
+		"popup-2": 19
+	},
+	{
+		"date": "2018-09-21",
+		"column-1": "11",
+		"column-2": "7",
+		"popup-1": 18,
+		"popup-2": 24
+	},
+	{
+		"date": "2018-09-22",
+		"column-1": "10",
+		"column-2": "8",
+		"popup-1": 12,
+		"popup-2": 10
+	},
+	{
+		"date": "2018-09-23",
+		"column-1": "9",
+		"column-2": "7",
+		"popup-1": 34,
+		"popup-2": 18
+	},
+	{
+		"date": "2018-09-24",
+		"column-1": "8",
+		"column-2": "6",
+		"popup-1": 14,
+		"popup-2": 28
+	},
+	{
+		"date": "2018-09-25",
+		"column-1": "7",
+		"column-2": "5",
+		"popup-1": 24,
+		"popup-2": 13
+	},
+	{
+		"date": "2018-09-26",
+		"column-1": "6",
+		"column-2": "4",
+		"popup-1": 14,
+		"popup-2": 25
+	},
+	{
+		"date": "2018-09-27",
+		"column-1": "5",
+		"column-2": "3",
+		"popup-1": 50,
+		"popup-2": 13
+	},
+	{
+		"date": "2018-09-28",
+		"column-1": "6",
+		"column-2": "2",
+		"popup-1": 17,
+		"popup-2": 31
+	},
+	{
+		"date": "2018-09-29",
+		"column-1": "7",
+		"column-2": "1",
+		"popup-1": 28,
+		"popup-2": 39
+	},
+	{
+		"date": "2018-09-30",
+		"column-1": "8",
+		"column-2": "0",
+		"popup-1": 11,
+		"popup-2": 39
+	}
+]
 AmCharts.makeChart("chartdiv",
 	{
 		"type": "serial",
@@ -614,12 +819,9 @@ AmCharts.makeChart("chartdiv",
 		"dataDateFormat": "YYYY-MM-DD",
 		"maxSelectedSeries": 0,
 		"synchronizeGrid": true,
-		"autoMarginOffset": 8,
-		"marginBottom": 0,
-		"marginLeft": 10,
-		"minMarginBottom": 0,
+		"zoomOutOnDataUpdate": false,
+		"maxZoomFactor": 0,
 		"gridAboveGraphs": true,
-		"accessibleTitle": "",
 		"addClassNames": true,
 		"backgroundAlpha": 0.8,
 		"processCount": 998,
@@ -635,24 +837,21 @@ AmCharts.makeChart("chartdiv",
 			"gridThickness": 0,
 			"labelFrequency": 48,
 			"markPeriodChange": false,
-			"minorGridAlpha": 0,
 			"offset": 1,
 			"titleFontSize": 0
 		},
 		"chartCursor": {
 			"enabled": true,
 			"animationDuration": 0,
-			"avoidBalloonOverlapping": false,
 			"bulletSize": 4,
 			"categoryBalloonColor": "#FFFFFF",
 			"categoryBalloonDateFormat": "MMM DD",
 			"color": "#CC0000",
 			"graphBulletAlpha": 0,
 			"graphBulletSize": 0,
-			"leaveAfterTouch": false,
 			"limitToGraph": "AmGraph-1",
 			"selectionAlpha": 0,
-			"tabIndex": 0,
+			"selectWithoutZooming": true,
 			"valueBalloonsEnabled": false,
 			"valueLineAlpha": 0
 		},
@@ -662,11 +861,12 @@ AmCharts.makeChart("chartdiv",
 				"fillColors": "undefined",
 				"id": "AmGraph-1",
 				"lineColor": "#937BF3",
-				"lineThickness": 2,
+				"lineThickness": 3,
 				"title": "graph 1",
 				"valueField": "column-1"
 			},
 			{
+				"bulletHitAreaSize": 0,
 				"columnWidth": 0,
 				"dashLength": 10,
 				"fixedColumnWidth": 0,
@@ -691,8 +891,6 @@ AmCharts.makeChart("chartdiv",
 				"minimumDate": "",
 				"position": "right",
 				"precision": 0,
-				"totalText": "",
-				"unit": "%",
 				"zeroGridAlpha": 0,
 				"autoRotateAngle": 0,
 				"axisAlpha": 0,
@@ -712,153 +910,59 @@ AmCharts.makeChart("chartdiv",
 		"allLabels": [],
 		"balloon": {},
 		"titles": [],
-		"dataProvider": [
-			{
-				"date": "2018-09-01",
-				"column-1": "12",
-				"column-2": "6"
-			},
-			{
-				"date": "2018-09-02",
-				"column-1": "10",
-				"column-2": "7"
-			},
-			{
-				"date": "2018-09-03",
-				"column-1": "8",
-				"column-2": "8"
-			},
-			{
-				"date": "2018-09-04",
-				"column-1": "7",
-				"column-2": "7"
-			},
-			{
-				"date": "2018-09-06",
-				"column-1": "8",
-				"column-2": "5"
-			},
-			{
-				"date": "2018-09-07",
-				"column-1": "9",
-				"column-2": "4"
-			},
-			{
-				"date": "2018-09-08",
-				"column-1": "10",
-				"column-2": "7"
-			},
-			{
-				"date": "2018-09-09",
-				"column-1": "9",
-				"column-2": "9"
-			},
-			{
-				"date": "2018-09-10",
-				"column-1": "11",
-				"column-2": "8"
-			},
-			{
-				"date": "2018-09-11",
-				"column-1": "13",
-				"column-2": "7"
-			},
-			{
-				"date": "2018-09-12",
-				"column-1": "10",
-				"column-2": "3"
-			},
-			{
-				"date": "2018-09-13",
-				"column-1": "8",
-				"column-2": "5"
-			},
-			{
-				"date": "2018-09-14",
-				"column-1": "7",
-				"column-2": "6"
-			},
-			{
-				"date": "2018-09-15",
-				"column-1": "10",
-				"column-2": "7"
-			},
-			{
-				"date": "2018-09-16",
-				"column-1": "20",
-				"column-2": "6"
-			},
-			{
-				"date": "2018-09-17",
-				"column-1": "10",
-				"column-2": "3"
-			},
-			{
-				"date": "2018-09-18",
-				"column-1": "7",
-				"column-2": "6"
-			},
-			{
-				"date": "2018-09-19",
-				"column-1": "6",
-				"column-2": "5"
-			},
-			{
-				"date": "2018-09-20",
-				"column-1": "9",
-				"column-2": "6"
-			},
-			{
-				"date": "2018-09-21",
-				"column-1": "11",
-				"column-2": "7"
-			},
-			{
-				"date": "2018-09-22",
-				"column-1": "10",
-				"column-2": "8"
-			},
-			{
-				"date": "2018-09-23",
-				"column-1": "9",
-				"column-2": "7"
-			},
-			{
-				"date": "2018-09-24",
-				"column-1": "8",
-				"column-2": "6"
-			},
-			{
-				"date": "2018-09-25",
-				"column-1": "7",
-				"column-2": "5"
-			},
-			{
-				"date": "2018-09-26",
-				"column-1": "6",
-				"column-2": "4"
-			},
-			{
-				"date": "2018-09-27",
-				"column-1": "5",
-				"column-2": "3"
-			},
-			{
-				"date": "2018-09-28",
-				"column-1": "6",
-				"column-2": "2"
-			},
-			{
-				"date": "2018-09-29",
-				"column-1": "7",
-				"column-2": "1"
-			},
-			{
-				"date": "2018-09-30",
-				"column-1": "8",
-				"column-2": "0"
-			}
-		]
+		"dataProvider": data
 	}
 );
+
+/*REMPLIR POPUP*/
+function popupChart() {
+	setTimeout(function(){
+		$('.popupChart').remove();
+		//DATE CHART HOVER
+		let dateChart = $('.amcharts-balloon-div div').text().split(" ");
+		switch (dateChart[0]) {
+			case "Jan" : dateChart[0] = '01'; break;
+			case "Feb" : dateChart[0] = '02'; break;
+			case "Mar" : dateChart[0] = '03'; break;
+			case "Apr" : dateChart[0] = '04'; break;
+			case "May" : dateChart[0] = '05'; break;
+			case "Jun" : dateChart[0] = '06'; break;
+			case "Jul" : dateChart[0] = '07'; break;
+			case "Aug" : dateChart[0] = '08'; break;
+			case "Sep" : dateChart[0] = '09'; break;
+			case "Oct" : dateChart[0] = '10'; break;
+			case "Nov" : dateChart[0] = '11'; break;
+			case "Dec" : dateChart[0] = '12'; break;
+		}
+		dateChart = dateChart[0] + '-' + dateChart[1];
+		
+		//PARCOURS DATA POUR TROUVER LA DATE
+		let twoValues = [];
+		$.each( data, function( key, value ) {
+			let date = value['date'].split('-');
+			date = date[1] + '-' + date[2];
+			
+			if(date == dateChart) {
+				twoValues[0] = value['popup-1'];
+				twoValues[1] = value['popup-2'];
+			}
+		});
+		
+		if(twoValues[0] != undefined) {
+			let popup = '<ul class="popupChart">' +
+							'<li>'+twoValues[0]+'%</li>' +
+							'<li class="point"></li>' +
+							'<li>'+twoValues[1]+' anomalie</li>' +
+						'</ul>';
+			$('#chartdiv').append(popup);
+		}
+	}, 50);
+}
+
+if (window.matchMedia("(min-width: 800px)").matches) {
+	$('#chartdiv').on('mousemove', popupChart);
+}
+else {
+	$('#chartdiv').on('touchend', popupChart);
+}
 </script>
