@@ -4424,6 +4424,8 @@ main.profil #container {
   .wrapper-tab-clients .message-search .container-text {
     width: 0;
     overflow: hidden; }
+  .wrapper-tab-clients.tuile .container-clients {
+    width: 100%; }
   .wrapper-tab-clients.tuile .container-clients .client {
     width: 100%;
     border-radius: 0; }
@@ -5083,6 +5085,8 @@ main.profil #container {
     width: 320px; } }
 
 @media screen and (max-width: 800px) {
+  #container .wrapper {
+    width: 100%; }
   main.agents #container {
     margin-top: -150px;
     margin-bottom: -160px;
@@ -5103,6 +5107,8 @@ main.profil #container {
   .wrapper-tab-agents .message-search .container-action form {
     width: 100%; }
   .wrapper-tab-agents .message-search .container-action .search-input {
+    width: 100%; }
+  .wrapper-tab-agents .container-agents {
     width: 100%; }
   .wrapper-tab-agents .container-agents .agent {
     border-radius: 0;

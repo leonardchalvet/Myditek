@@ -365,6 +365,10 @@
 
 @media screen and (max-width: 800px) {
 
+	#container .wrapper {
+		width: 100%;
+	}
+
 	main.agents {
 		#container {
 			margin-top: -150px;
@@ -397,6 +401,9 @@
 		width: 100%;
 	}
 
+	.wrapper-tab-agents .container-agents {
+		width: 100%;
+	}
 	.wrapper-tab-agents .container-agents .agent {
 		border-radius: 0;
 		width: 100%;
