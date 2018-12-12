@@ -1,6 +1,39 @@
 $(window).on('load', function() {
 
 	/* INIT PAGE AGENTS */
+	$('#container .cta-common .container-action .content .container-el .el').click(function(){
+		
+		let data = $(this).attr('data-add');
+
+		if(data != undefined) {
+
+			$('main').removeClass();
+			$('header.mobile').removeClass('active');
+
+			switch (data) {
+				case 'drones': $('main').addClass('drones');
+							   initMapsDrones();
+							   initLightbox('.addDrone'); 
+							   break;
+				case 'capteurs': $('main').addClass('capteurs'); 
+								 initMapsCapteurs();
+								 initLightbox('.addCapteur'); 
+								 break;
+				case 'clients': $('main').addClass('clients'); 
+								initMapsClient();
+								initLightbox('.addClient'); 
+								break;
+				case 'factures': $('main').addClass('factures'); 
+				 				 initLightbox('.addFacture'); 
+				 				 break;
+				case 'agenda': $('main').addClass('agenda'); 
+							   initLightbox('.addEvent'); 
+							   break;
+				default: break;
+			}
+		}		
+	})
+
 	$('header .nav .container-action').click(function() {
 
 		$('header .nav .container-action').removeClass('active');

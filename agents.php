@@ -143,31 +143,31 @@
 								<img src="img/agents/common/plus.svg">
 							</div>
 							<div class="container-el">
-								<div class="el">
+								<div class="el" data-add="drones">
 									<div class="icn">
 										<img src="img/agents/common/drone-picto.svg">
 									</div>
-									<div class="text">DRONE</div>
+									<div class="text">DRONES</div>
 								</div>
-								<div class="el">
+								<div class="el" data-add="capteurs">
 									<div class="icn">
 										<img src="img/agents/common/capteur-picto.svg">
 									</div>
 									<div class="text">CAPTEURS</div>
 								</div>
-								<div class="el">
+								<div class="el" data-add="clients">
 									<div class="icn">
 										<img src="img/agents/common/clients-picto.svg">
 									</div>
 									<div class="text">CLIENTS</div>
 								</div>
-								<div class="el">
+								<div class="el" data-add="factures">
 									<div class="icn">
 										<img src="img/agents/common/facture-picto.svg">
 									</div>
 									<div class="text">FACTURES</div>
 								</div>
-								<div class="el">
+								<div class="el" data-add="agenda">
 									<div class="icn">
 										<img src="img/agents/common/agenda-picto.svg">
 									</div>
