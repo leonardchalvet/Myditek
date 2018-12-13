@@ -483,6 +483,12 @@ $(window).on('load', function() {
 		$('lightbox .box').removeClass('active');
 	})
 
+	$('lightbox .box .container-form .container-action .cancel').click(function() {
+		$('body').removeClass('lightbox');
+		$('lightbox').removeClass('active');
+		$('lightbox .box').removeClass('active');
+	})
+
 	$('lightbox').on('click', function(event) { 
 	    if (!$(event.target).closest('.box').length) {
 	        $('body').removeClass('lightbox');

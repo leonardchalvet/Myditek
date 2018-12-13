@@ -269,6 +269,7 @@ lightbox {
           line-height: 24px; }
         lightbox .box .container-form .input input, lightbox .box .container-form .input .select, lightbox .box .container-form .input .styledSelect {
           padding: 15px;
+          padding-right: 0;
           font-family: Lato-Regular;
           color: #9495A0;
           opacity: 0.8;
@@ -1468,7 +1469,7 @@ header.mobile {
       header.mobile .burger .line:last-child {
         transform: translateY(4px); }
   header.mobile .nav {
-    transform: translateY(-100%);
+    transform: translateY(-200%);
     padding: 30px;
     position: fixed;
     z-index: -1;
@@ -1480,7 +1481,7 @@ header.mobile {
     align-items: flex-start;
     justify-content: flex-start;
     background-color: #1C2D4F;
-    transition-duration: 0.3s; }
+    transition-duration: 0.4s; }
     header.mobile .nav .container-action {
       padding: 40px 0;
       flex-wrap: wrap;
@@ -2550,6 +2551,7 @@ main.profil #container {
     margin-right: 0;
     margin-left: auto; }
     .wrapper-tab-messagerie .message-search .search-input {
+      -webkit-appearance: textfield;
       height: 40px;
       width: 100%;
       border-radius: 20px;
@@ -2943,6 +2945,7 @@ main.profil #container {
       .wrapper-tab-factures .message-search .container-action form {
         position: relative; }
       .wrapper-tab-factures .message-search .container-action .search-input {
+        -webkit-appearance: textfield;
         height: 40px;
         width: 355px;
         border-radius: 20px;
@@ -3794,6 +3797,7 @@ main.profil #container {
       .wrapper-tab-agenda .message-search .container-action form {
         position: relative; }
       .wrapper-tab-agenda .message-search .container-action .search-input {
+        -webkit-appearance: textfield;
         height: 40px;
         width: 355px;
         border-radius: 20px;
@@ -4105,6 +4109,7 @@ main.profil #container {
       .wrapper-tab-clients .message-search .container-action form {
         position: relative; }
       .wrapper-tab-clients .message-search .container-action .search-input {
+        -webkit-appearance: textfield;
         height: 40px;
         width: 355px;
         border-radius: 20px;
@@ -4483,6 +4488,7 @@ main.profil #container {
       .wrapper.produit .message-search .container-action form {
         position: relative; }
       .wrapper.produit .message-search .container-action .search-input {
+        -webkit-appearance: textfield;
         height: 40px;
         width: 355px;
         border-radius: 20px;
@@ -4814,6 +4820,7 @@ main.profil #container {
       .wrapper-tab-agents .message-search .container-action form {
         position: relative; }
       .wrapper-tab-agents .message-search .container-action .search-input {
+        -webkit-appearance: textfield;
         height: 40px;
         width: 355px;
         border-radius: 20px;

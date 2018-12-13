@@ -8,7 +8,7 @@
 				<img src="img/agents/common/plus.svg">
 			</div>
 			<form role="search">
-				<input value="" placeholder="Rechercher un capteur, un lieux, un mot clé" class="search-input">
+				<input value="" type="search" placeholder="Rechercher un capteur, un lieux, un mot clé" class="search-input">
 				<button type="submit" class="search-button">
 					<img src="img/agents/agenda/loupe.svg">
 				</button>

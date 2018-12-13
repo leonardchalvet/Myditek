@@ -428,7 +428,7 @@ header.mobile {
 	}
 
 	.nav {
-		transform: translateY(-100%);
+		transform: translateY(-200%);
 		padding: 30px;
 		position: fixed;
 		z-index: -1;
@@ -440,7 +440,7 @@ header.mobile {
 		align-items: flex-start;
 		justify-content: flex-start;
 		background-color: $colorMain_1;
-		transition-duration: 0.3s;
+		transition-duration: 0.4s;
 
 		.container-action {
 			padding: 40px 0;

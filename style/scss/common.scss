@@ -531,6 +531,7 @@ lightbox {
 
 				input, .select, .styledSelect {
 					padding: 15px;
+					padding-right: 0;
 					@include styleParagraphSmall;
 					width: 100%;
 					border: 0.5px solid #0B1D4C;	
@@ -1691,6 +1692,8 @@ lightbox {
 			input {
 				padding-right: 0;
 				width: 50px !important;
+
+
 			}
 		}
 

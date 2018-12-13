@@ -26,7 +26,7 @@
 		</div>
 		<form class="container-form">
 			<div class="container-action">
-				<button class="cancel">Annuler</button>
+				<a class="button cancel">Annuler</a>
 				<button class="delete">Supprimer</button>
 			</div>
 		</form>
@@ -57,7 +57,7 @@
 				</select>
 			</div>
 			<div class="container-action">
-				<button class="cancel">Annuler</button>
+				<a class="button cancel">Annuler</a>
 				<button class="validate">Valider</button>
 			</div>
 		</form>
@@ -88,7 +88,7 @@
 		</div>
 		<form class="container-form">
 			<div class="container-action">
-				<button class="cancel">Annuler</button>
+				<a class="button cancel">Annuler</a>
 				<button class="delete">Supprimer</button>
 			</div>
 		</form>
@@ -159,7 +159,7 @@
 					</div>
 				</div>
 				<div class="container-action">
-					<button class="cancel">Annuler</button>
+					<a class="button cancel">Annuler</a>
 					<div class="button validate">Suivant</div>
 				</div>
 			</form>
@@ -322,7 +322,7 @@
 				</div>
 			</div>
 			<div class="container-action">
-				<button class="cancel">Annuler</button>
+				<a class="button cancel">Annuler</a>
 				<button class="button validate">Valider</button>
 			</div>
 		</form>
@@ -373,7 +373,7 @@
 				</div>
 			</div>
 			<div class="container-action">
-				<button class="cancel">Annuler</button>
+				<a class="button cancel">Annuler</a>
 				<button class="button validate">Valider</button>
 			</div>
 		</form>
@@ -398,7 +398,7 @@
 		</div>
 		<form class="container-form">
 			<div class="container-action">
-				<button class="cancel">Annuler</button>
+				<a class="button cancel">Annuler</a>
 				<button class="delete">Supprimer</button>
 			</div>
 		</form>
@@ -447,7 +447,7 @@
 				</div>
 			</div>
 			<div class="container-action">
-				<button class="cancel">Annuler</button>
+				<a class="button cancel">Annuler</a>
 				<button class="button validate">Enregistrer</button>
 			</div>
 		</form>
@@ -532,7 +532,7 @@
 				</div>
 			</div>
 			<div class="container-action">
-				<button class="cancel">Annuler</button>
+				<a class="button cancel">Annuler</a>
 				<button class="button validate">Valider</button>
 			</div>
 		</form>
@@ -623,7 +623,7 @@
 		</div>
 		<form class="container-form">
 			<div class="container-action">
-				<button class="cancel">Annuler</button>
+				<a class="button cancel">Annuler</a>
 				<button class="delete">Supprimer</button>
 			</div>
 		</form>
@@ -675,7 +675,7 @@
 				</div>
 			</div>
 			<div class="container-action">
-				<button class="cancel">Annuler</button>
+				<a class="button cancel">Annuler</a>
 				<button class="button validate">Valider</button>
 			</div>
 		</form>
@@ -712,7 +712,7 @@
 				<input type="text" name="titleDrone">
 			</div>
 			<div class="container-action">
-				<button class="cancel">Annuler</button>
+				<a class="button cancel">Annuler</a>
 				<button class="delete">Valider</button>
 			</div>
 		</form>
@@ -744,7 +744,7 @@
 		</div>
 		<form class="container-form">
 			<div class="container-action">
-				<button class="cancel">Annuler</button>
+				<a class="button cancel">Annuler</a>
 				<button class="delete">Supprimer</button>
 			</div>
 		</form>
@@ -796,7 +796,7 @@
 				</div>
 			</div>
 			<div class="container-action">
-				<button class="cancel">Annuler</button>
+				<a class="button cancel">Annuler</a>
 				<button class="button validate">Valider</button>
 			</div>
 		</form>
@@ -836,7 +836,7 @@
 				<input type="text" name="titleDrone">
 			</div>
 			<div class="container-action">
-				<button class="cancel">Annuler</button>
+				<a class="button cancel">Annuler</a>
 				<button class="delete">Valider</button>
 			</div>
 		</form>

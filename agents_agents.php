@@ -5,7 +5,7 @@
 		</div>
 		<div class="container-action">
 			<form role="search">
-				<input value="" placeholder="Rechercher un agents, exploitation…" class="search-input">
+				<input value="" type="search" placeholder="Rechercher un agents, exploitation…" class="search-input">
 				<button type="submit" class="search-button">
 					<img src="img/agents/agenda/loupe.svg">
 				</button>
