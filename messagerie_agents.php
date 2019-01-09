@@ -84,7 +84,7 @@
 
 			<div class="answer">
 				<form role="answer">
-					<input type="text" value="" placeholder="Tapez votre réponse..." class="anwser-input">
+					<textarea value="" placeholder="Tapez votre réponse..." class="anwser-input"></textarea>
 					<button type="submit" class="answer-button">Répondre</button>
 				</form>
 			</div>

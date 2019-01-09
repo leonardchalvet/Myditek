@@ -4,9 +4,11 @@
 			32 factures disponibles
 		</div>
 		<div class="container-action">
+			<?php if($agent) { ?>
 			<div class="new-facture">
 				<img src="img/agents/common/plus.svg">
 			</div>
+			<?php } ?>
 			<form role="search">
 				<input value="" type="search" placeholder="Recherche une factures" class="search-input">
 				<button type="submit" class="search-button">
@@ -45,10 +47,12 @@
 								<img src="img/agents/common/creditcard.svg">
 								Payer
 							</div>
+							<?php if($agent) { ?>
 							<div class="action supprimer">
 								<img src="img/agents/agenda/supprimer.svg">
 								Supprimer
 							</div>
+							<?php } ?>
 						</div>
 					</div>
 				</div>
@@ -121,10 +125,12 @@
 								<img src="img/agents/common/creditcard.svg">
 								Payer
 							</div>
+							<?php if($agent) { ?>
 							<div class="action supprimer">
 								<img src="img/agents/agenda/supprimer.svg">
 								Supprimer
 							</div>
+							<?php } ?>
 						</div>
 					</div>
 				</div>
@@ -197,10 +203,12 @@
 								<img src="img/agents/common/creditcard.svg">
 								Payer
 							</div>
+							<?php if($agent) { ?>
 							<div class="action supprimer">
 								<img src="img/agents/agenda/supprimer.svg">
 								Supprimer
 							</div>
+							<?php } ?>
 						</div>
 					</div>
 				</div>

@@ -17,14 +17,18 @@
 				PRODUITS
 			</div>
 			<div class="arrow">
-				<img src="img/header/down-arrow.svg">
+				<svg width="8" height="5" xmlns="http://www.w3.org/2000/svg">
+					<path d="M3.97 5L0 1.03 1.03 0l2.94 2.941L6.913 0l1.03 1.03z" fill-rule="nonzero"/>
+				</svg>
 			</div>
 			<div class="dropdown">
 				<div class="container-illu" data-tab="drones">
 					<img src="img/header/drone.svg">
 					<div class="container-text">
 						DRONES
-						<img src="img/header/down-arrow.svg">
+						<svg width="8" height="5" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.97 5L0 1.03 1.03 0l2.94 2.941L6.913 0l1.03 1.03z" fill-rule="nonzero"/>
+						</svg>
 					</div>
 				</div>
 				<div class="line"></div>
@@ -32,11 +36,14 @@
 					<img src="img/header/capteur.svg">
 					<div class="container-text">
 						CAPTEUR
-						<img src="img/header/down-arrow.svg">
+						<svg width="8" height="5" xmlns="http://www.w3.org/2000/svg">
+						<path d="M3.97 5L0 1.03 1.03 0l2.94 2.941L6.913 0l1.03 1.03z" fill-rule="nonzero"/>
+					</svg>
 					</div>
 				</div>
 			</div>
 		</div>
+		<?php if($agent) { ?>
 		<div class="container-action" data-tab="clients">
 			<img src="img/header/clients-picto.svg">
 			<div class="container-text">
@@ -46,12 +53,14 @@
 				23
 			</div>
 		</div>
+		<?php } ?>
 		<div class="container-action" data-tab="factures">
 			<img src="img/header/facture-picto.svg">
 			<div class="container-text">
 				FACTURES
 			</div>
 		</div>
+		<?php if($agent) { ?>
 		<div class="container-action" data-tab="agents">
 			<img src="img/header/agent-picto.svg">
 			<div class="container-text">
@@ -64,6 +73,7 @@
 				AGENDA
 			</div>
 		</div>
+		<?php } ?>
 	</div>
 
 	<div class="profil">
@@ -310,14 +320,18 @@
 				PRODUITS
 			</div>
 			<div class="arrow">
-				<img src="img/header/down-arrow.svg">
+				<svg width="8" height="5" xmlns="http://www.w3.org/2000/svg">
+					<path d="M3.97 5L0 1.03 1.03 0l2.94 2.941L6.913 0l1.03 1.03z" fill-rule="nonzero"/>
+				</svg>
 			</div>
 			<div class="dropdown">
 				<div class="container-illu" data-tab="drones">
 					<img src="img/header/drone.svg">
 					<div class="container-text">
 						DRONES
-						<img src="img/header/down-arrow.svg">
+						<svg width="8" height="5" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.97 5L0 1.03 1.03 0l2.94 2.941L6.913 0l1.03 1.03z" fill-rule="nonzero"/>
+						</svg>
 					</div>
 				</div>
 				<div class="line"></div>
@@ -325,11 +339,14 @@
 					<img src="img/header/capteur.svg">
 					<div class="container-text">
 						CAPTEUR
-						<img src="img/header/down-arrow.svg">
+						<svg width="8" height="5" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.97 5L0 1.03 1.03 0l2.94 2.941L6.913 0l1.03 1.03z" fill-rule="nonzero"/>
+						</svg>
 					</div>
 				</div>
 			</div>
 		</div>
+		<?php if($agent) { ?>
 		<div class="container-action" data-tab="clients">
 			<img src="img/header/clients-picto.svg">
 			<div class="container-text">
@@ -339,12 +356,14 @@
 				23
 			</div>
 		</div>
+		<?php } ?>
 		<div class="container-action" data-tab="factures">
 			<img src="img/header/facture-picto.svg">
 			<div class="container-text">
 				FACTURES
 			</div>
 		</div>
+		<?php if($agent) { ?>
 		<div class="container-action" data-tab="agents">
 			<img src="img/header/agent-picto.svg">
 			<div class="container-text">
@@ -357,6 +376,7 @@
 				AGENDA
 			</div>
 		</div>
+		<?php } ?>
 	</div>
 	
 </header>

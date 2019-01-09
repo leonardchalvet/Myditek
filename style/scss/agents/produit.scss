@@ -23,7 +23,7 @@
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
-			width: 410px;
+			width: 360px;
 
 			.new-produit {
 				cursor: pointer;
@@ -83,7 +83,7 @@
 	}
 
 	.container-produit {
-		width: 1100px;
+		width: 100%;
 		margin-bottom: 20px;
 		.produit {
 			display: flex;
@@ -313,6 +313,16 @@
 	}
 }
 
+body.agent {
+	.wrapper.produit .message-search .container-action {
+		width: 410px;
+	}
+
+	.container-produit {
+		width: 1100px;
+	}
+}
+
 @media screen and (max-width: 1250px) {
 	.wrapper.produit .container-produit {
 		width: 675px;
@@ -331,11 +341,18 @@
 			margin-bottom: -230px;
 			padding: 0;
 			.wrapper {
-				transform: translateY(-525px);
+				transform: translateY(-415px);
 			}
 		}
 		#head {
 			padding-bottom: 300px;
+		}
+	}
+	body.agent {
+		main.drones, main.capteurs {
+			#container .wrapper {
+				transform: translateY(-525px);
+			}
 		}
 	}
 
@@ -343,12 +360,15 @@
 		padding: 0 25px;
 		flex-direction: column-reverse;
 		align-items: flex-start;
-		height: 275px;
+		height: 100px;
 		margin-bottom: 5px;
+	}
+	body.agent .wrapper.produit .message-search {
+		height: 275px;
 	}
 	.wrapper.produit .message-search .container-action {
 		flex-direction: column;
-		width: 100%;
+		width: 100% !important;
 	}
 	.wrapper.produit .message-search .container-action form {
 		width: 100%;

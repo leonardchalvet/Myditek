@@ -287,7 +287,7 @@
 							<img src="img/agents/dashboard/right-arrow.svg">
 						</div>
 					</a>
-					<a class="container-action" href="#">
+					<a class="container-action" onclick="gotopage('drones')" >
 						Tout voir
 						<img src="img/agents/dashboard/right-arrow.svg">
 					</a>

@@ -1,3 +1,7 @@
+<?php
+	$agent = isset($_GET['agent']); // REUTILISER CETTE VARIABLE 1 agent 0 client
+?>
+
 <html>
 	<head>
 
@@ -17,13 +21,14 @@
 
 	</head>
 	
-	<body>
+	<body <?php if($agent) { echo('class="agent"'); } ?> >
 
 		<script type="text/javascript">
 			/* FONCTION A APPELER POUR CHANGER DE PAGE POUR LES BACK */
 			function gotopage(page) {
 				$('main').removeClass();
 				$('main').addClass(page);
+				$("html, body").scrollTop(0);
 
 				switch (page) {
 					case 'dashboard': initMapsDashboard(); break; 

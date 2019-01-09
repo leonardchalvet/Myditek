@@ -7,7 +7,7 @@
 
 #head{
 	position: relative;
-	background-color: $colorMain_1;
+	background: linear-gradient(123.1deg, #C4446D 0%, #E3667A 100%);
 	padding: 175px 0px 175px 0px;
 	.wrapper{
 		@include styleGrid1;
@@ -23,6 +23,7 @@
 				width: 350px;
 				margin: auto;
 				@include styleParagraphSmall;
+				color: #fff;
 				font-size: 15px;
     			line-height: 18px;
 			}
@@ -50,7 +51,7 @@
 	justify-content: space-between;
 	position: relative;
 	.wrapper{
-		@include styleGrid2;
+		@include styleGrid1;
 		margin-right: 0;
 		margin-left: 0;
 		position: relative;
@@ -71,6 +72,7 @@
 
 	.cta-common {
 		width: 70px;
+		display: none;
 		.container-text {
 			margin-bottom: 20px;
 			text-align: center;
@@ -173,6 +175,23 @@
 					transform: scale(1);
 				}
 			}
+		}
+	}
+}
+
+body.agent {
+	#head {
+		background: $colorMain_1;
+		/*.container-text p {
+			color: $colorMain_1;
+		}*/
+	}
+	#container {
+		.wrapper {
+			@include styleGrid2;
+		}
+		.cta-common {
+			display: block;
 		}
 	}
 }

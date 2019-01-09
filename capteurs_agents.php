@@ -4,9 +4,11 @@
 			32 capteurs disponibles
 		</div>
 		<div class="container-action">
+			<?php if($agent) { ?>
 			<div class="new-produit capteur">
 				<img src="img/agents/common/plus.svg">
 			</div>
+			<?php } ?>
 			<form role="search">
 				<input value="" type="search" placeholder="Rechercher un capteur, un lieux, un mot clé" class="search-input">
 				<button type="submit" class="search-button">
@@ -41,10 +43,12 @@
 							<img src="img/agents/clients/edit-picto.svg">
 							Modifier
 						</div>
+						<?php if($agent) { ?>
 						<div class="action supprimer">
 							<img src="img/agents/agenda/supprimer.svg">
 							Supprimer
 						</div>
+						<?php } ?>
 					</div>
 				</div>
 			</div>
@@ -85,10 +89,12 @@
 							<img src="img/agents/clients/edit-picto.svg">
 							Modifier
 						</div>
+						<?php if($agent) { ?>
 						<div class="action supprimer">
 							<img src="img/agents/agenda/supprimer.svg">
 							Supprimer
 						</div>
+						<?php } ?>
 					</div>
 				</div>
 			</div>
@@ -129,10 +135,12 @@
 							<img src="img/agents/clients/edit-picto.svg">
 							Modifier
 						</div>
+						<?php if($agent) { ?>
 						<div class="action supprimer">
 							<img src="img/agents/agenda/supprimer.svg">
 							Supprimer
 						</div>
+						<?php } ?>
 					</div>
 				</div>
 			</div>
@@ -173,10 +181,12 @@
 							<img src="img/agents/clients/edit-picto.svg">
 							Modifier
 						</div>
+						<?php if($agent) { ?>
 						<div class="action supprimer">
 							<img src="img/agents/agenda/supprimer.svg">
 							Supprimer
 						</div>
+						<?php } ?>
 					</div>
 				</div>
 			</div>
@@ -217,10 +227,12 @@
 							<img src="img/agents/clients/edit-picto.svg">
 							Modifier
 						</div>
+						<?php if($agent) { ?>
 						<div class="action supprimer">
 							<img src="img/agents/agenda/supprimer.svg">
 							Supprimer
 						</div>
+						<?php } ?>
 					</div>
 				</div>
 			</div>
@@ -261,10 +273,12 @@
 							<img src="img/agents/clients/edit-picto.svg">
 							Modifier
 						</div>
+						<?php if($agent) { ?>
 						<div class="action supprimer">
 							<img src="img/agents/agenda/supprimer.svg">
 							Supprimer
 						</div>
+						<?php } ?>
 					</div>
 				</div>
 			</div>
@@ -305,10 +319,12 @@
 							<img src="img/agents/clients/edit-picto.svg">
 							Modifier
 						</div>
+						<?php if($agent) { ?>
 						<div class="action supprimer">
 							<img src="img/agents/agenda/supprimer.svg">
 							Supprimer
 						</div>
+						<?php } ?>
 					</div>
 				</div>
 			</div>

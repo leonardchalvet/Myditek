@@ -151,12 +151,14 @@
 					</div>
 				</div>
 			</div>
+			<?php if($agent) { ?>
 			<a class="el add">
 				<div class="container-img">
 					<img src="img/agents/common/plus.svg">
 				</div>
 				Ajouter une exploitation
 			</a>
+			<?php } ?>
 			<button class="submit">
 				Voir plus
 			</button>
