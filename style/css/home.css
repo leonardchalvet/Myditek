@@ -1636,9 +1636,9 @@ body {
         height: 270px;
         width: 435px; }
   body main .offer:before {
-    border-width: 100px 100vw 0 0; }
+    border-width: 60px 100vw 0 0; }
   body main .offer:after {
-    border-width: 0 0 100px 100vw; }
+    border-width: 0 0 60px 100vw; }
   body main .offer .wrapper .block {
     padding: 50px 35px;
     height: auto;
@@ -1657,8 +1657,48 @@ body {
       body main .offer .wrapper .elements .el .container-image {
         width: 100%;
         order: 1 !important; }
-  body main .contact:before {
-    border-width: 100px 100vw 0 0; } }
+  body main .contact {
+    padding-top: 125px;
+    padding-bottom: 250px; }
+    body main .contact:before {
+      border-width: 60px 100vw 0 0; }
+    body main .contact .home {
+      z-index: 2;
+      height: 170px;
+      width: 290px; }
+    body main .contact .bridge {
+      height: 240px;
+      width: 240px;
+      bottom: -30px; }
+    body main .contact .colin {
+      width: 230px;
+      height: 40px; }
+    body main .contact .wrapper form {
+      flex-direction: column;
+      align-items: center; }
+      body main .contact .wrapper form .col {
+        width: 300px; }
+        body main .contact .wrapper form .col input:last-child {
+          margin-bottom: 10px; }
+        body main .contact .wrapper form .col input, body main .contact .wrapper form .col textarea {
+          width: 300px; }
+      body main .contact .wrapper form button {
+        width: 300px; }
+  body footer {
+    height: 300px;
+    padding-top: 50px;
+    padding-bottom: 50px; }
+    body footer .wrapper {
+      flex-direction: column; }
+      body footer .wrapper .left {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+      body footer .wrapper .center {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none; } }
 
 /*====================================
 =            END PAGE HOME           =
