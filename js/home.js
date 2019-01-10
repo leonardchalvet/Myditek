@@ -34,4 +34,11 @@ $(window).on('load', function() {
         }, 600);
     })
 
+
+    if (window.matchMedia("(max-width: 800px)").matches) {
+    	$('body header.mobile .more .burger').click(function(){
+    		$(this).parent().parent().toggleClass('active');
+    	})
+	}
+
 });

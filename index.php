@@ -17,7 +17,7 @@
 	
 	<body>
 
-		<header>
+		<header class="desktop">
 			<div class="nav">
 				<a class="logo" href="index.php">
 					<img src="img/header/logo.svg">
@@ -39,11 +39,28 @@
 					<img src="img/landing/picto-personne.svg">
 				</a>
 				<div class="point"></div>
-				<a class="link" href="#">
+				<div class="link" href="#">
 					Book a demo
 					<img src="img/landing/arrow-right.svg">
-				</a>
+				</div>
 			</div>
+		</header>
+
+		<header class="mobile">
+			<a class="logo" href="index.php">
+				<img src="img/header/logo.svg">
+			</a>
+
+			<div class="more">
+				<a class="profil" href="#">
+					<img src="img/landing/picto-personne.svg">
+				</a>
+				<div class="point"></div>
+				<div class="burger">
+					<div class="line"></div>
+					<div class="line"></div>
+				</div>
+			</div>	
 		</header>
 
 		<main>
