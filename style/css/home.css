@@ -1157,10 +1157,7 @@ lightbox {
 body {
   background-color: #fff; }
   body header {
-    display: flex;
-    justify-content: space-between;
     width: 100%;
-    height: 70px;
     position: fixed;
     z-index: 1000;
     top: 0;
@@ -1198,6 +1195,9 @@ body {
         opacity: 0.3;
         border-radius: 50%; }
   body header.desktop {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
     background-color: #fff; }
     body header.desktop .nav {
       display: flex;
@@ -1222,24 +1222,48 @@ body {
           margin-left: 10px; }
   body header.mobile {
     display: none; }
-    body header.mobile .more {
-      width: 175px; }
-      body header.mobile .more .burger {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 16px;
-        height: 12px; }
-        body header.mobile .more .burger .line {
-          transition-duration: 0.2s;
-          width: 100%;
-          height: 2px;
-          border-radius: 5px;
-          background-color: #fff; }
+    body header.mobile .head {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      z-index: 1; }
+      body header.mobile .head .more {
+        width: 175px; }
+        body header.mobile .head .more .burger {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          width: 16px;
+          height: 12px; }
+          body header.mobile .head .more .burger .line {
+            transition-duration: 0.2s;
+            width: 100%;
+            height: 2px;
+            border-radius: 5px;
+            background-color: #fff; }
+    body header.mobile .nav {
+      transform: translateY(-200%);
+      transition-duration: .4s;
+      padding-top: 70px;
+      padding-bottom: 25px;
+      background-color: #1C2D4F;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end; }
+      body header.mobile .nav .container-text {
+        cursor: pointer;
+        margin-top: 15px;
+        margin-right: 50px;
+        color: #fff;
+        font-size: 12px;
+        font-weight: bold; }
     body header.mobile.active .more .burger .line:first-child {
       transform: rotate(45deg) translate(4px, 4px); }
     body header.mobile.active .more .burger .line:last-child {
       transform: rotate(-45deg) translate(3px, -3px); }
+    body header.mobile.active .nav {
+      transform: translateY(-70px); }
   body main .cover {
     margin-top: 100px; }
     body main .cover .wrapper {
@@ -1644,7 +1668,7 @@ body {
   body header.desktop {
     display: none; }
   body header.mobile {
-    display: flex; }
+    display: block; }
   body main .cover .wrapper {
     flex-direction: column;
     align-items: initial; }

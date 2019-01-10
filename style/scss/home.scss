@@ -8,11 +8,7 @@ body{
 	background-color: #fff;
 
 	header {
-		display: flex;
-		justify-content: space-between;
-
 		width: 100%;
-		height: 70px;
 
 		position: fixed;
 		z-index: 1000;
@@ -67,6 +63,9 @@ body{
 	}
 
 	header.desktop {
+		display: flex;
+		justify-content: space-between;
+		height: 70px;
 		background-color: #fff;
 		.nav {
 			display: flex;
@@ -102,21 +101,47 @@ body{
 	header.mobile {
 		display: none;
 
-		.more {
-			width: 175px;
-			.burger {
-				display: flex;
-				flex-direction: column;
-				justify-content: space-between;
-				width: 16px;
-				height: 12px;
-				.line {
-					transition-duration: 0.2s;
-					width: 100%;
-					height: 2px;
-					border-radius: 5px;
-					background-color: #fff;
+		.head {
+			display: flex;
+			justify-content: space-between;
+			position: relative;
+			z-index: 1;
+			.more {
+				width: 175px;
+				.burger {
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+					width: 16px;
+					height: 12px;
+					.line {
+						transition-duration: 0.2s;
+						width: 100%;
+						height: 2px;
+						border-radius: 5px;
+						background-color: #fff;
+					}
 				}
+			}
+		}
+		.nav {
+			transform: translateY(-200%);
+			transition-duration: .4s;
+			padding-top: 70px;
+			padding-bottom: 25px;
+			background-color: $colorMain_1;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+			
+			.container-text {
+				cursor: pointer;
+				margin-top: 15px;
+				margin-right: 50px;
+				color: #fff;	
+				font-size: 12px;	
+				font-weight: bold;
 			}
 		}
 
@@ -128,6 +153,9 @@ body{
 				&:last-child {
 					transform: rotate(-45deg) translate(3px, -3px);
 				}
+			}
+			.nav {
+				transform: translateY(-70px);
 			}
 		}
 	}
@@ -618,7 +646,7 @@ body{
 		}
 
 		header.mobile {
-			display: flex;
+			display: block;
 		}
 
 		main {

@@ -37,7 +37,7 @@ $(window).on('load', function() {
 
     if (window.matchMedia("(max-width: 800px)").matches) {
     	$('body header.mobile .more .burger').click(function(){
-    		$(this).parent().parent().toggleClass('active');
+    		$(this).parent().parent().parent().toggleClass('active');
     	})
 	}
 

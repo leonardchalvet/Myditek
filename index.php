@@ -47,20 +47,35 @@
 		</header>
 
 		<header class="mobile">
-			<a class="logo" href="index.php">
-				<img src="img/header/logo.svg">
-			</a>
-
-			<div class="more">
-				<a class="profil" href="#">
-					<img src="img/landing/picto-personne.svg">
+			<div class="head">
+				<a class="logo" href="index.php">
+					<img src="img/header/logo.svg">
 				</a>
-				<div class="point"></div>
-				<div class="burger">
-					<div class="line"></div>
-					<div class="line"></div>
+
+				<div class="more">
+					<a class="profil" href="#">
+						<img src="img/landing/picto-personne.svg">
+					</a>
+					<div class="point"></div>
+					<div class="burger">
+						<div class="line"></div>
+						<div class="line"></div>
+					</div>
+				</div>	
+			</div>
+
+			<div class="nav">
+				<div class="container-text" data-ancre="offer">
+					NOTRE OFFRE
 				</div>
-			</div>	
+				<div class="container-text" data-ancre="product">
+					NOTRE PRODUIT
+				</div>
+				<div class="container-text" data-ancre="contact">
+					NOUS CONTACTER
+				</div>
+			</div>
+
 		</header>
 
 		<main>
