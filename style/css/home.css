@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 @font-face {
   font-family: ClanPro-Regular;
   src: url(../../fonts/ClanPro-Regular.woff); }
@@ -1165,6 +1166,8 @@ header {
   top: 0;
   left: 0;
   font-family: Lato-Regular; }
+  header.scroll {
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1); }
   header .logo {
     display: flex;
     align-items: center;
@@ -1229,7 +1232,8 @@ header.mobile {
     display: flex;
     justify-content: space-between;
     position: relative;
-    z-index: 1; }
+    z-index: 1;
+    background-color: #fff; }
     header.mobile .head .more {
       width: 175px; }
       header.mobile .head .more .burger {
@@ -1523,7 +1527,8 @@ main #section-product {
       main #section-product .wrapper .container-image .images {
         position: relative;
         width: 960px;
-        height: 640px; }
+        height: 640px;
+        box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.1); }
         main #section-product .wrapper .container-image .images img {
           position: absolute;
           width: 100%;
@@ -1616,6 +1621,7 @@ main #section-contact {
           main #section-contact .wrapper form .col input::placeholder, main #section-contact .wrapper form .col textarea::placeholder {
             color: #fff; }
         main #section-contact .wrapper form .col textarea {
+          resize: none;
           height: 170px; }
         main #section-contact .wrapper form .col input {
           height: 50px;
@@ -1676,6 +1682,7 @@ footer {
       height: 14px;
       transform: translateY(2px); }
     footer .wrapper .logo {
+      font-family: 'Roboto', sans-serif;
       position: absolute;
       top: 50%;
       left: 50%;

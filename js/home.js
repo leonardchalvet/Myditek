@@ -1,5 +1,16 @@
 $(window).on('load', function() {
 
+	$(window).scroll(function() {
+
+	    if ( $(window).scrollTop() >= 1 ) {
+	        $('header.desktop').addClass('scroll');
+	        $('header.mobile').addClass('scroll');
+	    } else {
+	    	$('header.desktop').removeClass('scroll');
+	    	$('header.mobile').removeClass('scroll');
+	    };
+	});
+
 	$('main #section-product .wrapper .container-image .arrow-left').click(function() {
 		let now = parseInt($('main #section-product .wrapper .container-image .images img.active').attr('data-active'));
 		let next = (now-1) < 1 ? 3 : (now-1);
