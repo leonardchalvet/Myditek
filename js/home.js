@@ -39,6 +39,10 @@ $(window).on('load', function() {
     	$('body header.mobile .more .burger').click(function(){
     		$(this).parent().parent().parent().toggleClass('active');
     	})
+
+    	$('body header.mobile .nav .container-text').click(function(){
+			$(this).parent().parent().removeClass('active');
+		})
 	}
 
 });

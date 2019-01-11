@@ -39,10 +39,10 @@
 					<img src="img/landing/picto-personne.svg">
 				</a>
 				<div class="point"></div>
-				<div class="link" href="#">
+				<a class="link" href="#">
 					Book a demo
 					<img src="img/landing/arrow-right.svg">
-				</div>
+				</a>
 			</div>
 		</header>
 
@@ -73,6 +73,10 @@
 				</div>
 				<div class="container-text" data-ancre="contact">
 					NOUS CONTACTER
+				</div>
+				<div class="link" href="#">
+					BOOK A DEMO
+					<img src="img/landing/arrow-right.svg">
 				</div>
 			</div>
 
