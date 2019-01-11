@@ -84,7 +84,7 @@
 
 		<main>
 			
-			<div class="cover">
+			<div id="section-cover">
 				<div class="wrapper">
 					<div class="container-text">
 						<span>MYDITEK</span>
@@ -98,16 +98,16 @@
 				</div>
 			</div>
 
-			<div class="offer">
+			<div id="section-offer">
 				<div class="wrapper">
-					<div class="block">
+					<div class="bnd">
 						<h2>Notre offre</h2>
 						<p>Offre digitale complète (capteurs + drones) pour vous accompagnez et simplifiez votre quotidien: alertes, aide à la décision, prédiction de maladies, évaluation des rendements, référencement, cartographie, etc.</p>
 						<button>
 							<img src="img/landing/arrow-right.svg">
 						</button>
 					</div>
-					<div class="elements">
+					<div class="container-el">
 						<div class="el">
 							<div class="container-text">
 								<h3>Capteur d'activité</h3>
@@ -178,7 +178,7 @@
 				</div>
 			</div>
 
-			<div class="product">
+			<div id="section-product">
 				<div class="wrapper">
 					<div class="container-head">
 						<h2>Notre produit</h2>
@@ -193,7 +193,7 @@
 						</div>
 						<div class="arrow arrow-right"><img src="img/landing/arrow-right.svg"></div>
 					</div>
-					<div class="container-text">
+					<div class="container-el">
 						<div class="el active">
 							<h4>Dashboard</h4>
 							<p>Forget Ebay and other forms of advertising for your property that costs you hard earned money. Why not do it all for free? </p>
@@ -210,7 +210,7 @@
 				</div>
 			</div>
 
-			<div class="contact">
+			<div id="section-contact">
 				<div class="wrapper">
 					<h2>Nous contactez</h2>
 					<form>
@@ -234,9 +234,9 @@
 
 		<footer>
 			<div class="wrapper">
-				<a class="center" href="index.php"><img src="img/landing/logo-myditek.svg">MYDITEK</a>
-				<div class="left">Nous sommes partenaires de <a href="#"><img src="img/landing/logo-station.png"></a></div>
-				<div class="right">Copyright 2018</div>
+				<a class="logo" href="index.php"><img src="img/landing/logo-myditek.svg">MYDITEK</a>
+				<div class="sponsors">Nous sommes partenaires de <a href="#"><img src="img/landing/logo-station.png"></a></div>
+				<div class="cpr">Copyright 2018</div>
 			</div>
 		</footer>
 
